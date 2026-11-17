@@ -1,0 +1,183 @@
+Compared with: propionylation + trypsin · 4–40 aa · ≤1 missed cleavage
+
+
+## H4 1–25  (0.01 s for all goals)
+
+### See lysines the standard digest misses
+The standard digest already **sees all 5 lysines** in H4 1–25 with these settings, so no strategy can improve this. Try another goal, region or settings.
+
+### Measure lysines one at a time
+1. Use **Lys-N** instead (no propionylation)
+   **+4** lysines measurable on their own (K5, K8, K12 and K16)
+   What you give up: Nothing lost in this region
+   Extra work: same work
+   Warnings: [Unmodified lysines only]
+2. Add a separate **Lys-N** digest (no propionylation)
+   **+4** lysines measurable on their own (K5, K8, K12 and K16)
+   What you give up: Nothing lost in this region
+   Extra work: +1 sample prep, +1 LC-MS run
+   Warnings: [Unmodified lysines only]
+3. Use **Lys-C** instead (no propionylation)
+   **+3** lysines measurable on their own (K5, K12 and K16)
+   What you give up: Nothing lost in this region
+   Extra work: same work
+   Warnings: [Unmodified lysines only]
+
+### Separate lysines that share a peptide
+1. Use **Lys-C** instead (no propionylation)
+   **+6** lysine pairs can now be measured separately (K5–K8, K5–K12, K5–K16 and 3 more)
+   What you give up: Nothing lost in this region
+   Extra work: same work
+   Warnings: [Unmodified lysines only]
+2. Use **Lys-C/P** instead (no propionylation)
+   **+6** lysine pairs can now be measured separately (K5–K8, K5–K12, K5–K16 and 3 more)
+   What you give up: Nothing lost in this region
+   Extra work: same work
+   Warnings: [Unmodified lysines only]
+3. Use **Lys-N** instead (no propionylation)
+   **+6** lysine pairs can now be measured separately (K5–K8, K5–K12, K5–K16 and 3 more)
+   What you give up: Nothing lost in this region
+   Extra work: same work
+   Warnings: [Unmodified lysines only]
+
+### Read lysines together (combinations / crosstalk)
+1. Use **Asp-N (ambic)** instead
+   **+4** new lysine combinations on one peptide (K5–K20, K8–K20, K12–K20 and K16–K20)
+   What you give up: Nothing lost in this region
+   Extra work: same work
+2. Use **Asp-N** instead
+   **+4** new lysine combinations on one peptide (K5–K20, K8–K20, K12–K20 and K16–K20)
+   What you give up: Nothing lost in this region
+   Extra work: same work
+3. Use **ProAlanase** instead
+   **+4** new lysine combinations on one peptide (K5–K20, K8–K20, K12–K20 and K16–K20)
+   What you give up: Nothing lost in this region
+   Extra work: same work
+
+### Cover known modification sites
+The standard digest already **sees all 5 known modification sites** in H4 1–25 with these settings, so no strategy can improve this. Try another goal, region or settings.
+
+### Tell variants and isoforms apart
+Nothing to measure for this goal in H4 1–25: no other H4 entry has a different sequence. Try another goal or region.
+
+
+## H3.1 1–40  (0.01 s for all goals)
+
+### See lysines the standard digest misses
+The standard digest already **sees all 8 lysines** in H3.1 1–40 with these settings, so no strategy can improve this. Try another goal, region or settings.
+
+### Measure lysines one at a time
+1. Use **trypsin** instead (no propionylation)
+   **+7** lysines measurable on their own (K9, K14, K18 and 4 more)
+   What you give up: Nothing lost in this region
+   Extra work: same work
+   Warnings: [Unmodified lysines only]
+2. Use **trypsin/P** instead (no propionylation)
+   **+7** lysines measurable on their own (K9, K14, K18 and 4 more)
+   What you give up: Nothing lost in this region
+   Extra work: same work
+   Warnings: [Unmodified lysines only]
+3. Add a separate **trypsin** digest (no propionylation)
+   **+7** lysines measurable on their own (K9, K14, K18 and 4 more)
+   What you give up: Nothing lost in this region
+   Extra work: +1 sample prep, +1 LC-MS run
+   Warnings: [Unmodified lysines only]
+
+### Separate lysines that share a peptide
+1. Use **Lys-C** instead (no propionylation)
+   **+5** lysine pairs can now be measured separately (K9–K14, K18–K23, K27–K36 and 2 more)
+   What you give up: Nothing lost in this region
+   Extra work: same work
+   Warnings: [Unmodified lysines only]
+2. Use **Lys-C/P** instead (no propionylation)
+   **+5** lysine pairs can now be measured separately (K9–K14, K18–K23, K27–K36 and 2 more)
+   What you give up: Nothing lost in this region
+   Extra work: same work
+   Warnings: [Unmodified lysines only]
+3. Use **Lys-N** instead (no propionylation)
+   **+5** lysine pairs can now be measured separately (K9–K14, K18–K23, K27–K36 and 2 more)
+   What you give up: Nothing lost in this region
+   Extra work: same work
+   Warnings: [Unmodified lysines only]
+
+### Read lysines together (combinations / crosstalk)
+1. Use **chymotrypsin (low specificity)** instead
+   **+11** new lysine combinations on one peptide (K4–K18, K4–K23, K4–K27 and 8 more)
+   What you give up: Nothing lost in this region
+   Extra work: same work
+2. Add a separate **chymotrypsin (low specificity)** digest
+   **+11** new lysine combinations on one peptide (K4–K18, K4–K23, K4–K27 and 8 more)
+   What you give up: Nothing lost in this region
+   Extra work: +1 sample prep, +1 LC-MS run
+3. Add a separate **chymotrypsin** digest
+   **+1** new lysine combination on one peptide (K4–K18)
+   What you give up: Nothing lost in this region
+   Extra work: +1 sample prep, +1 LC-MS run
+
+### Cover known modification sites
+The standard digest already **sees all 8 known modification sites** in H3.1 1–40 with these settings, so no strategy can improve this. Try another goal, region or settings.
+
+### Tell variants and isoforms apart
+No strategy improves this in H3.1 1–40 with these settings. The standard digest tells H3.1 apart from 6 of 8 other H3 entries, and every alternative gives the same or less. Try another goal, region or settings.
+
+
+## H2B type 1-C/E/F/G/I 1–35  (0.01 s for all goals)
+
+### See lysines the standard digest misses
+The standard digest already **sees all 12 lysines** in H2B type 1-C/E/F/G/I 1–35 with these settings, so no strategy can improve this. Try another goal, region or settings.
+
+### Measure lysines one at a time
+1. Add a separate **Lys-C** or **Lys-C/P** digest (no propionylation)
+   **+4** lysines measurable on their own (K5, K11, K20 and K34)
+   What you give up: Nothing lost in this region
+   Extra work: +1 sample prep, +1 LC-MS run
+   Warnings: [Unmodified lysines only]
+2. Use **Lys-C** or **Lys-C/P** instead (no propionylation)
+   **+4** lysines measurable on their own (K5, K11, K20 and K34)
+   but 1 lysine no longer measurable on its own (K30)
+   What you give up: Nothing lost in this region
+   Extra work: same work
+   Warnings: [Unmodified lysines only]
+3. Use **Lys-N** instead (no propionylation)
+   **+3** lysines measurable on their own (K5, K16 and K34)
+   What you give up: Nothing lost in this region
+   Extra work: same work
+   Warnings: [Unmodified lysines only]
+
+### Separate lysines that share a peptide
+1. Add a separate **Lys-C** or **Lys-C/P** digest (no propionylation)
+   **+44** lysine pairs can now be measured separately (K5–K11, K5–K12, K5–K15 and 41 more)
+   What you give up: Nothing lost in this region
+   Extra work: +1 sample prep, +1 LC-MS run
+   Warnings: [Unmodified lysines only]
+2. Add a separate **Lys-N** digest (no propionylation)
+   **+44** lysine pairs can now be measured separately (K5–K11, K5–K12, K5–K15 and 41 more)
+   What you give up: Nothing lost in this region
+   Extra work: +1 sample prep, +1 LC-MS run
+   Warnings: [Unmodified lysines only]
+3. Add a separate **trypsin** or **trypsin/P** digest (no propionylation)
+   **+44** lysine pairs can now be measured separately (K5–K11, K5–K12, K5–K15 and 41 more)
+   What you give up: Nothing lost in this region
+   Extra work: +1 sample prep, +1 LC-MS run
+   Warnings: [Unmodified lysines only]
+
+### Read lysines together (combinations / crosstalk)
+1. Use **Asp-N (ambic)** instead
+   **+11** new lysine combinations on one peptide (K5–K34, K11–K34, K12–K34 and 8 more)
+   What you give up: Nothing lost in this region
+   Extra work: same work
+2. Use **Glu-C** instead
+   **+11** new lysine combinations on one peptide (K5–K34, K11–K34, K12–K34 and 8 more)
+   What you give up: Nothing lost in this region
+   Extra work: same work
+3. Use **chymotrypsin**, **chymotrypsin (high specificity)** or **chymotrypsin (low specificity)** instead
+   **+11** new lysine combinations on one peptide (K5–K34, K11–K34, K12–K34 and 8 more)
+   What you give up: Nothing lost in this region
+   Extra work: same work
+
+### Cover known modification sites
+The standard digest already **sees all 9 known modification sites** in H2B type 1-C/E/F/G/I 1–35 with these settings, so no strategy can improve this. Try another goal, region or settings.
+
+### Tell variants and isoforms apart
+No strategy improves this in H2B type 1-C/E/F/G/I 1–35 with these settings. The standard digest tells H2B type 1-C/E/F/G/I apart from 16 of 17 other H2B entries, and every alternative gives the same or less. Try another goal, region or settings.
+

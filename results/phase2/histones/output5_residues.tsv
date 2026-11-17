@@ -1,0 +1,1262 @@
+# ProteaseScope 0.2.0 - Output 5: residues
+# PREDICTED (in silico) results. These are predictions from cleavage rules, not observed data.
+# Generated: 2026-11-14T10:51:16-05:00
+# Proteins digested: human_histones.fasta (54 entries)
+# Uniqueness background: UniProtKB/Swiss-Prot reviewed human proteome UP000005640 incl. isoforms, UniProt release 2026_04 (04-November-2026; downloaded 2026-11-14), 42,545 entries + human_histones.fasta (54 entries) (0 not already present); a peptide maps to every entry whose sequence contains it (I = L)
+# Baseline:
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 1:
+#   Digest: Trypsin/P (PSI-MS) [single]
+#     Trypsin/P (PSI-MS): regex (?<=[KR])  [PSI-MS MS:1001313, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 2: parallel digests (union of peptide sets)
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+#   Digest: Trypsin/P (PSI-MS) [single]
+#     Trypsin/P (PSI-MS): regex (?<=[KR])  [PSI-MS MS:1001313, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 3:
+#   Digest: Trypsin (PSI-MS) + Trypsin/P (PSI-MS) [sequential (union of cut sites)]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Trypsin/P (PSI-MS): regex (?<=[KR])  [PSI-MS MS:1001313, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 4:
+#   Digest: Arg-C (PSI-MS) [single]
+#     Arg-C (PSI-MS): regex (?<=R)(?!P)  [PSI-MS MS:1001303, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 5: parallel digests (union of peptide sets)
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+#   Digest: Arg-C (PSI-MS) [single]
+#     Arg-C (PSI-MS): regex (?<=R)(?!P)  [PSI-MS MS:1001303, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 6:
+#   Digest: Trypsin (PSI-MS) + Arg-C (PSI-MS) [sequential (union of cut sites)]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Arg-C (PSI-MS): regex (?<=R)(?!P)  [PSI-MS MS:1001303, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 7:
+#   Digest: Lys-C (PSI-MS) [single]
+#     Lys-C (PSI-MS): regex (?<=K)(?!P)  [PSI-MS MS:1001309, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 8: parallel digests (union of peptide sets)
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+#   Digest: Lys-C (PSI-MS) [single]
+#     Lys-C (PSI-MS): regex (?<=K)(?!P)  [PSI-MS MS:1001309, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 9:
+#   Digest: Trypsin (PSI-MS) + Lys-C (PSI-MS) [sequential (union of cut sites)]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Lys-C (PSI-MS): regex (?<=K)(?!P)  [PSI-MS MS:1001309, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 10:
+#   Digest: Lys-C/P (PSI-MS) [single]
+#     Lys-C/P (PSI-MS): regex (?<=K)  [PSI-MS MS:1001310, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 11: parallel digests (union of peptide sets)
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+#   Digest: Lys-C/P (PSI-MS) [single]
+#     Lys-C/P (PSI-MS): regex (?<=K)  [PSI-MS MS:1001310, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 12:
+#   Digest: Trypsin (PSI-MS) + Lys-C/P (PSI-MS) [sequential (union of cut sites)]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Lys-C/P (PSI-MS): regex (?<=K)  [PSI-MS MS:1001310, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 13:
+#   Digest: Lys-N (PSI-MS) [single]
+#     Lys-N (PSI-MS): regex (?=K)  [PSI-MS MS:1003093, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009. Taouatas N et al. (2008) Nat Methods 5:405-407 (Lys-N cleaves N-terminal to K).
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 14: parallel digests (union of peptide sets)
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+#   Digest: Lys-N (PSI-MS) [single]
+#     Lys-N (PSI-MS): regex (?=K)  [PSI-MS MS:1003093, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009. Taouatas N et al. (2008) Nat Methods 5:405-407 (Lys-N cleaves N-terminal to K).
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 15:
+#   Digest: Trypsin (PSI-MS) + Lys-N (PSI-MS) [sequential (union of cut sites)]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Lys-N (PSI-MS): regex (?=K)  [PSI-MS MS:1003093, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009. Taouatas N et al. (2008) Nat Methods 5:405-407 (Lys-N cleaves N-terminal to K).
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 16:
+#   Digest: Asp-N (PSI-MS) [single]
+#     Asp-N (PSI-MS): regex (?=[BD])  [PSI-MS MS:1001304, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 17: parallel digests (union of peptide sets)
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+#   Digest: Asp-N (PSI-MS) [single]
+#     Asp-N (PSI-MS): regex (?=[BD])  [PSI-MS MS:1001304, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 18:
+#   Digest: Trypsin (PSI-MS) + Asp-N (PSI-MS) [sequential (union of cut sites)]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Asp-N (PSI-MS): regex (?=[BD])  [PSI-MS MS:1001304, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 19:
+#   Digest: Asp-N ambic (PSI-MS) [single]
+#     Asp-N ambic (PSI-MS): regex (?=[DE])  [PSI-MS MS:1001305, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 20: parallel digests (union of peptide sets)
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+#   Digest: Asp-N ambic (PSI-MS) [single]
+#     Asp-N ambic (PSI-MS): regex (?=[DE])  [PSI-MS MS:1001305, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 21:
+#   Digest: Trypsin (PSI-MS) + Asp-N ambic (PSI-MS) [sequential (union of cut sites)]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Asp-N ambic (PSI-MS): regex (?=[DE])  [PSI-MS MS:1001305, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 22:
+#   Digest: Glu-C (PSI-MS) [single]
+#     Glu-C (PSI-MS): regex (?<=[^E]E)  [PSI-MS MS:1001917, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 23: parallel digests (union of peptide sets)
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+#   Digest: Glu-C (PSI-MS) [single]
+#     Glu-C (PSI-MS): regex (?<=[^E]E)  [PSI-MS MS:1001917, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 24:
+#   Digest: Trypsin (PSI-MS) + Glu-C (PSI-MS) [sequential (union of cut sites)]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Glu-C (PSI-MS): regex (?<=[^E]E)  [PSI-MS MS:1001917, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 25:
+#   Digest: Chymotrypsin (PSI-MS) [single]
+#     Chymotrypsin (PSI-MS): regex (?<=[FYWL])(?!P)  [PSI-MS MS:1001306, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 26: parallel digests (union of peptide sets)
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+#   Digest: Chymotrypsin (PSI-MS) [single]
+#     Chymotrypsin (PSI-MS): regex (?<=[FYWL])(?!P)  [PSI-MS MS:1001306, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 27:
+#   Digest: Trypsin (PSI-MS) + Chymotrypsin (PSI-MS) [sequential (union of cut sites)]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Chymotrypsin (PSI-MS): regex (?<=[FYWL])(?!P)  [PSI-MS MS:1001306, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 28:
+#   Digest: Chymotrypsin high specificity (ExPASy) [single]
+#     Chymotrypsin high specificity (ExPASy): regex (?<=[FY])(?=[^P])|(?<=W)(?=[^MP])  [ExPASy]
+#       Citation: ExPASy PeptideCutter cleavage rules; Gasteiger E et al. (2005) The Proteomics Protocols Handbook, Humana Press, 571-607. As implemented in Protein Cleaver and the R/Bioconductor package cleaver.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 29: parallel digests (union of peptide sets)
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+#   Digest: Chymotrypsin high specificity (ExPASy) [single]
+#     Chymotrypsin high specificity (ExPASy): regex (?<=[FY])(?=[^P])|(?<=W)(?=[^MP])  [ExPASy]
+#       Citation: ExPASy PeptideCutter cleavage rules; Gasteiger E et al. (2005) The Proteomics Protocols Handbook, Humana Press, 571-607. As implemented in Protein Cleaver and the R/Bioconductor package cleaver.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 30:
+#   Digest: Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy) [sequential (union of cut sites)]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Chymotrypsin high specificity (ExPASy): regex (?<=[FY])(?=[^P])|(?<=W)(?=[^MP])  [ExPASy]
+#       Citation: ExPASy PeptideCutter cleavage rules; Gasteiger E et al. (2005) The Proteomics Protocols Handbook, Humana Press, 571-607. As implemented in Protein Cleaver and the R/Bioconductor package cleaver.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 31:
+#   Digest: Chymotrypsin low specificity (ExPASy) [single]
+#     Chymotrypsin low specificity (ExPASy): regex (?<=[FLY])(?=[^P])|(?<=W)(?=[^MP])|(?<=M)(?=[^PY])|(?<=H)(?=[^DMPW])  [ExPASy]
+#       Citation: ExPASy PeptideCutter cleavage rules; Gasteiger E et al. (2005) The Proteomics Protocols Handbook, Humana Press, 571-607. As implemented in Protein Cleaver and the R/Bioconductor package cleaver.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 32: parallel digests (union of peptide sets)
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+#   Digest: Chymotrypsin low specificity (ExPASy) [single]
+#     Chymotrypsin low specificity (ExPASy): regex (?<=[FLY])(?=[^P])|(?<=W)(?=[^MP])|(?<=M)(?=[^PY])|(?<=H)(?=[^DMPW])  [ExPASy]
+#       Citation: ExPASy PeptideCutter cleavage rules; Gasteiger E et al. (2005) The Proteomics Protocols Handbook, Humana Press, 571-607. As implemented in Protein Cleaver and the R/Bioconductor package cleaver.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 33:
+#   Digest: Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy) [sequential (union of cut sites)]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Chymotrypsin low specificity (ExPASy): regex (?<=[FLY])(?=[^P])|(?<=W)(?=[^MP])|(?<=M)(?=[^PY])|(?<=H)(?=[^DMPW])  [ExPASy]
+#       Citation: ExPASy PeptideCutter cleavage rules; Gasteiger E et al. (2005) The Proteomics Protocols Handbook, Humana Press, 571-607. As implemented in Protein Cleaver and the R/Bioconductor package cleaver.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 34:
+#   Digest: Proteinase K (ExPASy) [single]
+#     Proteinase K (ExPASy): regex (?<=[AEFILTVWY])  [ExPASy]
+#       Citation: ExPASy PeptideCutter cleavage rules; Gasteiger E et al. (2005) The Proteomics Protocols Handbook, Humana Press, 571-607. As implemented in Protein Cleaver and the R/Bioconductor package cleaver.
+#       Flags: nonspecific, low confidence
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 35: parallel digests (union of peptide sets)
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+#   Digest: Proteinase K (ExPASy) [single]
+#     Proteinase K (ExPASy): regex (?<=[AEFILTVWY])  [ExPASy]
+#       Citation: ExPASy PeptideCutter cleavage rules; Gasteiger E et al. (2005) The Proteomics Protocols Handbook, Humana Press, 571-607. As implemented in Protein Cleaver and the R/Bioconductor package cleaver.
+#       Flags: nonspecific, low confidence
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 36:
+#   Digest: Trypsin (PSI-MS) + Proteinase K (ExPASy) [sequential (union of cut sites)]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Proteinase K (ExPASy): regex (?<=[AEFILTVWY])  [ExPASy]
+#       Citation: ExPASy PeptideCutter cleavage rules; Gasteiger E et al. (2005) The Proteomics Protocols Handbook, Humana Press, 571-607. As implemented in Protein Cleaver and the R/Bioconductor package cleaver.
+#       Flags: nonspecific, low confidence
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Numbering: UniProt (initiator Met = 1); *_mature = UniProt - 1 when Met is removed.
+# Masses: neutral monoisotopic and average (ExPASy average residue masses); m/z = (M + z*1.007276)/z.
+# Counts: peptides are counted by position (entry, start, end).
+alternative	kind	accession	gene	residues_gained	residues_lost	gained_ranges	lost_ranges
+Trypsin/P (PSI-MS)	alone	Q6DN03	H2BC20P	0	2		95-96
+Trypsin/P (PSI-MS)	alone	Q6DRA6	H2BC19P	0	2		95-96
+Trypsin/P (PSI-MS)	alone	Q75WM6	H1-7	0	1		191
+Trypsin (PSI-MS) + Trypsin/P (PSI-MS)	sequential	Q6DN03	H2BC20P	0	2		95-96
+Trypsin (PSI-MS) + Trypsin/P (PSI-MS)	sequential	Q6DRA6	H2BC19P	0	2		95-96
+Trypsin (PSI-MS) + Trypsin/P (PSI-MS)	sequential	Q75WM6	H1-7	0	1		191
+Lys-C (PSI-MS)	alone	O60814	H2BC12	0	125		2-126
+Lys-C (PSI-MS)	alone	O75367	MACROH2A1	0	155		2-156
+Lys-C (PSI-MS)	alone	P04908	H2AC4	0	129		2-130
+Lys-C (PSI-MS)	alone	P06899	H2BC11	0	125		2-126
+Lys-C (PSI-MS)	alone	P07305	H1-0	0	98		2-94;190-194
+Lys-C (PSI-MS)	alone	P0C0S5	H2AZ1	0	127		2-128
+Lys-C (PSI-MS)	alone	P0C0S8	H2AC11	0	88		2-89
+Lys-C (PSI-MS)	alone	P0C5Z0	H2AB2	0	108		8-115
+Lys-C (PSI-MS)	alone	P0DPK2	H3Y1	0	133		2-130;133-136
+Lys-C (PSI-MS)	alone	P0DPK5	H3Y2	0	146		2-147
+Lys-C (PSI-MS)	alone	P10412	H1-4	0	78		2-79
+Lys-C (PSI-MS)	alone	P16104	H2AX	0	88		2-89
+Lys-C (PSI-MS)	alone	P16401	H1-5	0	81		2-82
+Lys-C (PSI-MS)	alone	P16402	H1-3	0	79		2-80
+Lys-C (PSI-MS)	alone	P16403	H1-2	0	78		2-79
+Lys-C (PSI-MS)	alone	P20671	H2AC7	0	88		2-89
+Lys-C (PSI-MS)	alone	P23527	H2BC17	0	125		2-126
+Lys-C (PSI-MS)	alone	P33778	H2BC3	0	125		2-126
+Lys-C (PSI-MS)	alone	P49450	CENPA	0	138		2-5;7-140
+Lys-C (PSI-MS)	alone	P57053	H2BC12L	0	125		2-126
+Lys-C (PSI-MS)	alone	P58876	H2BC5	0	125		2-126
+Lys-C (PSI-MS)	alone	P60008	H1-9P	0	231		1-231
+Lys-C (PSI-MS)	alone	P62805	H4C1	0	102		2-103
+Lys-C (PSI-MS)	alone	P62807	H2BC4	0	125		2-126
+Lys-C (PSI-MS)	alone	P68431	H3C1	0	135		2-136
+Lys-C (PSI-MS)	alone	P84243	H3-3A	0	135		2-136
+Lys-C (PSI-MS)	alone	Q02539	H1-1	0	77		58-82;164-215
+Lys-C (PSI-MS)	alone	Q16695	H3-4	0	135		2-136
+Lys-C (PSI-MS)	alone	Q16777	H2AC20	0	128		2-129
+Lys-C (PSI-MS)	alone	Q16778	H2BC21	0	125		2-126
+Lys-C (PSI-MS)	alone	Q5QNW6	H2BC18	0	125		2-126
+Lys-C (PSI-MS)	alone	Q5TEC6	H3-7	0	135		2-136
+Lys-C (PSI-MS)	alone	Q6DN03	H2BC20P	0	192		2-193
+Lys-C (PSI-MS)	alone	Q6DRA6	H2BC19P	0	163		2-164
+Lys-C (PSI-MS)	alone	Q6FI13	H2AC18	0	88		2-89
+Lys-C (PSI-MS)	alone	Q6NXT2	H3-5	0	134		2-135
+Lys-C (PSI-MS)	alone	Q71DI3	H3C15	0	135		2-136
+Lys-C (PSI-MS)	alone	Q71UI9	H2AZ2	0	127		2-128
+Lys-C (PSI-MS)	alone	Q75WM6	H1-7	0	251		1-156;158-187;191-255
+Lys-C (PSI-MS)	alone	Q7L7L0	H2AC25	0	129		2-130
+Lys-C (PSI-MS)	alone	Q7Z2G1	H2BW1	0	152		2-153
+Lys-C (PSI-MS)	alone	Q8IUE6	H2AC21	0	88		2-89
+Lys-C (PSI-MS)	alone	Q8N257	H2BC26	0	125		2-126
+Lys-C (PSI-MS)	alone	Q92522	H1-10	0	169		2-170
+Lys-C (PSI-MS)	alone	Q93077	H2AC6	0	129		2-130
+Lys-C (PSI-MS)	alone	Q93079	H2BC9	0	125		2-126
+Lys-C (PSI-MS)	alone	Q96A08	H2BC1	0	126		2-127
+Lys-C (PSI-MS)	alone	Q96KK5	H2AC12	0	127		2-128
+Lys-C (PSI-MS)	alone	Q96QV6	H2AC1	0	88		2-89
+Lys-C (PSI-MS)	alone	Q99877	H2BC15	0	125		2-126
+Lys-C (PSI-MS)	alone	Q99878	H2AC14	0	127		2-128
+Lys-C (PSI-MS)	alone	Q99879	H2BC14	0	125		2-126
+Lys-C (PSI-MS)	alone	Q99880	H2BC13	0	125		2-126
+Lys-C (PSI-MS)	alone	Q9P0M6	MACROH2A2	0	192		2-155;212-249
+Lys-C/P (PSI-MS)	alone	O60814	H2BC12	0	125		2-126
+Lys-C/P (PSI-MS)	alone	O75367	MACROH2A1	0	155		2-156
+Lys-C/P (PSI-MS)	alone	P04908	H2AC4	0	129		2-130
+Lys-C/P (PSI-MS)	alone	P06899	H2BC11	0	125		2-126
+Lys-C/P (PSI-MS)	alone	P07305	H1-0	0	98		2-94;190-194
+Lys-C/P (PSI-MS)	alone	P0C0S5	H2AZ1	0	127		2-128
+Lys-C/P (PSI-MS)	alone	P0C0S8	H2AC11	0	88		2-89
+Lys-C/P (PSI-MS)	alone	P0C5Z0	H2AB2	0	108		8-115
+Lys-C/P (PSI-MS)	alone	P0DPK2	H3Y1	0	133		2-130;133-136
+Lys-C/P (PSI-MS)	alone	P0DPK5	H3Y2	0	146		2-147
+Lys-C/P (PSI-MS)	alone	P10412	H1-4	0	78		2-79
+Lys-C/P (PSI-MS)	alone	P16104	H2AX	0	88		2-89
+Lys-C/P (PSI-MS)	alone	P16401	H1-5	0	81		2-82
+Lys-C/P (PSI-MS)	alone	P16402	H1-3	0	79		2-80
+Lys-C/P (PSI-MS)	alone	P16403	H1-2	0	78		2-79
+Lys-C/P (PSI-MS)	alone	P20671	H2AC7	0	88		2-89
+Lys-C/P (PSI-MS)	alone	P23527	H2BC17	0	125		2-126
+Lys-C/P (PSI-MS)	alone	P33778	H2BC3	0	125		2-126
+Lys-C/P (PSI-MS)	alone	P49450	CENPA	0	138		2-5;7-140
+Lys-C/P (PSI-MS)	alone	P57053	H2BC12L	0	125		2-126
+Lys-C/P (PSI-MS)	alone	P58876	H2BC5	0	125		2-126
+Lys-C/P (PSI-MS)	alone	P60008	H1-9P	0	231		1-231
+Lys-C/P (PSI-MS)	alone	P62805	H4C1	0	102		2-103
+Lys-C/P (PSI-MS)	alone	P62807	H2BC4	0	125		2-126
+Lys-C/P (PSI-MS)	alone	P68431	H3C1	0	135		2-136
+Lys-C/P (PSI-MS)	alone	P84243	H3-3A	0	135		2-136
+Lys-C/P (PSI-MS)	alone	Q02539	H1-1	0	77		58-82;164-215
+Lys-C/P (PSI-MS)	alone	Q16695	H3-4	0	135		2-136
+Lys-C/P (PSI-MS)	alone	Q16777	H2AC20	0	128		2-129
+Lys-C/P (PSI-MS)	alone	Q16778	H2BC21	0	125		2-126
+Lys-C/P (PSI-MS)	alone	Q5QNW6	H2BC18	0	125		2-126
+Lys-C/P (PSI-MS)	alone	Q5TEC6	H3-7	0	135		2-136
+Lys-C/P (PSI-MS)	alone	Q6DN03	H2BC20P	0	192		2-193
+Lys-C/P (PSI-MS)	alone	Q6DRA6	H2BC19P	0	163		2-164
+Lys-C/P (PSI-MS)	alone	Q6FI13	H2AC18	0	88		2-89
+Lys-C/P (PSI-MS)	alone	Q6NXT2	H3-5	0	134		2-135
+Lys-C/P (PSI-MS)	alone	Q71DI3	H3C15	0	135		2-136
+Lys-C/P (PSI-MS)	alone	Q71UI9	H2AZ2	0	127		2-128
+Lys-C/P (PSI-MS)	alone	Q75WM6	H1-7	0	251		1-156;158-187;191-255
+Lys-C/P (PSI-MS)	alone	Q7L7L0	H2AC25	0	129		2-130
+Lys-C/P (PSI-MS)	alone	Q7Z2G1	H2BW1	0	152		2-153
+Lys-C/P (PSI-MS)	alone	Q8IUE6	H2AC21	0	88		2-89
+Lys-C/P (PSI-MS)	alone	Q8N257	H2BC26	0	125		2-126
+Lys-C/P (PSI-MS)	alone	Q92522	H1-10	0	169		2-170
+Lys-C/P (PSI-MS)	alone	Q93077	H2AC6	0	129		2-130
+Lys-C/P (PSI-MS)	alone	Q93079	H2BC9	0	125		2-126
+Lys-C/P (PSI-MS)	alone	Q96A08	H2BC1	0	126		2-127
+Lys-C/P (PSI-MS)	alone	Q96KK5	H2AC12	0	127		2-128
+Lys-C/P (PSI-MS)	alone	Q96QV6	H2AC1	0	88		2-89
+Lys-C/P (PSI-MS)	alone	Q99877	H2BC15	0	125		2-126
+Lys-C/P (PSI-MS)	alone	Q99878	H2AC14	0	127		2-128
+Lys-C/P (PSI-MS)	alone	Q99879	H2BC14	0	125		2-126
+Lys-C/P (PSI-MS)	alone	Q99880	H2BC13	0	125		2-126
+Lys-C/P (PSI-MS)	alone	Q9P0M6	MACROH2A2	0	192		2-155;212-249
+Lys-N (PSI-MS)	alone	O60814	H2BC12	0	125		2-126
+Lys-N (PSI-MS)	alone	O75367	MACROH2A1	0	155		2-156
+Lys-N (PSI-MS)	alone	P04908	H2AC4	0	129		2-130
+Lys-N (PSI-MS)	alone	P06899	H2BC11	0	125		2-126
+Lys-N (PSI-MS)	alone	P07305	H1-0	0	98		2-94;190-194
+Lys-N (PSI-MS)	alone	P0C0S5	H2AZ1	0	127		2-128
+Lys-N (PSI-MS)	alone	P0C0S8	H2AC11	0	88		2-89
+Lys-N (PSI-MS)	alone	P0C5Z0	H2AB2	0	108		8-115
+Lys-N (PSI-MS)	alone	P0DPK2	H3Y1	0	133		2-130;133-136
+Lys-N (PSI-MS)	alone	P0DPK5	H3Y2	0	146		2-147
+Lys-N (PSI-MS)	alone	P10412	H1-4	0	78		2-79
+Lys-N (PSI-MS)	alone	P16104	H2AX	0	88		2-89
+Lys-N (PSI-MS)	alone	P16401	H1-5	0	81		2-82
+Lys-N (PSI-MS)	alone	P16402	H1-3	0	79		2-80
+Lys-N (PSI-MS)	alone	P16403	H1-2	0	78		2-79
+Lys-N (PSI-MS)	alone	P20671	H2AC7	0	88		2-89
+Lys-N (PSI-MS)	alone	P23527	H2BC17	0	125		2-126
+Lys-N (PSI-MS)	alone	P33778	H2BC3	0	125		2-126
+Lys-N (PSI-MS)	alone	P49450	CENPA	0	138		2-5;7-140
+Lys-N (PSI-MS)	alone	P57053	H2BC12L	0	125		2-126
+Lys-N (PSI-MS)	alone	P58876	H2BC5	0	125		2-126
+Lys-N (PSI-MS)	alone	P60008	H1-9P	0	231		1-231
+Lys-N (PSI-MS)	alone	P62805	H4C1	0	102		2-103
+Lys-N (PSI-MS)	alone	P62807	H2BC4	0	125		2-126
+Lys-N (PSI-MS)	alone	P68431	H3C1	0	135		2-136
+Lys-N (PSI-MS)	alone	P84243	H3-3A	0	135		2-136
+Lys-N (PSI-MS)	alone	Q02539	H1-1	0	77		58-82;164-215
+Lys-N (PSI-MS)	alone	Q16695	H3-4	0	135		2-136
+Lys-N (PSI-MS)	alone	Q16777	H2AC20	0	128		2-129
+Lys-N (PSI-MS)	alone	Q16778	H2BC21	0	125		2-126
+Lys-N (PSI-MS)	alone	Q5QNW6	H2BC18	0	125		2-126
+Lys-N (PSI-MS)	alone	Q5TEC6	H3-7	0	135		2-136
+Lys-N (PSI-MS)	alone	Q6DN03	H2BC20P	0	192		2-193
+Lys-N (PSI-MS)	alone	Q6DRA6	H2BC19P	0	163		2-164
+Lys-N (PSI-MS)	alone	Q6FI13	H2AC18	0	88		2-89
+Lys-N (PSI-MS)	alone	Q6NXT2	H3-5	0	134		2-135
+Lys-N (PSI-MS)	alone	Q71DI3	H3C15	0	135		2-136
+Lys-N (PSI-MS)	alone	Q71UI9	H2AZ2	0	127		2-128
+Lys-N (PSI-MS)	alone	Q75WM6	H1-7	0	251		1-156;158-187;191-255
+Lys-N (PSI-MS)	alone	Q7L7L0	H2AC25	0	129		2-130
+Lys-N (PSI-MS)	alone	Q7Z2G1	H2BW1	0	152		2-153
+Lys-N (PSI-MS)	alone	Q8IUE6	H2AC21	0	88		2-89
+Lys-N (PSI-MS)	alone	Q8N257	H2BC26	0	125		2-126
+Lys-N (PSI-MS)	alone	Q92522	H1-10	0	169		2-170
+Lys-N (PSI-MS)	alone	Q93077	H2AC6	0	129		2-130
+Lys-N (PSI-MS)	alone	Q93079	H2BC9	0	125		2-126
+Lys-N (PSI-MS)	alone	Q96A08	H2BC1	0	126		2-127
+Lys-N (PSI-MS)	alone	Q96KK5	H2AC12	0	127		2-128
+Lys-N (PSI-MS)	alone	Q96QV6	H2AC1	0	88		2-89
+Lys-N (PSI-MS)	alone	Q99877	H2BC15	0	125		2-126
+Lys-N (PSI-MS)	alone	Q99878	H2AC14	0	127		2-128
+Lys-N (PSI-MS)	alone	Q99879	H2BC14	0	125		2-126
+Lys-N (PSI-MS)	alone	Q99880	H2BC13	0	125		2-126
+Lys-N (PSI-MS)	alone	Q9P0M6	MACROH2A2	0	192		2-155;212-249
+Asp-N (PSI-MS)	alone	O60814	H2BC12	0	58		69-126
+Asp-N (PSI-MS)	alone	O75367	MACROH2A1	84	137	172-218;281-299;352-369	2-69;88-156
+Asp-N (PSI-MS)	alone	P04908	H2AC4	0	71		2-72
+Asp-N (PSI-MS)	alone	P06899	H2BC11	0	58		69-126
+Asp-N (PSI-MS)	alone	P07305	H1-0	4	5	95-98	190-194
+Asp-N (PSI-MS)	alone	P0C0S5	H2AZ1	0	67		9-75
+Asp-N (PSI-MS)	alone	P0C0S8	H2AC11	41	71	90-130	2-72
+Asp-N (PSI-MS)	alone	P0C5Z0	H2AB2	0	81		8-88
+Asp-N (PSI-MS)	alone	P0DPK2	H3Y1	2	80	131-132	2-81
+Asp-N (PSI-MS)	alone	P0DPK5	H3Y2	0	80		2-81
+Asp-N (PSI-MS)	alone	P10412	H1-4	0	78		2-79
+Asp-N (PSI-MS)	alone	P16104	H2AX	1	71	90	2-72
+Asp-N (PSI-MS)	alone	P16401	H1-5	0	81		2-82
+Asp-N (PSI-MS)	alone	P16402	H1-3	0	79		2-80
+Asp-N (PSI-MS)	alone	P16403	H1-2	0	78		2-79
+Asp-N (PSI-MS)	alone	P20671	H2AC7	41	71	90-130	2-72
+Asp-N (PSI-MS)	alone	P23527	H2BC17	0	58		69-126
+Asp-N (PSI-MS)	alone	P33778	H2BC3	0	58		69-126
+Asp-N (PSI-MS)	alone	P49450	CENPA	0	80		2-5;7-82
+Asp-N (PSI-MS)	alone	P57053	H2BC12L	0	58		69-126
+Asp-N (PSI-MS)	alone	P58876	H2BC5	0	58		69-126
+Asp-N (PSI-MS)	alone	P60008	H1-9P	0	133		60-126;166-231
+Asp-N (PSI-MS)	alone	P62805	H4C1	0	44		25-68
+Asp-N (PSI-MS)	alone	P62807	H2BC4	0	58		69-126
+Asp-N (PSI-MS)	alone	P68431	H3C1	0	76		2-77
+Asp-N (PSI-MS)	alone	P84243	H3-3A	0	76		2-77
+Asp-N (PSI-MS)	alone	Q02539	H1-1	0	77		58-82;164-215
+Asp-N (PSI-MS)	alone	Q16695	H3-4	0	76		2-77
+Asp-N (PSI-MS)	alone	Q16777	H2AC20	0	71		2-72
+Asp-N (PSI-MS)	alone	Q16778	H2BC21	0	58		69-126
+Asp-N (PSI-MS)	alone	Q5QNW6	H2BC18	0	58		69-126
+Asp-N (PSI-MS)	alone	Q5TEC6	H3-7	0	80		2-81
+Asp-N (PSI-MS)	alone	Q6DN03	H2BC20P	0	125		69-193
+Asp-N (PSI-MS)	alone	Q6DRA6	H2BC19P	0	96		69-164
+Asp-N (PSI-MS)	alone	Q6FI13	H2AC18	41	71	90-130	2-72
+Asp-N (PSI-MS)	alone	Q6NXT2	H3-5	0	75		2-76
+Asp-N (PSI-MS)	alone	Q71DI3	H3C15	0	76		2-77
+Asp-N (PSI-MS)	alone	Q71UI9	H2AZ2	0	67		9-75
+Asp-N (PSI-MS)	alone	Q75WM6	H1-7	0	209		1-156;158-187;191-213
+Asp-N (PSI-MS)	alone	Q7L7L0	H2AC25	0	71		2-72
+Asp-N (PSI-MS)	alone	Q7Z2G1	H2BW1	0	116		2-56;93-153
+Asp-N (PSI-MS)	alone	Q8IUE6	H2AC21	41	71	90-130	2-72
+Asp-N (PSI-MS)	alone	Q8N257	H2BC26	0	58		69-126
+Asp-N (PSI-MS)	alone	Q92522	H1-10	43	137	171-213	2-80;100-157
+Asp-N (PSI-MS)	alone	Q93077	H2AC6	0	71		2-72
+Asp-N (PSI-MS)	alone	Q93079	H2BC9	0	58		69-126
+Asp-N (PSI-MS)	alone	Q96A08	H2BC1	0	109		2-52;70-127
+Asp-N (PSI-MS)	alone	Q96KK5	H2AC12	0	71		2-72
+Asp-N (PSI-MS)	alone	Q96QV6	H2AC1	1	71	90	2-72
+Asp-N (PSI-MS)	alone	Q99877	H2BC15	0	58		69-126
+Asp-N (PSI-MS)	alone	Q99878	H2AC14	0	71		2-72
+Asp-N (PSI-MS)	alone	Q99879	H2BC14	0	58		69-126
+Asp-N (PSI-MS)	alone	Q99880	H2BC13	0	58		69-126
+Asp-N (PSI-MS)	alone	Q9P0M6	MACROH2A2	137	158	164-211;284-372	2-69;88-155;228-249
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	parallel	O75367	MACROH2A1	84	0	172-218;281-299;352-369	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	parallel	P07305	H1-0	4	0	95-98	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	parallel	P0C0S8	H2AC11	41	0	90-130	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	parallel	P0DPK2	H3Y1	2	0	131-132	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	parallel	P16104	H2AX	1	0	90	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	parallel	P20671	H2AC7	41	0	90-130	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	parallel	Q6FI13	H2AC18	41	0	90-130	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	parallel	Q8IUE6	H2AC21	41	0	90-130	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	parallel	Q92522	H1-10	43	0	171-213	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	parallel	Q96QV6	H2AC1	1	0	90	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	parallel	Q9P0M6	MACROH2A2	137	0	164-211;284-372	
+Trypsin (PSI-MS) + Asp-N (PSI-MS)	sequential	O75367	MACROH2A1	213	0	157-369	
+Trypsin (PSI-MS) + Asp-N (PSI-MS)	sequential	P07305	H1-0	4	0	95-98	
+Trypsin (PSI-MS) + Asp-N (PSI-MS)	sequential	P0C0S8	H2AC11	41	0	90-130	
+Trypsin (PSI-MS) + Asp-N (PSI-MS)	sequential	P16104	H2AX	1	0	90	
+Trypsin (PSI-MS) + Asp-N (PSI-MS)	sequential	P20671	H2AC7	41	0	90-130	
+Trypsin (PSI-MS) + Asp-N (PSI-MS)	sequential	Q6FI13	H2AC18	41	0	90-130	
+Trypsin (PSI-MS) + Asp-N (PSI-MS)	sequential	Q8IUE6	H2AC21	41	0	90-130	
+Trypsin (PSI-MS) + Asp-N (PSI-MS)	sequential	Q92522	H1-10	43	0	171-213	
+Trypsin (PSI-MS) + Asp-N (PSI-MS)	sequential	Q96QV6	H2AC1	1	0	90	
+Trypsin (PSI-MS) + Asp-N (PSI-MS)	sequential	Q9P0M6	MACROH2A2	179	0	156-211;250-372	
+Asp-N ambic (PSI-MS)	alone	O75367	MACROH2A1	161	52	157-299;352-369	2-53
+Asp-N ambic (PSI-MS)	alone	P07305	H1-0	18	5	95-112	190-194
+Asp-N ambic (PSI-MS)	alone	P0C0S5	H2AZ1	0	52		9-59;95
+Asp-N ambic (PSI-MS)	alone	P0C0S8	H2AC11	41	0	90-130	
+Asp-N ambic (PSI-MS)	alone	P0C5Z0	H2AB2	6	1	2-7	115
+Asp-N ambic (PSI-MS)	alone	P0DPK2	H3Y1	2	49	131-132	2-50
+Asp-N ambic (PSI-MS)	alone	P0DPK5	H3Y2	0	49		2-50
+Asp-N ambic (PSI-MS)	alone	P10412	H1-4	0	6		74-79
+Asp-N ambic (PSI-MS)	alone	P16104	H2AX	2	0	90-91	
+Asp-N ambic (PSI-MS)	alone	P16401	H1-5	0	6		77-82
+Asp-N ambic (PSI-MS)	alone	P16402	H1-3	0	6		75-80
+Asp-N ambic (PSI-MS)	alone	P16403	H1-2	0	6		74-79
+Asp-N ambic (PSI-MS)	alone	P20671	H2AC7	41	0	90-130	
+Asp-N ambic (PSI-MS)	alone	P49450	CENPA	1	0	6	
+Asp-N ambic (PSI-MS)	alone	P60008	H1-9P	0	110		83-126;166-231
+Asp-N ambic (PSI-MS)	alone	P68431	H3C1	0	49		2-50
+Asp-N ambic (PSI-MS)	alone	P84243	H3-3A	0	49		2-50
+Asp-N ambic (PSI-MS)	alone	Q02539	H1-1	56	58	2-57	77-82;164-215
+Asp-N ambic (PSI-MS)	alone	Q16695	H3-4	0	49		2-50
+Asp-N ambic (PSI-MS)	alone	Q5TEC6	H3-7	0	49		2-50
+Asp-N ambic (PSI-MS)	alone	Q6DN03	H2BC20P	0	50		77-126
+Asp-N ambic (PSI-MS)	alone	Q6DRA6	H2BC19P	0	50		77-126
+Asp-N ambic (PSI-MS)	alone	Q6FI13	H2AC18	41	0	90-130	
+Asp-N ambic (PSI-MS)	alone	Q6NXT2	H3-5	0	48		2-49
+Asp-N ambic (PSI-MS)	alone	Q71DI3	H3C15	0	49		2-50
+Asp-N ambic (PSI-MS)	alone	Q71UI9	H2AZ2	0	52		9-59;95
+Asp-N ambic (PSI-MS)	alone	Q75WM6	H1-7	4	0	157;188-190	
+Asp-N ambic (PSI-MS)	alone	Q8IUE6	H2AC21	41	0	90-130	
+Asp-N ambic (PSI-MS)	alone	Q92522	H1-10	43	0	171-213	
+Asp-N ambic (PSI-MS)	alone	Q96QV6	H2AC1	42	0	90-131	
+Asp-N ambic (PSI-MS)	alone	Q9P0M6	MACROH2A2	179	52	156-211;250-372	2-53
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	parallel	O75367	MACROH2A1	161	0	157-299;352-369	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	parallel	P07305	H1-0	18	0	95-112	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	parallel	P0C0S8	H2AC11	41	0	90-130	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	parallel	P0C5Z0	H2AB2	6	0	2-7	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	parallel	P0DPK2	H3Y1	2	0	131-132	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	parallel	P16104	H2AX	2	0	90-91	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	parallel	P20671	H2AC7	41	0	90-130	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	parallel	P49450	CENPA	1	0	6	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	parallel	Q02539	H1-1	56	0	2-57	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	parallel	Q6FI13	H2AC18	41	0	90-130	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	parallel	Q75WM6	H1-7	4	0	157;188-190	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	parallel	Q8IUE6	H2AC21	41	0	90-130	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	parallel	Q92522	H1-10	43	0	171-213	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	parallel	Q96QV6	H2AC1	42	0	90-131	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	parallel	Q9P0M6	MACROH2A2	179	0	156-211;250-372	
+Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	sequential	O75367	MACROH2A1	213	0	157-369	
+Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	sequential	P04908	H2AC4	0	1		91
+Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	sequential	P07305	H1-0	18	0	95-112	
+Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	sequential	P0C0S5	H2AZ1	0	2		94-95
+Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	sequential	P0C0S8	H2AC11	40	0	90;92-130	
+Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	sequential	P0C5Z0	H2AB2	0	1		115
+Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	sequential	P0DPK5	H3Y2	0	2		131-132
+Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	sequential	P10412	H1-4	35	0	80-114	
+Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	sequential	P16104	H2AX	1	0	90	
+Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	sequential	P16401	H1-5	35	0	83-117	
+Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	sequential	P16402	H1-3	50	0	81-130	
+Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	sequential	P16403	H1-2	35	0	80-114	
+Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	sequential	P20671	H2AC7	40	0	90;92-130	
+Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	sequential	P68431	H3C1	0	6		131-136
+Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	sequential	P84243	H3-3A	0	6		131-136
+Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	sequential	Q02539	H1-1	91	0	2-57;83-117	
+Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	sequential	Q16695	H3-4	0	6		131-136
+Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	sequential	Q16777	H2AC20	0	1		91
+Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	sequential	Q5TEC6	H3-7	0	4		133-136
+Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	sequential	Q6FI13	H2AC18	40	0	90;92-130	
+Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	sequential	Q6NXT2	H3-5	0	6		130-135
+Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	sequential	Q71DI3	H3C15	0	6		131-136
+Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	sequential	Q71UI9	H2AZ2	0	2		94-95
+Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	sequential	Q75WM6	H1-7	0	1		137
+Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	sequential	Q7L7L0	H2AC25	0	1		91
+Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	sequential	Q8IUE6	H2AC21	40	0	90;92-130	
+Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	sequential	Q92522	H1-10	43	0	171-213	
+Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	sequential	Q93077	H2AC6	0	1		91
+Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	sequential	Q96KK5	H2AC12	0	1		91
+Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	sequential	Q96QV6	H2AC1	41	0	90;92-131	
+Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	sequential	Q99878	H2AC14	0	1		91
+Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	sequential	Q9P0M6	MACROH2A2	179	0	156-211;250-372	
+Glu-C (PSI-MS)	alone	O75367	MACROH2A1	98	53	157-176;226-288;355-369	2-54
+Glu-C (PSI-MS)	alone	P04908	H2AC4	0	41		2-42
+Glu-C (PSI-MS)	alone	P07305	H1-0	19	5	95-113	190-194
+Glu-C (PSI-MS)	alone	P0C0S5	H2AZ1	0	59		2-60
+Glu-C (PSI-MS)	alone	P0C0S8	H2AC11	41	41	90-130	2-42
+Glu-C (PSI-MS)	alone	P0C5Z0	H2AB2	6	0	2-7	
+Glu-C (PSI-MS)	alone	P0DPK2	H3Y1	2	50	131-132	2-51
+Glu-C (PSI-MS)	alone	P0DPK5	H3Y2	0	50		2-51
+Glu-C (PSI-MS)	alone	P10412	H1-4	0	5		75-79
+Glu-C (PSI-MS)	alone	P16104	H2AX	3	41	90-92	2-42
+Glu-C (PSI-MS)	alone	P16401	H1-5	0	5		78-82
+Glu-C (PSI-MS)	alone	P16402	H1-3	0	5		76-80
+Glu-C (PSI-MS)	alone	P16403	H1-2	0	5		75-79
+Glu-C (PSI-MS)	alone	P20671	H2AC7	41	41	90-130	2-42
+Glu-C (PSI-MS)	alone	P49450	CENPA	1	0	6	
+Glu-C (PSI-MS)	alone	P60008	H1-9P	0	148		84-231
+Glu-C (PSI-MS)	alone	P62805	H4C1	0	52		2-53
+Glu-C (PSI-MS)	alone	P68431	H3C1	0	50		2-51
+Glu-C (PSI-MS)	alone	P84243	H3-3A	0	50		2-51
+Glu-C (PSI-MS)	alone	Q02539	H1-1	56	57	2-57	78-82;164-215
+Glu-C (PSI-MS)	alone	Q16695	H3-4	0	50		2-51
+Glu-C (PSI-MS)	alone	Q16777	H2AC20	0	41		2-42
+Glu-C (PSI-MS)	alone	Q5TEC6	H3-7	0	50		2-51
+Glu-C (PSI-MS)	alone	Q6DN03	H2BC20P	0	50		78-127
+Glu-C (PSI-MS)	alone	Q6DRA6	H2BC19P	0	50		78-127
+Glu-C (PSI-MS)	alone	Q6FI13	H2AC18	41	41	90-130	2-42
+Glu-C (PSI-MS)	alone	Q6NXT2	H3-5	0	49		2-50
+Glu-C (PSI-MS)	alone	Q71DI3	H3C15	0	50		2-51
+Glu-C (PSI-MS)	alone	Q71UI9	H2AZ2	0	59		2-60
+Glu-C (PSI-MS)	alone	Q75WM6	H1-7	4	0	157;188-190	
+Glu-C (PSI-MS)	alone	Q7L7L0	H2AC25	0	41		2-42
+Glu-C (PSI-MS)	alone	Q7Z2G1	H2BW1	0	52		28-79
+Glu-C (PSI-MS)	alone	Q8IUE6	H2AC21	41	41	90-130	2-42
+Glu-C (PSI-MS)	alone	Q92522	H1-10	0	93		74-122;127-170
+Glu-C (PSI-MS)	alone	Q93077	H2AC6	0	41		2-42
+Glu-C (PSI-MS)	alone	Q96KK5	H2AC12	0	41		2-42
+Glu-C (PSI-MS)	alone	Q96QV6	H2AC1	42	41	90-131	2-42
+Glu-C (PSI-MS)	alone	Q99878	H2AC14	0	41		2-42
+Glu-C (PSI-MS)	alone	Q9P0M6	MACROH2A2	124	53	156-211;250-302;358-372	2-54
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	parallel	O75367	MACROH2A1	98	0	157-176;226-288;355-369	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	parallel	P07305	H1-0	19	0	95-113	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	parallel	P0C0S8	H2AC11	41	0	90-130	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	parallel	P0C5Z0	H2AB2	6	0	2-7	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	parallel	P0DPK2	H3Y1	2	0	131-132	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	parallel	P16104	H2AX	3	0	90-92	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	parallel	P20671	H2AC7	41	0	90-130	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	parallel	P49450	CENPA	1	0	6	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	parallel	Q02539	H1-1	56	0	2-57	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	parallel	Q6FI13	H2AC18	41	0	90-130	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	parallel	Q75WM6	H1-7	4	0	157;188-190	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	parallel	Q8IUE6	H2AC21	41	0	90-130	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	parallel	Q96QV6	H2AC1	42	0	90-131	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	parallel	Q9P0M6	MACROH2A2	124	0	156-211;250-302;358-372	
+Trypsin (PSI-MS) + Glu-C (PSI-MS)	sequential	O75367	MACROH2A1	164	0	157-176;226-369	
+Trypsin (PSI-MS) + Glu-C (PSI-MS)	sequential	P07305	H1-0	19	0	95-113	
+Trypsin (PSI-MS) + Glu-C (PSI-MS)	sequential	P0C0S8	H2AC11	41	0	90-130	
+Trypsin (PSI-MS) + Glu-C (PSI-MS)	sequential	P0DPK2	H3Y1	0	4		133-136
+Trypsin (PSI-MS) + Glu-C (PSI-MS)	sequential	P10412	H1-4	36	0	80-115	
+Trypsin (PSI-MS) + Glu-C (PSI-MS)	sequential	P16104	H2AX	3	0	90-92	
+Trypsin (PSI-MS) + Glu-C (PSI-MS)	sequential	P16401	H1-5	36	0	83-118	
+Trypsin (PSI-MS) + Glu-C (PSI-MS)	sequential	P16402	H1-3	50	0	81-130	
+Trypsin (PSI-MS) + Glu-C (PSI-MS)	sequential	P16403	H1-2	36	0	80-115	
+Trypsin (PSI-MS) + Glu-C (PSI-MS)	sequential	P20671	H2AC7	41	0	90-130	
+Trypsin (PSI-MS) + Glu-C (PSI-MS)	sequential	P60008	H1-9P	0	2		70-71
+Trypsin (PSI-MS) + Glu-C (PSI-MS)	sequential	P68431	H3C1	0	4		52-53;135-136
+Trypsin (PSI-MS) + Glu-C (PSI-MS)	sequential	P84243	H3-3A	0	4		52-53;135-136
+Trypsin (PSI-MS) + Glu-C (PSI-MS)	sequential	Q02539	H1-1	92	0	2-57;83-118	
+Trypsin (PSI-MS) + Glu-C (PSI-MS)	sequential	Q16695	H3-4	0	4		52-53;135-136
+Trypsin (PSI-MS) + Glu-C (PSI-MS)	sequential	Q5TEC6	H3-7	0	4		52-53;135-136
+Trypsin (PSI-MS) + Glu-C (PSI-MS)	sequential	Q6FI13	H2AC18	41	0	90-130	
+Trypsin (PSI-MS) + Glu-C (PSI-MS)	sequential	Q6NXT2	H3-5	0	4		51-52;134-135
+Trypsin (PSI-MS) + Glu-C (PSI-MS)	sequential	Q71DI3	H3C15	0	4		52-53;135-136
+Trypsin (PSI-MS) + Glu-C (PSI-MS)	sequential	Q8IUE6	H2AC21	41	0	90-130	
+Trypsin (PSI-MS) + Glu-C (PSI-MS)	sequential	Q96QV6	H2AC1	42	0	90-131	
+Trypsin (PSI-MS) + Glu-C (PSI-MS)	sequential	Q9P0M6	MACROH2A2	179	0	156-211;250-372	
+Chymotrypsin (PSI-MS)	alone	O75367	MACROH2A1	184	32	184-348;351-369	125-156
+Chymotrypsin (PSI-MS)	alone	P07305	H1-0	13	5	95-107	190-194
+Chymotrypsin (PSI-MS)	alone	P0C0S8	H2AC11	41	0	90-130	
+Chymotrypsin (PSI-MS)	alone	P0C5Z0	H2AB2	6	0	2-7	
+Chymotrypsin (PSI-MS)	alone	P0DPK2	H3Y1	2	0	131-132	
+Chymotrypsin (PSI-MS)	alone	P10412	H1-4	28	42	80-107	2-43
+Chymotrypsin (PSI-MS)	alone	P16104	H2AX	54	0	90-143	
+Chymotrypsin (PSI-MS)	alone	P16401	H1-5	28	45	83-110	2-46
+Chymotrypsin (PSI-MS)	alone	P16402	H1-3	28	0	81-108	
+Chymotrypsin (PSI-MS)	alone	P16403	H1-2	28	42	80-107	2-43
+Chymotrypsin (PSI-MS)	alone	P20671	H2AC7	41	0	90-130	
+Chymotrypsin (PSI-MS)	alone	P49450	CENPA	1	1	6	112
+Chymotrypsin (PSI-MS)	alone	Q02539	H1-1	113	52	2-57;83-139	164-215
+Chymotrypsin (PSI-MS)	alone	Q6DN03	H2BC20P	0	65		85-149
+Chymotrypsin (PSI-MS)	alone	Q6DRA6	H2BC19P	0	65		85-149
+Chymotrypsin (PSI-MS)	alone	Q6FI13	H2AC18	41	0	90-130	
+Chymotrypsin (PSI-MS)	alone	Q75WM6	H1-7	1	133	157	6-58;173-187;191-255
+Chymotrypsin (PSI-MS)	alone	Q8IUE6	H2AC21	41	0	90-130	
+Chymotrypsin (PSI-MS)	alone	Q92522	H1-10	0	49		122-170
+Chymotrypsin (PSI-MS)	alone	Q96QV6	H2AC1	42	0	90-131	
+Chymotrypsin (PSI-MS)	alone	Q9P0M6	MACROH2A2	149	27	184-211;250-351;354-372	129-155
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	parallel	O75367	MACROH2A1	184	0	184-348;351-369	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	parallel	P07305	H1-0	13	0	95-107	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	parallel	P0C0S8	H2AC11	41	0	90-130	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	parallel	P0C5Z0	H2AB2	6	0	2-7	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	parallel	P0DPK2	H3Y1	2	0	131-132	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	parallel	P10412	H1-4	28	0	80-107	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	parallel	P16104	H2AX	54	0	90-143	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	parallel	P16401	H1-5	28	0	83-110	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	parallel	P16402	H1-3	28	0	81-108	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	parallel	P16403	H1-2	28	0	80-107	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	parallel	P20671	H2AC7	41	0	90-130	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	parallel	P49450	CENPA	1	0	6	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	parallel	Q02539	H1-1	113	0	2-57;83-139	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	parallel	Q6FI13	H2AC18	41	0	90-130	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	parallel	Q75WM6	H1-7	1	0	157	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	parallel	Q8IUE6	H2AC21	41	0	90-130	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	parallel	Q96QV6	H2AC1	42	0	90-131	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	parallel	Q9P0M6	MACROH2A2	149	0	184-211;250-351;354-372	
+Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	sequential	O75367	MACROH2A1	211	1	157-348;351-369	30
+Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	sequential	P04908	H2AC4	0	1		35
+Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	sequential	P07305	H1-0	52	0	95-107;151-189	
+Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	sequential	P0C0S8	H2AC11	41	1	90-130	35
+Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	sequential	P0DPK2	H3Y1	0	3		63;71;130
+Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	sequential	P0DPK5	H3Y2	0	4		63;71;130-131
+Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	sequential	P10412	H1-4	28	0	80-107	
+Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	sequential	P16104	H2AX	54	1	90-143	35
+Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	sequential	P16401	H1-5	28	0	83-110	
+Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	sequential	P16402	H1-3	50	0	81-130	
+Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	sequential	P16403	H1-2	28	0	80-107	
+Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	sequential	P20671	H2AC7	41	1	90-130	35
+Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	sequential	P49450	CENPA	0	3		70;112;131
+Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	sequential	P62805	H4C1	0	4		38-40;99
+Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	sequential	P68431	H3C1	0	2		71;130
+Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	sequential	P84243	H3-3A	0	2		71;130
+Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	sequential	Q02539	H1-1	137	0	2-57;83-163	
+Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	sequential	Q16695	H3-4	0	2		71;130
+Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	sequential	Q16777	H2AC20	0	1		35
+Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	sequential	Q5TEC6	H3-7	0	1		71
+Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	sequential	Q6FI13	H2AC18	41	1	90-130	35
+Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	sequential	Q6NXT2	H3-5	0	2		70;129
+Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	sequential	Q71DI3	H3C15	0	2		71;130
+Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	sequential	Q75WM6	H1-7	0	1		121
+Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	sequential	Q7L7L0	H2AC25	0	1		35
+Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	sequential	Q7Z2G1	H2BW1	0	2		64-65
+Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	sequential	Q8IUE6	H2AC21	41	1	90-130	35
+Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	sequential	Q92522	H1-10	0	1		89
+Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	sequential	Q93077	H2AC6	0	1		35
+Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	sequential	Q96KK5	H2AC12	0	1		35
+Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	sequential	Q96QV6	H2AC1	42	1	90-131	35
+Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	sequential	Q99878	H2AC14	0	1		35
+Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	sequential	Q9P0M6	MACROH2A2	177	3	156-211;250-351;354-372	29-31
+Chymotrypsin high specificity (ExPASy)	alone	O75367	MACROH2A1	130	101	184-278;335-369	56-156
+Chymotrypsin high specificity (ExPASy)	alone	P04908	H2AC4	0	72		59-130
+Chymotrypsin high specificity (ExPASy)	alone	P07305	H1-0	13	5	95-107	190-194
+Chymotrypsin high specificity (ExPASy)	alone	P0C0S5	H2AZ1	0	120		2-54;62-128
+Chymotrypsin high specificity (ExPASy)	alone	P0C0S8	H2AC11	0	31		59-89
+Chymotrypsin high specificity (ExPASy)	alone	P0C5Z0	H2AB2	6	0	2-7	
+Chymotrypsin high specificity (ExPASy)	alone	P0DPK2	H3Y1	2	0	131-132	
+Chymotrypsin high specificity (ExPASy)	alone	P0DPK5	H3Y2	0	42		106-147
+Chymotrypsin high specificity (ExPASy)	alone	P10412	H1-4	26	70	80-105	2-71
+Chymotrypsin high specificity (ExPASy)	alone	P16104	H2AX	0	31		59-89
+Chymotrypsin high specificity (ExPASy)	alone	P16401	H1-5	26	73	83-108	2-74
+Chymotrypsin high specificity (ExPASy)	alone	P16402	H1-3	26	71	81-106	2-72
+Chymotrypsin high specificity (ExPASy)	alone	P16403	H1-2	26	70	80-105	2-71
+Chymotrypsin high specificity (ExPASy)	alone	P20671	H2AC7	0	31		59-89
+Chymotrypsin high specificity (ExPASy)	alone	P49450	CENPA	0	45		2-5;7-47
+Chymotrypsin high specificity (ExPASy)	alone	P60008	H1-9P	0	43		91-133
+Chymotrypsin high specificity (ExPASy)	alone	P62805	H4C1	0	51		2-52
+Chymotrypsin high specificity (ExPASy)	alone	P68431	H3C1	0	41		2-42
+Chymotrypsin high specificity (ExPASy)	alone	P84243	H3-3A	0	41		2-42
+Chymotrypsin high specificity (ExPASy)	alone	Q02539	H1-1	26	69	83-108	58-74;164-215
+Chymotrypsin high specificity (ExPASy)	alone	Q16695	H3-4	0	41		2-42
+Chymotrypsin high specificity (ExPASy)	alone	Q16777	H2AC20	0	71		59-129
+Chymotrypsin high specificity (ExPASy)	alone	Q5TEC6	H3-7	0	41		2-42
+Chymotrypsin high specificity (ExPASy)	alone	Q6DN03	H2BC20P	0	65		85-149
+Chymotrypsin high specificity (ExPASy)	alone	Q6DRA6	H2BC19P	0	65		85-149
+Chymotrypsin high specificity (ExPASy)	alone	Q6FI13	H2AC18	0	31		59-89
+Chymotrypsin high specificity (ExPASy)	alone	Q71DI3	H3C15	0	41		2-42
+Chymotrypsin high specificity (ExPASy)	alone	Q71UI9	H2AZ2	0	120		2-54;62-128
+Chymotrypsin high specificity (ExPASy)	alone	Q75WM6	H1-7	1	168	157	1-88;173-187;191-255
+Chymotrypsin high specificity (ExPASy)	alone	Q7L7L0	H2AC25	0	72		59-130
+Chymotrypsin high specificity (ExPASy)	alone	Q7Z2G1	H2BW1	0	109		2-59;64-114
+Chymotrypsin high specificity (ExPASy)	alone	Q8IUE6	H2AC21	0	31		59-89
+Chymotrypsin high specificity (ExPASy)	alone	Q92522	H1-10	0	103		2-48;115-170
+Chymotrypsin high specificity (ExPASy)	alone	Q93077	H2AC6	0	72		59-130
+Chymotrypsin high specificity (ExPASy)	alone	Q96KK5	H2AC12	0	70		59-128
+Chymotrypsin high specificity (ExPASy)	alone	Q96QV6	H2AC1	0	31		59-89
+Chymotrypsin high specificity (ExPASy)	alone	Q99878	H2AC14	0	70		59-128
+Chymotrypsin high specificity (ExPASy)	alone	Q9P0M6	MACROH2A2	66	130	250-281;339-372	56-155;212-241
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	parallel	O75367	MACROH2A1	130	0	184-278;335-369	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	parallel	P07305	H1-0	13	0	95-107	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	parallel	P0C5Z0	H2AB2	6	0	2-7	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	parallel	P0DPK2	H3Y1	2	0	131-132	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	parallel	P10412	H1-4	26	0	80-105	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	parallel	P16401	H1-5	26	0	83-108	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	parallel	P16402	H1-3	26	0	81-106	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	parallel	P16403	H1-2	26	0	80-105	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	parallel	Q02539	H1-1	26	0	83-108	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	parallel	Q75WM6	H1-7	1	0	157	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	parallel	Q9P0M6	MACROH2A2	66	0	250-281;339-372	
+Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	sequential	O75367	MACROH2A1	213	0	157-369	
+Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	sequential	P07305	H1-0	13	0	95-107	
+Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	sequential	P10412	H1-4	26	0	80-105	
+Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	sequential	P16401	H1-5	26	0	83-108	
+Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	sequential	P16402	H1-3	50	0	81-130	
+Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	sequential	P16403	H1-2	26	0	80-105	
+Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	sequential	Q02539	H1-1	26	0	83-108	
+Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	sequential	Q75WM6	H1-7	0	1		121
+Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	sequential	Q7Z2G1	H2BW1	0	1		64
+Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	sequential	Q9P0M6	MACROH2A2	179	0	156-211;250-372	
+Chymotrypsin low specificity (ExPASy)	alone	O75367	MACROH2A1	184	32	184-348;351-369	125-156
+Chymotrypsin low specificity (ExPASy)	alone	P07305	H1-0	13	5	95-107	190-194
+Chymotrypsin low specificity (ExPASy)	alone	P0C0S8	H2AC11	41	0	90-130	
+Chymotrypsin low specificity (ExPASy)	alone	P0C5Z0	H2AB2	6	1	2-7	88
+Chymotrypsin low specificity (ExPASy)	alone	P0DPK2	H3Y1	2	0	131-132	
+Chymotrypsin low specificity (ExPASy)	alone	P10412	H1-4	28	42	80-107	2-43
+Chymotrypsin low specificity (ExPASy)	alone	P16104	H2AX	54	0	90-143	
+Chymotrypsin low specificity (ExPASy)	alone	P16401	H1-5	28	45	83-110	2-46
+Chymotrypsin low specificity (ExPASy)	alone	P16402	H1-3	28	0	81-108	
+Chymotrypsin low specificity (ExPASy)	alone	P16403	H1-2	28	42	80-107	2-43
+Chymotrypsin low specificity (ExPASy)	alone	P20671	H2AC7	41	0	90-130	
+Chymotrypsin low specificity (ExPASy)	alone	P49450	CENPA	1	6	6	103-105;112-114
+Chymotrypsin low specificity (ExPASy)	alone	P60008	H1-9P	0	2		1-2
+Chymotrypsin low specificity (ExPASy)	alone	Q02539	H1-1	113	52	2-57;83-139	164-215
+Chymotrypsin low specificity (ExPASy)	alone	Q6DN03	H2BC20P	0	67		84-149;176
+Chymotrypsin low specificity (ExPASy)	alone	Q6DRA6	H2BC19P	0	66		84-149
+Chymotrypsin low specificity (ExPASy)	alone	Q6FI13	H2AC18	41	0	90-130	
+Chymotrypsin low specificity (ExPASy)	alone	Q75WM6	H1-7	1	80	157	173-187;191-255
+Chymotrypsin low specificity (ExPASy)	alone	Q8IUE6	H2AC21	41	0	90-130	
+Chymotrypsin low specificity (ExPASy)	alone	Q92522	H1-10	2	0	171-172	
+Chymotrypsin low specificity (ExPASy)	alone	Q96QV6	H2AC1	42	0	90-131	
+Chymotrypsin low specificity (ExPASy)	alone	Q9P0M6	MACROH2A2	149	29	184-211;250-351;354-372	30-31;129-155
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	parallel	O75367	MACROH2A1	184	0	184-348;351-369	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	parallel	P07305	H1-0	13	0	95-107	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	parallel	P0C0S8	H2AC11	41	0	90-130	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	parallel	P0C5Z0	H2AB2	6	0	2-7	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	parallel	P0DPK2	H3Y1	2	0	131-132	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	parallel	P10412	H1-4	28	0	80-107	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	parallel	P16104	H2AX	54	0	90-143	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	parallel	P16401	H1-5	28	0	83-110	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	parallel	P16402	H1-3	28	0	81-108	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	parallel	P16403	H1-2	28	0	80-107	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	parallel	P20671	H2AC7	41	0	90-130	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	parallel	P49450	CENPA	1	0	6	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	parallel	Q02539	H1-1	113	0	2-57;83-139	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	parallel	Q6FI13	H2AC18	41	0	90-130	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	parallel	Q75WM6	H1-7	1	0	157	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	parallel	Q8IUE6	H2AC21	41	0	90-130	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	parallel	Q92522	H1-10	2	0	171-172	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	parallel	Q96QV6	H2AC1	42	0	90-131	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	parallel	Q9P0M6	MACROH2A2	149	0	184-211;250-351;354-372	
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	O60814	H2BC12	0	2		82-83
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	O75367	MACROH2A1	211	4	157-348;351-369	29-30;81-82
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	P04908	H2AC4	0	4		33-35;84
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	P06899	H2BC11	0	2		82-83
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	P07305	H1-0	52	0	95-107;151-189	
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	P0C0S5	H2AZ1	0	3		35-36;87
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	P0C0S8	H2AC11	41	4	90-130	33-35;84
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	P0C5Z0	H2AB2	0	1		88
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	P0DPK2	H3Y1	0	3		63;71;130
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	P0DPK5	H3Y2	0	4		63;71;130-131
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	P10412	H1-4	28	0	80-107	
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	P16104	H2AX	54	4	90-143	33-35;84
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	P16401	H1-5	28	0	83-110	
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	P16402	H1-3	50	0	81-130	
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	P16403	H1-2	28	0	80-107	
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	P20671	H2AC7	41	4	90-130	33-35;84
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	P23527	H2BC17	0	2		82-83
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	P33778	H2BC3	0	2		82-83
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	P49450	CENPA	0	10		43;61;70;103-105;112-114;131
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	P58876	H2BC5	0	2		82-83
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	P60008	H1-9P	0	6		1-2;10;157;207-208
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	P62805	H4C1	0	4		38-40;99
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	P62807	H2BC4	0	2		82-83
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	P68431	H3C1	0	2		71;130
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	P84243	H3-3A	0	2		71;130
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	Q02539	H1-1	137	0	2-57;83-163	
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	Q16695	H3-4	0	3		71-72;130
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	Q16777	H2AC20	0	4		33-35;84
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	Q16778	H2BC21	0	2		82-83
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	Q5QNW6	H2BC18	0	2		82-83
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	Q5TEC6	H3-7	0	1		71
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	Q6DN03	H2BC20P	0	4		82-83;176;186
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	Q6DRA6	H2BC19P	0	2		82-83
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	Q6FI13	H2AC18	41	4	90-130	33-35;84
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	Q6NXT2	H3-5	0	2		70;129
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	Q71DI3	H3C15	0	2		71;130
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	Q71UI9	H2AZ2	0	3		35-36;87
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	Q75WM6	H1-7	0	1		121
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	Q7L7L0	H2AC25	0	4		33-35;84
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	Q7Z2G1	H2BW1	0	2		64-65
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	Q8IUE6	H2AC21	41	4	90-130	33-35;84
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	Q8N257	H2BC26	0	2		82-83
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	Q92522	H1-10	42	1	171-212	89
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	Q93077	H2AC6	0	4		33-35;84
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	Q93079	H2BC9	0	2		82-83
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	Q96A08	H2BC1	0	2		83-84
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	Q96KK5	H2AC12	0	4		33-35;84
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	Q96QV6	H2AC1	42	4	90-131	33-35;84
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	Q99877	H2BC15	0	2		82-83
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	Q99878	H2AC14	0	4		33-35;84
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	Q99879	H2BC14	0	2		82-83
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	Q99880	H2BC13	0	2		82-83
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	Q9P0M6	MACROH2A2	177	5	156-211;250-351;354-372	29-31;81-82
+Proteinase K (ExPASy)	alone	O60814	H2BC12	0	27		20;41-45;72-77;96-102;119-126
+Proteinase K (ExPASy)	alone	O75367	MACROH2A1	172	26	157-175;177-184;187-199;201-204;206-220;222-238;245-253;260-269;271-285;291-296;298-323;331-335;337-345;351-358;361-368	22-23;48-63;83-85;100;114;126-128
+Proteinase K (ExPASy)	alone	P04908	H2AC4	0	20		51-66;87;103;115-116
+Proteinase K (ExPASy)	alone	P06899	H2BC11	0	27		20;41-45;72-77;96-102;119-126
+Proteinase K (ExPASy)	alone	P07305	H1-0	94	10	95-151;153-189	2;34-38;77-80
+Proteinase K (ExPASy)	alone	P0C0S5	H2AZ1	0	25		50-69;90;102-105
+Proteinase K (ExPASy)	alone	P0C0S8	H2AC11	38	18	90-102;104-114;117-130	42;51-66;87
+Proteinase K (ExPASy)	alone	P0C5Z0	H2AB2	6	33	2-7	25-28;53-70;85-87;99-106
+Proteinase K (ExPASy)	alone	P0DPK2	H3Y1	2	35	131-132	2;13-14;23-25;48-51;62;73-78;90-106;113
+Proteinase K (ExPASy)	alone	P0DPK5	H3Y2	0	37		2;13-14;23-25;48-51;62;73-78;90-106;113;141;147
+Proteinase K (ExPASy)	alone	P10412	H1-4	133	23	80-93;95-125;127-142;146-163;166-219	2-11;16;43-49;60-61;67-69
+Proteinase K (ExPASy)	alone	P16104	H2AX	50	18	90-102;104-114;117-123;125-143	42;51-66;87
+Proteinase K (ExPASy)	alone	P16401	H1-5	140	20	83-96;98-128;130-164;166-179;181-226	2-11;46-52;63-64;70
+Proteinase K (ExPASy)	alone	P16402	H1-3	135	24	81-94;96-143;147-164;167-221	2-11;16;30;44-50;61-62;68-70
+Proteinase K (ExPASy)	alone	P16403	H1-2	128	22	80-93;95-163;167-190;193-213	2-11;43-49;60-61;67-69
+Proteinase K (ExPASy)	alone	P20671	H2AC7	38	17	90-102;104-114;117-130	51-66;87
+Proteinase K (ExPASy)	alone	P23527	H2BC17	0	23		20;41-45;72-77;96-102;119-122
+Proteinase K (ExPASy)	alone	P33778	H2BC3	0	23		20;41-45;72-77;96-102;119-122
+Proteinase K (ExPASy)	alone	P49450	CENPA	1	35	6	49-50;61;72-74;91-114;121;137-140
+Proteinase K (ExPASy)	alone	P57053	H2BC12L	0	27		20;41-45;72-77;96-102;119-126
+Proteinase K (ExPASy)	alone	P58876	H2BC5	0	23		20;41-45;72-77;96-102;119-122
+Proteinase K (ExPASy)	alone	P60008	H1-9P	0	29		7-8;30-38;57-58;76-77;82-84;122-125;135-138;144-146
+Proteinase K (ExPASy)	alone	P62805	H4C1	0	18		52-54;60-66;72-75;83;89-90;99
+Proteinase K (ExPASy)	alone	P62807	H2BC4	0	23		20;41-45;72-77;96-102;119-122
+Proteinase K (ExPASy)	alone	P68431	H3C1	0	30		2;23-25;48-51;61-62;73-75;91-106;113
+Proteinase K (ExPASy)	alone	P84243	H3-3A	0	31		2;23-25;48-51;61-62;73-75;90-106;113
+Proteinase K (ExPASy)	alone	Q02539	H1-1	120	5	5-10;15-30;33-45;51-57;83-96;98-127;129-132;134-163	63-64;70-72
+Proteinase K (ExPASy)	alone	Q16695	H3-4	0	23		2;23-25;48-51;61-62;91-96;101-106;113
+Proteinase K (ExPASy)	alone	Q16777	H2AC20	0	21		42;51-66;87;103;115-116
+Proteinase K (ExPASy)	alone	Q16778	H2BC21	0	23		20;41-45;72-77;96-102;119-122
+Proteinase K (ExPASy)	alone	Q5QNW6	H2BC18	0	23		20;41-45;72-77;96-102;119-122
+Proteinase K (ExPASy)	alone	Q5TEC6	H3-7	0	34		2;23-25;48-51;61-62;73-79;91-106;113
+Proteinase K (ExPASy)	alone	Q6DN03	H2BC20P	0	15		8;20;41-45;72-77;161;177
+Proteinase K (ExPASy)	alone	Q6DRA6	H2BC19P	0	17		8;20;41-45;72-77;161-164
+Proteinase K (ExPASy)	alone	Q6FI13	H2AC18	38	18	90-102;104-114;117-130	42;51-66;87
+Proteinase K (ExPASy)	alone	Q6NXT2	H3-5	0	31		2;23-25;47-50;60-61;72-74;89-105;112
+Proteinase K (ExPASy)	alone	Q71DI3	H3C15	0	30		2;23-25;48-51;61-62;73-75;91-106;113
+Proteinase K (ExPASy)	alone	Q71UI9	H2AZ2	0	25		50-69;90;102-105
+Proteinase K (ExPASy)	alone	Q75WM6	H1-7	4	34	157;188-190	5-8;24;43-45;65-68;76-78;89;107-109;118-123;171;207-213;255
+Proteinase K (ExPASy)	alone	Q7L7L0	H2AC25	0	20		51-66;87;103;115-116
+Proteinase K (ExPASy)	alone	Q7Z2G1	H2BW1	0	28		2-4;15-22;61-62;81;97-98;112-115;121-123;133;140-141;146-147
+Proteinase K (ExPASy)	alone	Q8IUE6	H2AC21	38	18	90-102;104-114;117-130	42;51-66;87
+Proteinase K (ExPASy)	alone	Q8N257	H2BC26	0	23		20;41-45;72-77;96-102;119-122
+Proteinase K (ExPASy)	alone	Q92522	H1-10	42	28	171-190;192-213	2-14;53-55;69-73;89;96;103;133-136
+Proteinase K (ExPASy)	alone	Q93077	H2AC6	0	21		42;51-66;87;103;115-116
+Proteinase K (ExPASy)	alone	Q93079	H2BC9	0	23		20;41-45;72-77;96-102;119-122
+Proteinase K (ExPASy)	alone	Q96A08	H2BC1	0	29		2-3;21;42-46;69-78;97-103;120-123
+Proteinase K (ExPASy)	alone	Q96KK5	H2AC12	0	21		42;51-66;87;103;115-116
+Proteinase K (ExPASy)	alone	Q96QV6	H2AC1	39	18	90-102;104-114;117-131	42;51-66;87
+Proteinase K (ExPASy)	alone	Q99877	H2BC15	0	23		20;41-45;72-77;96-102;119-122
+Proteinase K (ExPASy)	alone	Q99878	H2AC14	0	21		42;51-66;87;103;115-116
+Proteinase K (ExPASy)	alone	Q99879	H2BC14	0	22		41-45;72-77;96-102;119-122
+Proteinase K (ExPASy)	alone	Q99880	H2BC13	0	26		2-4;20;41-45;72-77;96-102;119-122
+Proteinase K (ExPASy)	alone	Q9P0M6	MACROH2A2	149	36	156-184;186-211;250-256;262-269;274-288;294-300;302-326;335-350;354-361;364-371	22-23;48-63;83-85;100;114;127;214-215;221-223;234;242-247
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	parallel	O75367	MACROH2A1	172	0	157-175;177-184;187-199;201-204;206-220;222-238;245-253;260-269;271-285;291-296;298-323;331-335;337-345;351-358;361-368	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	parallel	P07305	H1-0	94	0	95-151;153-189	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	parallel	P0C0S8	H2AC11	38	0	90-102;104-114;117-130	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	parallel	P0C5Z0	H2AB2	6	0	2-7	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	parallel	P0DPK2	H3Y1	2	0	131-132	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	parallel	P10412	H1-4	133	0	80-93;95-125;127-142;146-163;166-219	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	parallel	P16104	H2AX	50	0	90-102;104-114;117-123;125-143	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	parallel	P16401	H1-5	140	0	83-96;98-128;130-164;166-179;181-226	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	parallel	P16402	H1-3	135	0	81-94;96-143;147-164;167-221	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	parallel	P16403	H1-2	128	0	80-93;95-163;167-190;193-213	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	parallel	P20671	H2AC7	38	0	90-102;104-114;117-130	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	parallel	P49450	CENPA	1	0	6	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	parallel	Q02539	H1-1	120	0	5-10;15-30;33-45;51-57;83-96;98-127;129-132;134-163	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	parallel	Q6FI13	H2AC18	38	0	90-102;104-114;117-130	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	parallel	Q75WM6	H1-7	4	0	157;188-190	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	parallel	Q8IUE6	H2AC21	38	0	90-102;104-114;117-130	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	parallel	Q92522	H1-10	42	0	171-190;192-213	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	parallel	Q96QV6	H2AC1	39	0	90-102;104-114;117-131	
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	parallel	Q9P0M6	MACROH2A2	149	0	156-184;186-211;250-256;262-269;274-288;294-300;302-326;335-350;354-361;364-371	
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	O60814	H2BC12	0	38		20;41-45;72-82;90-102;119-126
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	O75367	MACROH2A1	171	31	157-175;177-184;187-199;201-204;206-220;222-238;246-253;260-269;271-285;291-296;298-323;331-335;337-345;351-358;361-368	22-23;30-31;41;48-63;77;82-85;100;114;126-128
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	P04908	H2AC4	0	35		13;31-35;43-44;51-66;79-80;87-88;99-103;115-116
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	P06899	H2BC11	0	38		20;41-45;72-82;90-102;119-126
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	P07305	H1-0	93	12	96-151;153-189	2;34-38;75-80
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	P0C0S5	H2AZ1	0	32		18;33;48-69;82-83;90-91;102-105
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	P0C0S8	H2AC11	38	29	90-102;104-114;117-130	13;31-35;42-44;51-66;79-80;87-88
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	P0C5Z0	H2AB2	0	49		24-28;37-40;46-70;82-87;98-106
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	P0DPK2	H3Y1	0	58		2-3;9-14;23-25;48-53;62-64;71-78;90-106;113-119;129-130;133-136
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	P0DPK5	H3Y2	0	62		2-3;9-14;23-29;48-53;62-64;71-78;90-106;113-119;129-132;141;147
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	P10412	H1-4	133	24	80-93;95-125;127-142;146-163;166-219	2-11;16;31;43-49;60-61;67-69
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	P16104	H2AX	50	29	90-102;104-114;117-123;125-143	13;31-35;42-44;51-66;79-80;87-88
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	P16401	H1-5	140	21	83-96;98-128;130-164;166-179;181-226	2-11;34;46-52;63-64;70
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	P16402	H1-3	135	24	81-94;96-143;147-164;167-221	2-11;16;30;44-50;61-62;68-70
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	P16403	H1-2	128	22	80-93;95-163;167-190;193-213	2-11;43-49;60-61;67-69
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	P20671	H2AC7	38	28	90-102;104-114;117-130	13;31-35;43-44;51-66;79-80;87-88
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	P23527	H2BC17	0	34		20;41-45;72-82;90-102;119-122
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	P33778	H2BC3	0	34		20;41-45;72-82;90-102;119-122
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	P49450	CENPA	0	56		13-15;49-52;61-63;70-74;79-80;91-114;119-121;129-140
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	P57053	H2BC12L	0	36		20;41-45;72-80;90-102;119-126
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	P58876	H2BC5	0	34		20;41-45;72-82;90-102;119-122
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	P60008	H1-9P	0	47		7-11;29-38;47;57-58;69-77;82-84;122-125;135-138;144-146;153-155;160;224-225
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	P62805	H4C1	0	37		23;36-40;52-75;82-83;89-91;98-99
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	P62807	H2BC4	0	34		20;41-45;72-82;90-102;119-122
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	P68431	H3C1	0	51		2-3;23-26;48-54;61-64;71-75;84;91-106;113;118-119;128-136
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	P84243	H3-3A	0	52		2-3;23-26;48-54;61-64;71-75;84;90-106;113;118-119;128-136
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	Q02539	H1-1	119	9	5-10;15-30;33-45;51-57;83-96;98-127;129-132;134-161;163	63-64;70-72;196-199
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	Q16695	H3-4	0	47		2-3;23-26;48-54;61-64;71-75;84;91-96;101-106;113;118-119;128-136
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	Q16777	H2AC20	0	32		13;31-35;42-44;51-66;79-80;87-88;103;115-116
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	Q16778	H2BC21	0	34		20;41-45;72-82;90-102;119-122
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	Q5QNW6	H2BC18	0	34		20;41-45;72-82;90-102;119-122
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	Q5TEC6	H3-7	0	55		2-3;23-26;48-54;61-64;71-79;84;91-106;113;118-119;128-136
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	Q6DN03	H2BC20P	0	39		8;20;41-48;72-82;90-94;116-117;161;177-186
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	Q6DRA6	H2BC19P	0	32		8;20;41-48;72-82;90-94;116-117;161-164
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	Q6FI13	H2AC18	38	29	90-102;104-114;117-130	13;31-35;42-44;51-66;79-80;87-88
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	Q6NXT2	H3-5	0	52		2-3;23-26;47-53;60-63;70-74;83;89-105;112;117-118;127-135
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	Q71DI3	H3C15	0	51		2-3;23-26;48-54;61-64;71-75;84;91-106;113;118-119;128-136
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	Q71UI9	H2AZ2	0	34		18;33;40-41;48-69;82-83;90-91;102-105
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	Q75WM6	H1-7	0	82		5-8;14-15;24;43-45;59;65-68;76-78;84;89-91;99;107-110;118-123;136-150;163-178;185-187;191;204-213;226;253-255
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	Q7L7L0	H2AC25	0	35		13;31-35;43-44;51-66;79-80;87-88;99-103;115-116
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	Q7Z2G1	H2BW1	0	49		2-4;15-22;61-66;79-81;93-98;104;111-123;133;140-147
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	Q8IUE6	H2AC21	38	29	90-102;104-114;117-130	13;31-35;42-44;51-66;79-80;87-88
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	Q8N257	H2BC26	0	34		20;41-45;72-82;90-102;119-122
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	Q92522	H1-10	42	36	171-190;192-213	2-14;53-61;69-73;88-89;96;103;128;133-136
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	Q93077	H2AC6	0	36		13;31-35;42-44;51-66;79-80;87-88;99-103;115-116
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	Q93079	H2BC9	0	34		20;41-45;72-82;90-102;119-122
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	Q96A08	H2BC1	0	37		2-3;21;34-35;42-46;69-83;96-103;120-123
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	Q96KK5	H2AC12	0	32		13;31-35;42-44;51-66;79-80;87-88;103;115-116
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	Q96QV6	H2AC1	39	28	90-102;104-114;117-131	31-35;42-44;51-66;79-80;87-88
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	Q99877	H2BC15	0	34		20;41-45;72-82;90-102;119-122
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	Q99878	H2AC14	0	32		13;31-35;42-44;51-66;79-80;87-88;103;115-116
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	Q99879	H2BC14	0	33		41-45;72-82;90-102;119-122
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	Q99880	H2BC13	0	37		2-4;20;41-45;72-82;90-102;119-122
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	Q9P0M6	MACROH2A2	149	55	156-184;186-211;250-256;262-269;274-288;294-300;302-326;335-350;354-361;364-371	18-23;28-31;38-41;48-63;76-77;82-85;100;107-108;114;127;213-215;221-223;234;242-248

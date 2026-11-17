@@ -1,0 +1,551 @@
+# ProteaseScope 0.2.0 - Output 5: Summary table
+# PREDICTED (in silico) results. These are predictions from cleavage rules, not observed data.
+# Generated: 2026-11-14T10:51:16-05:00
+# Proteins digested: human_histones.fasta (54 entries)
+# Uniqueness background: UniProtKB/Swiss-Prot reviewed human proteome UP000005640 incl. isoforms, UniProt release 2026_04 (04-November-2026; downloaded 2026-11-14), 42,545 entries + human_histones.fasta (54 entries) (0 not already present); a peptide maps to every entry whose sequence contains it (I = L)
+# Baseline:
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 1:
+#   Digest: Trypsin/P (PSI-MS) [single]
+#     Trypsin/P (PSI-MS): regex (?<=[KR])  [PSI-MS MS:1001313, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 2: parallel digests (union of peptide sets)
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+#   Digest: Trypsin/P (PSI-MS) [single]
+#     Trypsin/P (PSI-MS): regex (?<=[KR])  [PSI-MS MS:1001313, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 3:
+#   Digest: Trypsin (PSI-MS) + Trypsin/P (PSI-MS) [sequential (union of cut sites)]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Trypsin/P (PSI-MS): regex (?<=[KR])  [PSI-MS MS:1001313, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 4:
+#   Digest: Arg-C (PSI-MS) [single]
+#     Arg-C (PSI-MS): regex (?<=R)(?!P)  [PSI-MS MS:1001303, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 5: parallel digests (union of peptide sets)
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+#   Digest: Arg-C (PSI-MS) [single]
+#     Arg-C (PSI-MS): regex (?<=R)(?!P)  [PSI-MS MS:1001303, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 6:
+#   Digest: Trypsin (PSI-MS) + Arg-C (PSI-MS) [sequential (union of cut sites)]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Arg-C (PSI-MS): regex (?<=R)(?!P)  [PSI-MS MS:1001303, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 7:
+#   Digest: Lys-C (PSI-MS) [single]
+#     Lys-C (PSI-MS): regex (?<=K)(?!P)  [PSI-MS MS:1001309, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 8: parallel digests (union of peptide sets)
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+#   Digest: Lys-C (PSI-MS) [single]
+#     Lys-C (PSI-MS): regex (?<=K)(?!P)  [PSI-MS MS:1001309, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 9:
+#   Digest: Trypsin (PSI-MS) + Lys-C (PSI-MS) [sequential (union of cut sites)]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Lys-C (PSI-MS): regex (?<=K)(?!P)  [PSI-MS MS:1001309, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 10:
+#   Digest: Lys-C/P (PSI-MS) [single]
+#     Lys-C/P (PSI-MS): regex (?<=K)  [PSI-MS MS:1001310, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 11: parallel digests (union of peptide sets)
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+#   Digest: Lys-C/P (PSI-MS) [single]
+#     Lys-C/P (PSI-MS): regex (?<=K)  [PSI-MS MS:1001310, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 12:
+#   Digest: Trypsin (PSI-MS) + Lys-C/P (PSI-MS) [sequential (union of cut sites)]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Lys-C/P (PSI-MS): regex (?<=K)  [PSI-MS MS:1001310, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 13:
+#   Digest: Lys-N (PSI-MS) [single]
+#     Lys-N (PSI-MS): regex (?=K)  [PSI-MS MS:1003093, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009. Taouatas N et al. (2008) Nat Methods 5:405-407 (Lys-N cleaves N-terminal to K).
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 14: parallel digests (union of peptide sets)
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+#   Digest: Lys-N (PSI-MS) [single]
+#     Lys-N (PSI-MS): regex (?=K)  [PSI-MS MS:1003093, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009. Taouatas N et al. (2008) Nat Methods 5:405-407 (Lys-N cleaves N-terminal to K).
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 15:
+#   Digest: Trypsin (PSI-MS) + Lys-N (PSI-MS) [sequential (union of cut sites)]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Lys-N (PSI-MS): regex (?=K)  [PSI-MS MS:1003093, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009. Taouatas N et al. (2008) Nat Methods 5:405-407 (Lys-N cleaves N-terminal to K).
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 16:
+#   Digest: Asp-N (PSI-MS) [single]
+#     Asp-N (PSI-MS): regex (?=[BD])  [PSI-MS MS:1001304, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 17: parallel digests (union of peptide sets)
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+#   Digest: Asp-N (PSI-MS) [single]
+#     Asp-N (PSI-MS): regex (?=[BD])  [PSI-MS MS:1001304, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 18:
+#   Digest: Trypsin (PSI-MS) + Asp-N (PSI-MS) [sequential (union of cut sites)]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Asp-N (PSI-MS): regex (?=[BD])  [PSI-MS MS:1001304, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 19:
+#   Digest: Asp-N ambic (PSI-MS) [single]
+#     Asp-N ambic (PSI-MS): regex (?=[DE])  [PSI-MS MS:1001305, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 20: parallel digests (union of peptide sets)
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+#   Digest: Asp-N ambic (PSI-MS) [single]
+#     Asp-N ambic (PSI-MS): regex (?=[DE])  [PSI-MS MS:1001305, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 21:
+#   Digest: Trypsin (PSI-MS) + Asp-N ambic (PSI-MS) [sequential (union of cut sites)]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Asp-N ambic (PSI-MS): regex (?=[DE])  [PSI-MS MS:1001305, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 22:
+#   Digest: Glu-C (PSI-MS) [single]
+#     Glu-C (PSI-MS): regex (?<=[^E]E)  [PSI-MS MS:1001917, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 23: parallel digests (union of peptide sets)
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+#   Digest: Glu-C (PSI-MS) [single]
+#     Glu-C (PSI-MS): regex (?<=[^E]E)  [PSI-MS MS:1001917, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 24:
+#   Digest: Trypsin (PSI-MS) + Glu-C (PSI-MS) [sequential (union of cut sites)]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Glu-C (PSI-MS): regex (?<=[^E]E)  [PSI-MS MS:1001917, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 25:
+#   Digest: Chymotrypsin (PSI-MS) [single]
+#     Chymotrypsin (PSI-MS): regex (?<=[FYWL])(?!P)  [PSI-MS MS:1001306, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 26: parallel digests (union of peptide sets)
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+#   Digest: Chymotrypsin (PSI-MS) [single]
+#     Chymotrypsin (PSI-MS): regex (?<=[FYWL])(?!P)  [PSI-MS MS:1001306, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 27:
+#   Digest: Trypsin (PSI-MS) + Chymotrypsin (PSI-MS) [sequential (union of cut sites)]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Chymotrypsin (PSI-MS): regex (?<=[FYWL])(?!P)  [PSI-MS MS:1001306, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 28:
+#   Digest: Chymotrypsin high specificity (ExPASy) [single]
+#     Chymotrypsin high specificity (ExPASy): regex (?<=[FY])(?=[^P])|(?<=W)(?=[^MP])  [ExPASy]
+#       Citation: ExPASy PeptideCutter cleavage rules; Gasteiger E et al. (2005) The Proteomics Protocols Handbook, Humana Press, 571-607. As implemented in Protein Cleaver and the R/Bioconductor package cleaver.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 29: parallel digests (union of peptide sets)
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+#   Digest: Chymotrypsin high specificity (ExPASy) [single]
+#     Chymotrypsin high specificity (ExPASy): regex (?<=[FY])(?=[^P])|(?<=W)(?=[^MP])  [ExPASy]
+#       Citation: ExPASy PeptideCutter cleavage rules; Gasteiger E et al. (2005) The Proteomics Protocols Handbook, Humana Press, 571-607. As implemented in Protein Cleaver and the R/Bioconductor package cleaver.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 30:
+#   Digest: Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy) [sequential (union of cut sites)]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Chymotrypsin high specificity (ExPASy): regex (?<=[FY])(?=[^P])|(?<=W)(?=[^MP])  [ExPASy]
+#       Citation: ExPASy PeptideCutter cleavage rules; Gasteiger E et al. (2005) The Proteomics Protocols Handbook, Humana Press, 571-607. As implemented in Protein Cleaver and the R/Bioconductor package cleaver.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 31:
+#   Digest: Chymotrypsin low specificity (ExPASy) [single]
+#     Chymotrypsin low specificity (ExPASy): regex (?<=[FLY])(?=[^P])|(?<=W)(?=[^MP])|(?<=M)(?=[^PY])|(?<=H)(?=[^DMPW])  [ExPASy]
+#       Citation: ExPASy PeptideCutter cleavage rules; Gasteiger E et al. (2005) The Proteomics Protocols Handbook, Humana Press, 571-607. As implemented in Protein Cleaver and the R/Bioconductor package cleaver.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 32: parallel digests (union of peptide sets)
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+#   Digest: Chymotrypsin low specificity (ExPASy) [single]
+#     Chymotrypsin low specificity (ExPASy): regex (?<=[FLY])(?=[^P])|(?<=W)(?=[^MP])|(?<=M)(?=[^PY])|(?<=H)(?=[^DMPW])  [ExPASy]
+#       Citation: ExPASy PeptideCutter cleavage rules; Gasteiger E et al. (2005) The Proteomics Protocols Handbook, Humana Press, 571-607. As implemented in Protein Cleaver and the R/Bioconductor package cleaver.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 33:
+#   Digest: Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy) [sequential (union of cut sites)]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Chymotrypsin low specificity (ExPASy): regex (?<=[FLY])(?=[^P])|(?<=W)(?=[^MP])|(?<=M)(?=[^PY])|(?<=H)(?=[^DMPW])  [ExPASy]
+#       Citation: ExPASy PeptideCutter cleavage rules; Gasteiger E et al. (2005) The Proteomics Protocols Handbook, Humana Press, 571-607. As implemented in Protein Cleaver and the R/Bioconductor package cleaver.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 34:
+#   Digest: Proteinase K (ExPASy) [single]
+#     Proteinase K (ExPASy): regex (?<=[AEFILTVWY])  [ExPASy]
+#       Citation: ExPASy PeptideCutter cleavage rules; Gasteiger E et al. (2005) The Proteomics Protocols Handbook, Humana Press, 571-607. As implemented in Protein Cleaver and the R/Bioconductor package cleaver.
+#       Flags: nonspecific, low confidence
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 35: parallel digests (union of peptide sets)
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+#   Digest: Proteinase K (ExPASy) [single]
+#     Proteinase K (ExPASy): regex (?<=[AEFILTVWY])  [ExPASy]
+#       Citation: ExPASy PeptideCutter cleavage rules; Gasteiger E et al. (2005) The Proteomics Protocols Handbook, Humana Press, 571-607. As implemented in Protein Cleaver and the R/Bioconductor package cleaver.
+#       Flags: nonspecific, low confidence
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 36:
+#   Digest: Trypsin (PSI-MS) + Proteinase K (ExPASy) [sequential (union of cut sites)]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Proteinase K (ExPASy): regex (?<=[AEFILTVWY])  [ExPASy]
+#       Citation: ExPASy PeptideCutter cleavage rules; Gasteiger E et al. (2005) The Proteomics Protocols Handbook, Humana Press, 571-607. As implemented in Protein Cleaver and the R/Bioconductor package cleaver.
+#       Flags: nonspecific, low confidence
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Numbering: UniProt (initiator Met = 1); *_mature = UniProt - 1 when Met is removed.
+# Masses: neutral monoisotopic and average (ExPASy average residue masses); m/z = (M + z*1.007276)/z.
+# Counts: peptides are counted by position (entry, start, end).
+digest	kind	n_identifiable_proteins	n_identifiable_proteins_diff	n_identifiable_peptides	n_identifiable_peptides_diff	n_unique_peptides	n_unique_peptides_diff	n_confident_proteins	n_confident_proteins_diff	median_coverage_pct	median_coverage_pct_diff	overall_coverage_pct	overall_coverage_pct_diff
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K	baseline	54	0	990	0	238	0	31	0	100.0	0.0	82.06508734146925	0.0
+Trypsin/P (PSI-MS)	alone	54	0	999	9	240	2	31	0	100.0	0.0	82.00526441732472	-0.05982292414452672
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Trypsin/P (PSI-MS)	parallel	54	0	1021	31	247	9	31	0	100.0	0.0	82.06508734146925	0.0
+Trypsin (PSI-MS) + Trypsin/P (PSI-MS)	sequential	54	0	999	9	240	2	31	0	100.0	0.0	82.00526441732472	-0.05982292414452672
+Arg-C (PSI-MS)	alone	54	0	990	0	238	0	31	0	100.0	0.0	82.06508734146925	0.0
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Arg-C (PSI-MS)	parallel	54	0	990	0	238	0	31	0	100.0	0.0	82.06508734146925	0.0
+Trypsin (PSI-MS) + Arg-C (PSI-MS)	sequential	54	0	990	0	238	0	31	0	100.0	0.0	82.06508734146925	0.0
+Lys-C (PSI-MS)	alone	0	-54	0	-990	0	-238	0	-31	0.0	-100.0	0.0	-82.06508734146925
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C (PSI-MS)	parallel	54	0	990	0	238	0	31	0	100.0	0.0	82.06508734146925	0.0
+Trypsin (PSI-MS) + Lys-C (PSI-MS)	sequential	54	0	990	0	238	0	31	0	100.0	0.0	82.06508734146925	0.0
+Lys-C/P (PSI-MS)	alone	0	-54	0	-990	0	-238	0	-31	0.0	-100.0	0.0	-82.06508734146925
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C/P (PSI-MS)	parallel	54	0	990	0	238	0	31	0	100.0	0.0	82.06508734146925	0.0
+Trypsin (PSI-MS) + Lys-C/P (PSI-MS)	sequential	54	0	990	0	238	0	31	0	100.0	0.0	82.06508734146925	0.0
+Lys-N (PSI-MS)	alone	0	-54	0	-990	0	-238	0	-31	0.0	-100.0	0.0	-82.06508734146925
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-N (PSI-MS)	parallel	54	0	990	0	238	0	31	0	100.0	0.0	82.06508734146925	0.0
+Trypsin (PSI-MS) + Lys-N (PSI-MS)	sequential	54	0	990	0	238	0	31	0	100.0	0.0	82.06508734146925	0.0
+Asp-N (PSI-MS)	alone	49	-5	193	-797	75	-163	17	-14	44.746245155038764	-55.253754844961236	36.55180665230917	-45.513280689160084
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	parallel	54	0	1183	193	313	75	36	5	100.0	0.0	87.28164632687246	5.216558985403211
+Trypsin (PSI-MS) + Asp-N (PSI-MS)	sequential	54	0	1342	352	325	87	36	5	100.0	0.0	89.30366116295764	7.238573821488387
+Asp-N ambic (PSI-MS)	alone	54	0	949	-41	272	34	33	2	100.0	0.0	79.44484326393874	-2.620244077530515
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	parallel	54	0	1939	949	510	272	38	7	100.0	0.0	90.17707585546782	8.111988513998568
+Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	sequential	54	0	1772	782	395	157	36	5	99.2248062015504	-0.7751937984496067	92.27087820052644	10.205790859057188
+Glu-C (PSI-MS)	alone	54	0	584	-406	186	-52	33	2	68.21705426356588	-31.782945736434115	68.62885857860732	-13.43622876286193
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	parallel	54	0	1574	584	424	186	38	7	100.0	0.0	88.2747068676717	6.209619526202445
+Trypsin (PSI-MS) + Glu-C (PSI-MS)	sequential	54	0	1593	603	351	113	35	4	100.0	0.0	91.52907394113424	9.463986599664992
+Chymotrypsin (PSI-MS)	alone	54	0	1406	416	295	57	30	-1	100.0	0.0	85.45106484804977	3.3859775065805167
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	parallel	54	0	2396	1406	533	295	37	6	100.0	0.0	92.12730318257957	10.062215841110316
+Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	sequential	54	0	2088	1098	352	114	33	2	99.2248062015504	-0.7751937984496067	93.1442928930366	11.079205551567355
+Chymotrypsin high specificity (ExPASy)	alone	54	0	480	-510	148	-90	25	-6	63.1342663599182	-36.8657336400818	58.25556353194544	-23.80952380952381
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	parallel	54	0	1470	480	386	148	34	3	100.0	0.0	86.22876286192869	4.163675520459435
+Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	sequential	54	0	1525	535	317	79	35	4	100.0	0.0	88.72936109117013	6.664273749700882
+Chymotrypsin low specificity (ExPASy)	alone	54	0	1603	613	303	65	29	-2	100.0	0.0	86.53984206748027	4.474754726011014
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	parallel	54	0	2593	1603	541	303	35	4	100.0	0.0	92.15123235223737	10.08614501076812
+Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	sequential	54	0	2173	1183	335	97	31	0	97.9779411764706	-2.022058823529406	92.49820531227566	10.433117970806407
+Proteinase K (ExPASy)	alone	54	0	2671	1681	251	13	23	-8	82.00186042423532	-17.998139575764682	82.86671452500599	0.8016271835367377
+Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	parallel	54	0	3661	2671	489	251	35	4	100.0	0.0	98.42067480258434	16.355587461115093
+Trypsin (PSI-MS) + Proteinase K (ExPASy)	sequential	54	0	2438	1448	183	-55	21	-10	72.8	-27.200000000000003	74.08470926058865	-7.980378080880598

@@ -1,0 +1,157 @@
+{
+  "software": "ProteaseScope 0.7.0.dev1",
+  "created": "2026-11-16T10:56:46-0500",
+  "notice": "PREDICTED (in silico) results; not observed data.",
+  "psi_ms": {
+    "data_version": "4.2.17",
+    "obo_date": "2026-11-11",
+    "git_commit": "4d2a2346f7dd20d2da5eadfe93c0a897efe47a6b",
+    "url": "https://github.com/HUPO-PSI/psi-ms-CV/blob/master/psi-ms.obo"
+  },
+  "reference": {
+    "description": "UniProtKB/Swiss-Prot reviewed human proteome UP000005640 incl. isoforms",
+    "source_url": "https://rest.uniprot.org/uniprotkb/stream?format=fasta&includeIsoform=true&query=(proteome:UP000005640)+AND+(reviewed:true)",
+    "release": "2026_04",
+    "release_date": "04-November-2026",
+    "download_date": "2026-11-14",
+    "sha256": "d0100c8da86ebcb4d0d05417c34c14d835f87ea87bdf1eaf18003af366ef9b33",
+    "entries": 42545
+  },
+  "uniqueness": "substring mapping (I = L) via a precomputed shared-prefix index",
+  "presets": {
+    "proteome": {
+      "name": "Proteome",
+      "mode": "psi-ms",
+      "notes": "Trypsin (PSI-MS), 7-30 aa, <=1 missed cleavage.",
+      "n_digests": 46,
+      "baseline": [
+        "Digest: Trypsin (PSI-MS) [single]",
+        "  Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]",
+        "    Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.",
+        "  Peptide length: 7-30 aa",
+        "  Max missed cleavages: 1",
+        "  m/z filter: off",
+        "  Fixed modifications: Carbamidomethyl (C)",
+        "  Propionylation: No derivatization",
+        "  Initiator Met removal: MetAP rule"
+      ]
+    },
+    "histone_ptm": {
+      "name": "Histone PTM",
+      "mode": "psi-ms",
+      "notes": "Trypsin with protein-level propionylation (Arg-C-like), 4-40 aa, <=1 missed cleavage, 'propionylate before and after digestion' (formerly 'protein + peptide N-term').",
+      "n_digests": 46,
+      "baseline": [
+        "Digest: Trypsin (PSI-MS) [single]",
+        "  Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]",
+        "    Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.",
+        "  Peptide length: 4-40 aa",
+        "  Max missed cleavages: 1",
+        "  m/z filter: off",
+        "  Fixed modifications: Carbamidomethyl (C)",
+        "  Propionylation: Propionylate before and after digestion",
+        "  Initiator Met removal: MetAP rule"
+      ]
+    },
+    "middle_down": {
+      "name": "Middle-down",
+      "mode": "psi-ms",
+      "notes": "Glu-C (PSI-MS), 7-70 aa, 0 missed cleavages.",
+      "n_digests": 46,
+      "baseline": [
+        "Digest: Glu-C (PSI-MS) [single]",
+        "  Glu-C (PSI-MS): regex (?<=[^E]E)  [PSI-MS MS:1001917, psi-ms.obo v4.2.17]",
+        "    Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.",
+        "  Peptide length: 7-70 aa",
+        "  Max missed cleavages: 0",
+        "  m/z filter: off",
+        "  Fixed modifications: Carbamidomethyl (C)",
+        "  Propionylation: No derivatization",
+        "  Initiator Met removal: MetAP rule"
+      ]
+    },
+    "protein_cleaver": {
+      "name": "Protein Cleaver compatible",
+      "mode": "expasy",
+      "notes": "Arg-C (ExPASy), ExPASy rules, 7-30 aa, 0 missed cleavages, m/z filter off, no fixed mods. Initiator Met is not removed, as in Protein Cleaver (the preset table in CLAUDE.md does not specify Met removal).",
+      "n_digests": 34,
+      "baseline": [
+        "Digest: Arg-C (ExPASy) [single]",
+        "  Arg-C (ExPASy): regex (?<=R)  [ExPASy]",
+        "    Citation: ExPASy PeptideCutter cleavage rules; Gasteiger E et al. (2005) The Proteomics Protocols Handbook, Humana Press, 571-607. As implemented in Protein Cleaver and the R/Bioconductor package cleaver.",
+        "  Peptide length: 7-30 aa",
+        "  Max missed cleavages: 0",
+        "  m/z filter: off",
+        "  Fixed modifications: none",
+        "  Propionylation: No derivatization",
+        "  Initiator Met removal: never"
+      ]
+    }
+  },
+  "files": {
+    "reference.fasta.gz": {
+      "bytes": 12821110,
+      "sha256": "e600ec52ba1c3146cbcd9edf33db23b809e351407e72be61f51efa5724a676cb"
+    },
+    "uniqueness_index.npz": {
+      "bytes": 6462809,
+      "sha256": "8452d3a1781740d5b223e8e3b62d4af7e6b758d70e805d807d4a6771bbef599e"
+    },
+    "preset_proteome.npz": {
+      "bytes": 20589359,
+      "sha256": "6f44d538a3511aa78bc0461d9563d761616d2175cfadf716880690922ae2bf34"
+    },
+    "preset_proteome.json": {
+      "bytes": 122592,
+      "sha256": "5397981df4e9ecd9ba78f30c59b48234a3f1a5ce20eaad5eea1b7ad96782b472"
+    },
+    "preset_histone_ptm.npz": {
+      "bytes": 18225010,
+      "sha256": "4ed0f6850955bae5f6612a9bbb6b7766dd490f75d8c230cf3303979e671101be"
+    },
+    "preset_histone_ptm.json": {
+      "bytes": 123156,
+      "sha256": "6ed07488369dbf8f1def7c8469592f69b75cd88662219468df8565e06f724c1a"
+    },
+    "preset_middle_down.npz": {
+      "bytes": 21432858,
+      "sha256": "56a148bfb979df10bcb56865f3b922dbe5f28132bae934a2d53868fab0394af9"
+    },
+    "preset_middle_down.json": {
+      "bytes": 122923,
+      "sha256": "2b33d02a57ad9771248d113bf9b7c7acb6a8e674cb873150a9cb8d3a7d706296"
+    },
+    "preset_protein_cleaver.npz": {
+      "bytes": 16266772,
+      "sha256": "b6e52543bbd5cd1d5c37ae941acf22a8bce5a41d4000804bd746490793f2a151"
+    },
+    "preset_protein_cleaver.json": {
+      "bytes": 92669,
+      "sha256": "94b439fb115c05b9fbb3ba23bf12fcb5a583f45abf365ec2256f42b55f7c5ea7"
+    }
+  },
+  "timings_seconds": {
+    "uniqueness_index_build": 31.6,
+    "preset_proteome": 389.4,
+    "preset_histone_ptm": 374.6,
+    "preset_middle_down": 204.2,
+    "preset_protein_cleaver": 138.2
+  },
+  "entry_fields": [
+    "n_identifiable_peptides",
+    "n_unique_peptides",
+    "n_total_peptides",
+    "covered_residues",
+    "unique_covered_residues",
+    "residues_gained",
+    "residues_lost",
+    "K_sites_gained",
+    "K_sites_lost",
+    "S_sites_gained",
+    "S_sites_lost",
+    "T_sites_gained",
+    "T_sites_lost",
+    "Y_sites_gained",
+    "Y_sites_lost"
+  ]
+}

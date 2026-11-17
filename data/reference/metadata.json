@@ -1,0 +1,44 @@
+{
+  "files": {
+    "psi-ms.obo": {
+      "description": "HUPO-PSI PSI-MS controlled vocabulary; source of default cleavage-agent regexes",
+      "source_url": "https://raw.githubusercontent.com/HUPO-PSI/psi-ms-CV/master/psi-ms.obo",
+      "release": "data-version 4.2.17 (obo date 11:11:2026 13:00)",
+      "git_commit": "4d2a2346f7dd20d2da5eadfe93c0a897efe47a6b",
+      "download_date": "2026-11-14"
+    },
+    "uniprot_human_reviewed_isoforms.fasta": {
+      "source_url": "https://rest.uniprot.org/uniprotkb/stream?format=fasta&includeIsoform=true&query=(proteome:UP000005640)+AND+(reviewed:true)",
+      "release": "2026_04",
+      "release_date": "04-November-2026",
+      "download_date": "2026-11-14",
+      "sha256": "d0100c8da86ebcb4d0d05417c34c14d835f87ea87bdf1eaf18003af366ef9b33",
+      "bytes": 29333171,
+      "description": "UniProtKB/Swiss-Prot reviewed human proteome UP000005640 incl. isoforms",
+      "entries": 42545,
+      "canonical_entries": 20414,
+      "isoform_entries": 22131,
+      "residues": 24511867
+    },
+    "histone_features.tsv": {
+      "source_url": "https://rest.uniprot.org/uniprotkb/stream?format=tsv&fields=accession,gene_names,protein_name,length,ft_mod_res,ft_crosslnk&query=%28accession%3AO60814%29%20OR%20%28accession%3AO75367%29%20OR%20%28accession%3AP04908%29%20OR%20%28accession%3AP06899%29%20OR%20%28accession%3AP07305%29%20OR%20%28accession%3AP0C0S5%29%20OR%20%28accession%3AP0C0S8%29%20OR%20%28accession%3AP0C5Z0%29%20OR%20%28accession%3AP0DPK2%29%20OR%20%28accession%3AP0DPK5%29%20OR%20%28accession%3AP10412%29%20OR%20%28accession%3AP16104%29%20OR%20%28accession%3AP16401%29%20OR%20%28accession%3AP16402%29%20OR%20%28accession%3AP16403%29%20OR%20%28accession%3AP20671%29%20OR%20%28accession%3AP23527%29%20OR%20%28accession%3AP33778%29%20OR%20%28accession%3AP49450%29%20OR%20%28accession%3AP57053%29%20OR%20%28accession%3AP58876%29%20OR%20%28accession%3AP60008%29%20OR%20%28accession%3AP62805%29%20OR%20%28accession%3AP62807%29%20OR%20%28accession%3AP68431%29%20OR%20%28accession%3AP84243%29%20OR%20%28accession%3AQ02539%29%20OR%20%28accession%3AQ16695%29%20OR%20%28accession%3AQ16777%29%20OR%20%28accession%3AQ16778%29%20OR%20%28accession%3AQ5QNW6%29%20OR%20%28accession%3AQ5TEC6%29%20OR%20%28accession%3AQ6DN03%29%20OR%20%28accession%3AQ6DRA6%29%20OR%20%28accession%3AQ6FI13%29%20OR%20%28accession%3AQ6NXT2%29%20OR%20%28accession%3AQ71DI3%29%20OR%20%28accession%3AQ71UI9%29%20OR%20%28accession%3AQ75WM6%29%20OR%20%28accession%3AQ7L7L0%29%20OR%20%28accession%3AQ7Z2G1%29%20OR%20%28accession%3AQ8IUE6%29%20OR%20%28accession%3AQ8N257%29%20OR%20%28accession%3AQ92522%29%20OR%20%28accession%3AQ93077%29%20OR%20%28accession%3AQ93079%29%20OR%20%28accession%3AQ96A08%29%20OR%20%28accession%3AQ96KK5%29%20OR%20%28accession%3AQ96QV6%29%20OR%20%28accession%3AQ99877%29%20OR%20%28accession%3AQ99878%29%20OR%20%28accession%3AQ99879%29%20OR%20%28accession%3AQ99880%29%20OR%20%28accession%3AQ9P0M6%29",
+      "release": "2026_04",
+      "release_date": "04-November-2026",
+      "download_date": "2026-11-14",
+      "sha256": "b4388aed2f145bae5dad545a90323084b0a24d4a320299034fb0a1196632ecb0",
+      "bytes": 330523,
+      "description": "UniProt features (ft_mod_res, ft_crosslnk) for the histone FASTA accessions",
+      "fields": "accession,gene_names,protein_name,length,ft_mod_res,ft_crosslnk",
+      "entries": 54
+    },
+    "uniprot_O75367.json": {
+      "description": "UniProtKB entry O75367 (macroH2A.1), JSON; source of the isoform-to-splice-form assignment (isoform 1 = mH2A1.1 = O75367-2, displayed; isoform 2 = mH2A1.2 = O75367-1)",
+      "source_url": "https://rest.uniprot.org/uniprotkb/O75367.json",
+      "release": "2026_04",
+      "release_date": "04-November-2026",
+      "download_date": "2026-11-14",
+      "sha256": "546c089667aaada041bb766ee70e7a57253d3a366ee6357890cb26edbac6cab6",
+      "bytes": 83200
+    }
+  }
+}

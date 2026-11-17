@@ -1,0 +1,63 @@
+# status: REVIEWED by the user (approved in a Claude Code session) on 2026-11-14
+# Drafted 2026-11-14 from UniProt protein names (release 2026_04) following the unified histone variant nomenclature (Talbert et al. 2012, Epigenetics Chromatin 5:7) and HistoneDB 2.0 naming.
+# Entries: data/histones/human_histones.fasta (54) + data/histones/histone_isoforms.fasta (O75367-1, macroH2A1.2).
+# category: canonical | canonical_divergent | tissue_specific | replacement_variant | putative. Default histone views use category == canonical only.
+# cooccurrence_default: lysine co-occurrence defaults: one canonical representative per core family (H2A type 1, H2B type 1-C/E/F/G/I, H3.1, H4) plus H3.3 by explicit exception.
+# Rows whose notes contain 'REVIEW:' are remaining judgment calls.
+# After review, change the status line to: status: REVIEWED by <name> on <date>
+accession	display_name	family	variant	category	notes	gene	pe	cooccurrence_default
+P07305	H1.0	H1	H1.0	replacement_variant	Replication-independent (replacement) linker histone. UniProt also lists an N-terminally processed form.	H1-0	1	false
+Q02539	H1.1	H1	H1.1	canonical	Replication-dependent (clustered gene) linker histone. REVIEW: expression is tissue-restricted (thymus, testis, spleen); tissue_specific may fit better.	H1-1	1	false
+P16403	H1.2	H1	H1.2	canonical	Replication-dependent (clustered gene) somatic linker histone.	H1-2	1	false
+P16402	H1.3	H1	H1.3	canonical	Replication-dependent (clustered gene) somatic linker histone.	H1-3	1	false
+P10412	H1.4	H1	H1.4	canonical	Replication-dependent (clustered gene) somatic linker histone.	H1-4	1	false
+P16401	H1.5	H1	H1.5	canonical	Replication-dependent (clustered gene) somatic linker histone.	H1-5	1	false
+Q75WM6	H1.7	H1	H1.7	tissue_specific	Testis-specific linker histone (H1t2, HANP1). Initiator Met kept under the MetAP rule (residue 2 = E).	H1-7	1	false
+P60008	H1.9	H1	H1.9	putative	Putative spermatid-specific linker histone (HILS1); PE=5 (UniProt: H1.9 linker histone pseudogene). Initiator Met kept (residue 2 = L).	H1-9P	5	false
+Q92522	H1.10	H1	H1.10	replacement_variant	Replication-independent linker histone (H1x).	H1-10	1	false
+P0C0S8	H2A type 1	H2A	H2A	canonical	Replication-dependent (clustered gene); one protein from H2AC11, H2AC13, H2AC15, H2AC16, H2AC17. Reference canonical H2A; default H2A for lysine co-occurrence.	H2AC11	1	true
+P04908	H2A type 1-B/E	H2A	H2A	canonical	Replication-dependent (clustered gene); H2AC4, H2AC8.	H2AC4	1	false
+Q93077	H2A type 1-C	H2A	H2A	canonical	Replication-dependent (clustered gene); H2AC6.	H2AC6	1	false
+P20671	H2A type 1-D	H2A	H2A	canonical	Replication-dependent (clustered gene); H2AC7.	H2AC7	1	false
+Q96KK5	H2A type 1-H	H2A	H2A	canonical	Replication-dependent (clustered gene); H2AC12; 128 aa.	H2AC12	1	false
+Q99878	H2A type 1-J	H2A	H2A	canonical	Replication-dependent (clustered gene); H2AC14; 128 aa.	H2AC14	1	false
+Q96QV6	H2A type 1-A (TH2A)	H2A	TH2A	tissue_specific	H2AC1 (HIST1H2AA); TH2A, testis-specific H2A (user decision 2026-11-14). 131 aa.	H2AC1	1	false
+Q6FI13	H2A type 2-A	H2A	H2A	canonical	Replication-dependent (clustered gene); H2AC18, H2AC19.	H2AC18	1	false
+Q8IUE6	H2A type 2-B	H2A	H2A	canonical	Replication-dependent (clustered gene); H2AC21. REVIEW: its C-terminal tail differs from H2A type 1 at 6 positions, so canonical_divergent may fit by the H2AC25 criterion.	H2AC21	1	false
+Q16777	H2A type 2-C	H2A	H2A	canonical	Replication-dependent (clustered gene); H2AC20; 129 aa.	H2AC20	1	false
+Q7L7L0	H2A type 3	H2A	H2A	canonical_divergent	Replication-dependent (clustered gene); H2AC25 (HIST3H2A). Differs from H2A type 1 (P0C0S8) at UniProt 17 (T>S), 41 (A>S), 100 (K>R), hence canonical_divergent (user rule 2026-11-14). The gene alias 'H2AW' is a legacy alias unrelated to the plant H2A.W variant.	H2AC25	1	false
+P16104	H2A.X	H2A	H2A.X	replacement_variant	H2AX; variant.	H2AX	1	false
+P0C0S5	H2A.Z.1	H2A	H2A.Z	replacement_variant	H2AZ1; variant.	H2AZ1	1	false
+Q71UI9	H2A.Z.2	H2A	H2A.Z	replacement_variant	H2AZ2 (UniProt name 'Histone H2A.V'); variant. Other splice isoforms (Q71UI9-2 to -5) are in the reference proteome but not in the histone set.	H2AZ2	1	false
+O75367	macroH2A1.1	H2A	macroH2A	replacement_variant	MACROH2A1 splice form macroH2A1.1: UniProt isoform 1 (mH2A1.1, isoform ID O75367-2), the displayed sequence; 369 aa. UniProt features (known marks) are annotated on this sequence.	MACROH2A1	1	false
+O75367-1	macroH2A1.2	H2A	macroH2A	replacement_variant	MACROH2A1 splice form macroH2A1.2: UniProt isoform 2 (mH2A1.2, isoform ID O75367-1); 372 aa; residues 198-226 of macroH2A1.1 replaced by an alternative exon (32 aa). From data/histones/histone_isoforms.fasta (UniProt 2026_04). Isoform 3 (O75367-3) is not included.	MACROH2A1		false
+Q9P0M6	macroH2A.2	H2A	macroH2A	replacement_variant	MACROH2A2; variant, 372 aa.	MACROH2A2	1	false
+P0C5Z0	H2A.B	H2A	H2A.B	tissue_specific	H2AB2, H2AB3 (Barr body-deficient, H2A.Bbd); testis-enriched variant. No lysine features in UniProt.	H2AB2	1	false
+P62807	H2B type 1-C/E/F/G/I	H2B	H2B	canonical	Replication-dependent (clustered gene); one protein from H2BC4, H2BC6, H2BC7, H2BC8, H2BC10. Reference canonical H2B; default H2B for lysine co-occurrence.	H2BC4	1	true
+Q96A08	H2B.1 (TSH2B)	H2B	H2B.1	tissue_specific	H2BC1 (UniProt 'Histone H2B type 1-A', TSH2B); testis-specific despite its cluster-1 gene.	H2BC1	1	false
+P33778	H2B type 1-B	H2B	H2B	canonical	Replication-dependent (clustered gene); H2BC3.	H2BC3	1	false
+P58876	H2B type 1-D	H2B	H2B	canonical	Replication-dependent (clustered gene); H2BC5.	H2BC5	1	false
+Q93079	H2B type 1-H	H2B	H2B	canonical	Replication-dependent (clustered gene); H2BC9.	H2BC9	1	false
+P06899	H2B type 1-J	H2B	H2B	canonical	Replication-dependent (clustered gene); H2BC11.	H2BC11	1	false
+O60814	H2B type 1-K	H2B	H2B	canonical	Replication-dependent (clustered gene); H2BC12.	H2BC12	1	false
+Q99880	H2B type 1-L	H2B	H2B	canonical	Replication-dependent (clustered gene); H2BC13.	H2BC13	1	false
+Q99879	H2B type 1-M	H2B	H2B	canonical	Replication-dependent (clustered gene); H2BC14.	H2BC14	1	false
+Q99877	H2B type 1-N	H2B	H2B	canonical	Replication-dependent (clustered gene); H2BC15.	H2BC15	1	false
+P23527	H2B type 1-O	H2B	H2B	canonical	Replication-dependent (clustered gene); H2BC17.	H2BC17	1	false
+Q16778	H2B type 2-E	H2B	H2B	canonical	Replication-dependent (clustered gene); H2BC21.	H2BC21	1	false
+Q5QNW6	H2B type 2-F	H2B	H2B	canonical	Replication-dependent (clustered gene); H2BC18.	H2BC18	1	false
+Q8N257	H2B type 3-B	H2B	H2B	canonical_divergent	Replication-dependent (clustered gene); H2BC26 (alias H2BU1, 'H2B.U histone 1'). Differs from H2B type 1-C/E/F/G/I at 6 positions (UniProt 3, 5, 33, 40, 76, 95). canonical_divergent (user decision 2026-11-14).	H2BC26	1	false
+P57053	H2B type F-S	H2B	H2B.S	replacement_variant	H2BC12L ('H2B.S histone 1'); replacement variant (user decision 2026-11-14). Differs from H2B type 1-K at UniProt 28 (K>R) and 82 (A>P). K28R (mature 27) creates an Arg-C cleavage site after UniProt residue 28 (...DGR|KRKR...), so Arg-C-like (and propionylated-trypsin) peptides differ from canonical H2B there.	H2BC12L	1	false
+Q6DN03	H2B type 2-C (putative)	H2B	H2B	putative	H2BC20P pseudogene product; PE=5 (uncertain existence); 193 aa.	H2BC20P	5	false
+Q6DRA6	H2B type 2-D (putative)	H2B	H2B	putative	H2BC19P pseudogene product; PE=5 (uncertain existence); 164 aa.	H2BC19P	5	false
+Q7Z2G1	H2B.W	H2B	H2B.W	tissue_specific	H2BW1 (UniProt 'Histone H2B type W-T'); testis-specific, 153 aa.	H2BW1	1	false
+P68431	H3.1	H3	H3.1	canonical	Replication-dependent (clustered gene); one protein from 10 genes (H3C1-H3C12). Default H3 for lysine co-occurrence.	H3C1	1	true
+Q71DI3	H3.2	H3	H3.2	canonical	Replication-dependent (clustered gene); H3C13, H3C14, H3C15. Differs from H3.1 only at UniProt 97 (C>S; mature 96).	H3C15	1	false
+Q5TEC6	H3-7	H3	H3.2-like	putative	H3-7 (formerly HIST2H3PS2, a pseudogene symbol); putative (user decision 2026-11-14). 4 substitutions vs H3.2 (UniProt 78, 97, 128, 129).	H3-7	1	false
+Q16695	H3.4 (H3.1t)	H3	H3.4	tissue_specific	H3-4 (UniProt 'Histone H3.1t', H3t); testis-specific.	H3-4	1	false
+P84243	H3.3	H3	H3.3	replacement_variant	H3-3A, H3-3B; replication-independent variant. Not in the canonical-only default views, but kept as a lysine co-occurrence default by explicit exception (user decision 2026-11-14; CLAUDE.md section 8).	H3-3A	1	true
+Q6NXT2	H3.5	H3	H3.5	tissue_specific	H3-5 (UniProt 'Histone H3.3C'); hominid-specific, testis; 135 aa.	H3-5	1	false
+P0DPK2	H3.Y	H3	H3.Y	replacement_variant	H3Y1 (H3.Y.1); primate-specific. REVIEW: limited expression (tissue_specific may fit).	H3Y1	1	false
+P0DPK5	H3.X	H3	H3.Y	replacement_variant	H3Y2 (H3.Y.2, UniProt 'Histone H3.X'); primate-specific, 147 aa. REVIEW: limited expression (tissue_specific may fit).	H3Y2	1	false
+P49450	CENP-A	H3	cenH3	replacement_variant	CENPA; centromeric H3 variant. No lysine features in UniProt.	CENPA	1	false
+P62805	H4	H4	H4	canonical	Replication-dependent (clustered gene); one protein from 14 genes (H4C1-H4C16). Default H4 for lysine co-occurrence.	H4C1	1	true

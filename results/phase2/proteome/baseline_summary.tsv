@@ -1,0 +1,20 @@
+# ProteaseScope 0.2.0 - Summary metrics
+# PREDICTED (in silico) results. These are predictions from cleavage rules, not observed data.
+# Generated: 2026-11-14T10:51:24-05:00
+# Proteins digested: UniProtKB/Swiss-Prot reviewed human proteome UP000005640 incl. isoforms, UniProt release 2026_04 (04-November-2026; downloaded 2026-11-14), 42,545 entries
+# Uniqueness background: UniProtKB/Swiss-Prot reviewed human proteome UP000005640 incl. isoforms, UniProt release 2026_04 (04-November-2026; downloaded 2026-11-14), 42,545 entries; a peptide maps to every entry whose sequence contains it (I = L)
+# Digest:
+#   Digest: Proteome baseline: Trypsin (PSI-MS) [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 7-30 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: none
+#     Initiator Met removal: MetAP rule
+# Numbering: UniProt (initiator Met = 1); *_mature = UniProt - 1 when Met is removed.
+# Masses: neutral monoisotopic and average (ExPASy average residue masses); m/z = (M + z*1.007276)/z.
+# Counts: peptides are counted by position (entry, start, end).
+n_identifiable_proteins	n_identifiable_peptides	n_unique_peptides	n_confident_proteins	median_coverage_pct	overall_coverage_pct	n_total_peptides
+42491	2844568	590417	26200	79.86798679867987	77.01940705202546	2671556

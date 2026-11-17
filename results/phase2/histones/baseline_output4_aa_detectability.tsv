@@ -1,0 +1,39 @@
+# ProteaseScope 0.2.0 - Output 4: Amino acid detectability
+# PREDICTED (in silico) results. These are predictions from cleavage rules, not observed data.
+# Generated: 2026-11-14T10:51:15-05:00
+# Proteins digested: human_histones.fasta (54 entries)
+# Uniqueness background: UniProtKB/Swiss-Prot reviewed human proteome UP000005640 incl. isoforms, UniProt release 2026_04 (04-November-2026; downloaded 2026-11-14), 42,545 entries + human_histones.fasta (54 entries) (0 not already present); a peptide maps to every entry whose sequence contains it (I = L)
+# Digest:
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Numbering: UniProt (initiator Met = 1); *_mature = UniProt - 1 when Met is removed.
+# Masses: neutral monoisotopic and average (ExPASy average residue masses); m/z = (M + z*1.007276)/z.
+# Counts: peptides are counted by position (entry, start, end).
+residue	occurrences	on_identifiable_peptides	fraction_detectable	highlight
+A	1093	852	0.7795059469350412	False
+C	48	41	0.8541666666666666	True
+D	178	148	0.8314606741573034	False
+E	409	356	0.8704156479217604	False
+F	135	111	0.8222222222222222	False
+G	638	521	0.8166144200626959	False
+H	172	154	0.8953488372093024	False
+I	349	308	0.8825214899713467	False
+K	1188	824	0.6936026936026936	True
+L	643	544	0.8460342146189735	False
+M	73	69	0.9452054794520548	False
+N	198	163	0.8232323232323232	False
+P	471	359	0.7622080679405521	False
+Q	280	242	0.8642857142857143	False
+R	665	646	0.9714285714285714	False
+S	645	528	0.8186046511627907	True
+T	476	393	0.8256302521008403	True
+V	486	398	0.8189300411522634	False
+W	21	19	0.9047619047619048	False
+Y	190	183	0.9631578947368421	True

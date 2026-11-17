@@ -1,0 +1,16 @@
+{
+  "files": {
+    "histone_isoforms.fasta": {
+      "description": "Histone splice isoforms added to the user-provided histone FASTA: O75367-1 (macroH2A1.2). Record copied verbatim from data/reference/uniprot_human_reviewed_isoforms.fasta.",
+      "derived_from": "data/reference/uniprot_human_reviewed_isoforms.fasta",
+      "release": "2026_04",
+      "created": "2026-11-14",
+      "sha256": "023b485751a43a89ba69bf9d848b12b65931ff5f1b216419539407aa5a1fd278",
+      "reason": "User decision 2026-11-14: include both macroH2A.1 splice forms (macroH2A1.1 = O75367, macroH2A1.2 = O75367-1)."
+    },
+    "human_histones.fasta": {
+      "description": "User-provided histone FASTA (54 entries; all identical to UniProt 2026_04).",
+      "source": "user-provided"
+    }
+  }
+}

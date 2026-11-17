@@ -1,0 +1,1006 @@
+# ProteaseScope 0.2.0 - Histone outputs (Phase 3) - Lysine co-occurrence matrix data
+# PREDICTED (in silico) results. These are predictions from cleavage rules, not observed data.
+# Generated: 2026-11-14T11:35:13-05:00
+# Proteins digested: human_histones.fasta (54 entries) + histone_isoforms.fasta (1 entries)
+# Uniqueness background: human_histones.fasta (54 entries) + histone_isoforms.fasta (1 entries); a peptide maps to every entry whose sequence contains it (I = L)
+# Baseline:
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 1:
+#   Digest: Trypsin/P (PSI-MS) [single]
+#     Trypsin/P (PSI-MS): regex (?<=[KR])  [PSI-MS MS:1001313, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 2: parallel digests (union of peptide sets)
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+#   Digest: Trypsin/P (PSI-MS) [single]
+#     Trypsin/P (PSI-MS): regex (?<=[KR])  [PSI-MS MS:1001313, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 3:
+#   Digest: Trypsin (PSI-MS) + Trypsin/P (PSI-MS) [sequential (union of cut sites)]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Trypsin/P (PSI-MS): regex (?<=[KR])  [PSI-MS MS:1001313, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 4:
+#   Digest: Arg-C (PSI-MS) [single]
+#     Arg-C (PSI-MS): regex (?<=R)(?!P)  [PSI-MS MS:1001303, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 5: parallel digests (union of peptide sets)
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+#   Digest: Arg-C (PSI-MS) [single]
+#     Arg-C (PSI-MS): regex (?<=R)(?!P)  [PSI-MS MS:1001303, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 6:
+#   Digest: Trypsin (PSI-MS) + Arg-C (PSI-MS) [sequential (union of cut sites)]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Arg-C (PSI-MS): regex (?<=R)(?!P)  [PSI-MS MS:1001303, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 7:
+#   Digest: Lys-C (PSI-MS) [single]
+#     Lys-C (PSI-MS): regex (?<=K)(?!P)  [PSI-MS MS:1001309, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 8: parallel digests (union of peptide sets)
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+#   Digest: Lys-C (PSI-MS) [single]
+#     Lys-C (PSI-MS): regex (?<=K)(?!P)  [PSI-MS MS:1001309, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 9:
+#   Digest: Trypsin (PSI-MS) + Lys-C (PSI-MS) [sequential (union of cut sites)]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Lys-C (PSI-MS): regex (?<=K)(?!P)  [PSI-MS MS:1001309, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 10:
+#   Digest: Lys-C/P (PSI-MS) [single]
+#     Lys-C/P (PSI-MS): regex (?<=K)  [PSI-MS MS:1001310, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 11: parallel digests (union of peptide sets)
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+#   Digest: Lys-C/P (PSI-MS) [single]
+#     Lys-C/P (PSI-MS): regex (?<=K)  [PSI-MS MS:1001310, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 12:
+#   Digest: Trypsin (PSI-MS) + Lys-C/P (PSI-MS) [sequential (union of cut sites)]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Lys-C/P (PSI-MS): regex (?<=K)  [PSI-MS MS:1001310, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 13:
+#   Digest: Lys-N (PSI-MS) [single]
+#     Lys-N (PSI-MS): regex (?=K)  [PSI-MS MS:1003093, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009. Taouatas N et al. (2008) Nat Methods 5:405-407 (Lys-N cleaves N-terminal to K).
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 14: parallel digests (union of peptide sets)
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+#   Digest: Lys-N (PSI-MS) [single]
+#     Lys-N (PSI-MS): regex (?=K)  [PSI-MS MS:1003093, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009. Taouatas N et al. (2008) Nat Methods 5:405-407 (Lys-N cleaves N-terminal to K).
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 15:
+#   Digest: Trypsin (PSI-MS) + Lys-N (PSI-MS) [sequential (union of cut sites)]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Lys-N (PSI-MS): regex (?=K)  [PSI-MS MS:1003093, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009. Taouatas N et al. (2008) Nat Methods 5:405-407 (Lys-N cleaves N-terminal to K).
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 16:
+#   Digest: Asp-N (PSI-MS) [single]
+#     Asp-N (PSI-MS): regex (?=[BD])  [PSI-MS MS:1001304, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 17: parallel digests (union of peptide sets)
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+#   Digest: Asp-N (PSI-MS) [single]
+#     Asp-N (PSI-MS): regex (?=[BD])  [PSI-MS MS:1001304, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 18:
+#   Digest: Trypsin (PSI-MS) + Asp-N (PSI-MS) [sequential (union of cut sites)]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Asp-N (PSI-MS): regex (?=[BD])  [PSI-MS MS:1001304, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 19:
+#   Digest: Asp-N ambic (PSI-MS) [single]
+#     Asp-N ambic (PSI-MS): regex (?=[DE])  [PSI-MS MS:1001305, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 20: parallel digests (union of peptide sets)
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+#   Digest: Asp-N ambic (PSI-MS) [single]
+#     Asp-N ambic (PSI-MS): regex (?=[DE])  [PSI-MS MS:1001305, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 21:
+#   Digest: Trypsin (PSI-MS) + Asp-N ambic (PSI-MS) [sequential (union of cut sites)]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Asp-N ambic (PSI-MS): regex (?=[DE])  [PSI-MS MS:1001305, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 22:
+#   Digest: Glu-C (PSI-MS) [single]
+#     Glu-C (PSI-MS): regex (?<=[^E]E)  [PSI-MS MS:1001917, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 23: parallel digests (union of peptide sets)
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+#   Digest: Glu-C (PSI-MS) [single]
+#     Glu-C (PSI-MS): regex (?<=[^E]E)  [PSI-MS MS:1001917, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 24:
+#   Digest: Trypsin (PSI-MS) + Glu-C (PSI-MS) [sequential (union of cut sites)]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Glu-C (PSI-MS): regex (?<=[^E]E)  [PSI-MS MS:1001917, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 25:
+#   Digest: Chymotrypsin (PSI-MS) [single]
+#     Chymotrypsin (PSI-MS): regex (?<=[FYWL])(?!P)  [PSI-MS MS:1001306, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 26: parallel digests (union of peptide sets)
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+#   Digest: Chymotrypsin (PSI-MS) [single]
+#     Chymotrypsin (PSI-MS): regex (?<=[FYWL])(?!P)  [PSI-MS MS:1001306, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 27:
+#   Digest: Trypsin (PSI-MS) + Chymotrypsin (PSI-MS) [sequential (union of cut sites)]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Chymotrypsin (PSI-MS): regex (?<=[FYWL])(?!P)  [PSI-MS MS:1001306, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 28:
+#   Digest: Chymotrypsin high specificity (ExPASy) [single]
+#     Chymotrypsin high specificity (ExPASy): regex (?<=[FY])(?=[^P])|(?<=W)(?=[^MP])  [ExPASy]
+#       Citation: ExPASy PeptideCutter cleavage rules; Gasteiger E et al. (2005) The Proteomics Protocols Handbook, Humana Press, 571-607. As implemented in Protein Cleaver and the R/Bioconductor package cleaver.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 29: parallel digests (union of peptide sets)
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+#   Digest: Chymotrypsin high specificity (ExPASy) [single]
+#     Chymotrypsin high specificity (ExPASy): regex (?<=[FY])(?=[^P])|(?<=W)(?=[^MP])  [ExPASy]
+#       Citation: ExPASy PeptideCutter cleavage rules; Gasteiger E et al. (2005) The Proteomics Protocols Handbook, Humana Press, 571-607. As implemented in Protein Cleaver and the R/Bioconductor package cleaver.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 30:
+#   Digest: Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy) [sequential (union of cut sites)]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Chymotrypsin high specificity (ExPASy): regex (?<=[FY])(?=[^P])|(?<=W)(?=[^MP])  [ExPASy]
+#       Citation: ExPASy PeptideCutter cleavage rules; Gasteiger E et al. (2005) The Proteomics Protocols Handbook, Humana Press, 571-607. As implemented in Protein Cleaver and the R/Bioconductor package cleaver.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 31:
+#   Digest: Chymotrypsin low specificity (ExPASy) [single]
+#     Chymotrypsin low specificity (ExPASy): regex (?<=[FLY])(?=[^P])|(?<=W)(?=[^MP])|(?<=M)(?=[^PY])|(?<=H)(?=[^DMPW])  [ExPASy]
+#       Citation: ExPASy PeptideCutter cleavage rules; Gasteiger E et al. (2005) The Proteomics Protocols Handbook, Humana Press, 571-607. As implemented in Protein Cleaver and the R/Bioconductor package cleaver.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 32: parallel digests (union of peptide sets)
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+#   Digest: Chymotrypsin low specificity (ExPASy) [single]
+#     Chymotrypsin low specificity (ExPASy): regex (?<=[FLY])(?=[^P])|(?<=W)(?=[^MP])|(?<=M)(?=[^PY])|(?<=H)(?=[^DMPW])  [ExPASy]
+#       Citation: ExPASy PeptideCutter cleavage rules; Gasteiger E et al. (2005) The Proteomics Protocols Handbook, Humana Press, 571-607. As implemented in Protein Cleaver and the R/Bioconductor package cleaver.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 33:
+#   Digest: Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy) [sequential (union of cut sites)]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Chymotrypsin low specificity (ExPASy): regex (?<=[FLY])(?=[^P])|(?<=W)(?=[^MP])|(?<=M)(?=[^PY])|(?<=H)(?=[^DMPW])  [ExPASy]
+#       Citation: ExPASy PeptideCutter cleavage rules; Gasteiger E et al. (2005) The Proteomics Protocols Handbook, Humana Press, 571-607. As implemented in Protein Cleaver and the R/Bioconductor package cleaver.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 34:
+#   Digest: Proteinase K (ExPASy) [single]
+#     Proteinase K (ExPASy): regex (?<=[AEFILTVWY])  [ExPASy]
+#       Citation: ExPASy PeptideCutter cleavage rules; Gasteiger E et al. (2005) The Proteomics Protocols Handbook, Humana Press, 571-607. As implemented in Protein Cleaver and the R/Bioconductor package cleaver.
+#       Flags: nonspecific, low confidence
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 35: parallel digests (union of peptide sets)
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+#   Digest: Proteinase K (ExPASy) [single]
+#     Proteinase K (ExPASy): regex (?<=[AEFILTVWY])  [ExPASy]
+#       Citation: ExPASy PeptideCutter cleavage rules; Gasteiger E et al. (2005) The Proteomics Protocols Handbook, Humana Press, 571-607. As implemented in Protein Cleaver and the R/Bioconductor package cleaver.
+#       Flags: nonspecific, low confidence
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 36:
+#   Digest: Trypsin (PSI-MS) + Proteinase K (ExPASy) [sequential (union of cut sites)]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Proteinase K (ExPASy): regex (?<=[AEFILTVWY])  [ExPASy]
+#       Citation: ExPASy PeptideCutter cleavage rules; Gasteiger E et al. (2005) The Proteomics Protocols Handbook, Humana Press, 571-607. As implemented in Protein Cleaver and the R/Bioconductor package cleaver.
+#       Flags: nonspecific, low confidence
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Numbering: UniProt (initiator Met = 1); *_mature = UniProt - 1 when Met is removed.
+# Masses: neutral monoisotopic and average (ExPASy average residue masses); m/z = (M + z*1.007276)/z.
+# Counts: peptides are counted by position (entry, start, end).
+accession	display_name	K_i	K_j	baseline_pair	new_in	split_in	lost_in
+P0C0S8	H2A type 1	5	9	True			G,J,M,P,V
+P0C0S8	H2A type 1	5	13	True		AH,AJ	G,J,M,P,V
+P0C0S8	H2A type 1	5	15	True		AH,AJ	G,J,M,P,V
+P0C0S8	H2A type 1	5	36	False	S,T,AB,AC		
+P0C0S8	H2A type 1	5	74	False			
+P0C0S8	H2A type 1	5	75	False			
+P0C0S8	H2A type 1	5	95	False			
+P0C0S8	H2A type 1	5	99	False			
+P0C0S8	H2A type 1	5	118	False			
+P0C0S8	H2A type 1	5	119	False			
+P0C0S8	H2A type 1	5	125	False			
+P0C0S8	H2A type 1	5	127	False			
+P0C0S8	H2A type 1	5	129	False			
+P0C0S8	H2A type 1	9	13	True		AH,AJ	G,J,M,P,V
+P0C0S8	H2A type 1	9	15	True		AH,AJ	G,J,M,P,V
+P0C0S8	H2A type 1	9	36	False	S,T,AB,AC		
+P0C0S8	H2A type 1	9	74	False			
+P0C0S8	H2A type 1	9	75	False			
+P0C0S8	H2A type 1	9	95	False			
+P0C0S8	H2A type 1	9	99	False			
+P0C0S8	H2A type 1	9	118	False			
+P0C0S8	H2A type 1	9	119	False			
+P0C0S8	H2A type 1	9	125	False			
+P0C0S8	H2A type 1	9	127	False			
+P0C0S8	H2A type 1	9	129	False			
+P0C0S8	H2A type 1	13	15	True			G,J,M,P,V
+P0C0S8	H2A type 1	13	36	False	S,T,AB,AC		
+P0C0S8	H2A type 1	13	74	False			
+P0C0S8	H2A type 1	13	75	False			
+P0C0S8	H2A type 1	13	95	False			
+P0C0S8	H2A type 1	13	99	False			
+P0C0S8	H2A type 1	13	118	False			
+P0C0S8	H2A type 1	13	119	False			
+P0C0S8	H2A type 1	13	125	False			
+P0C0S8	H2A type 1	13	127	False			
+P0C0S8	H2A type 1	13	129	False			
+P0C0S8	H2A type 1	15	36	False	S,T,AB,AC		
+P0C0S8	H2A type 1	15	74	False			
+P0C0S8	H2A type 1	15	75	False			
+P0C0S8	H2A type 1	15	95	False			
+P0C0S8	H2A type 1	15	99	False			
+P0C0S8	H2A type 1	15	118	False			
+P0C0S8	H2A type 1	15	119	False			
+P0C0S8	H2A type 1	15	125	False			
+P0C0S8	H2A type 1	15	127	False			
+P0C0S8	H2A type 1	15	129	False			
+P0C0S8	H2A type 1	36	74	False			
+P0C0S8	H2A type 1	36	75	False			
+P0C0S8	H2A type 1	36	95	False			
+P0C0S8	H2A type 1	36	99	False			
+P0C0S8	H2A type 1	36	118	False			
+P0C0S8	H2A type 1	36	119	False			
+P0C0S8	H2A type 1	36	125	False			
+P0C0S8	H2A type 1	36	127	False			
+P0C0S8	H2A type 1	36	129	False			
+P0C0S8	H2A type 1	74	75	True			G,J,M,AB
+P0C0S8	H2A type 1	74	95	False			
+P0C0S8	H2A type 1	74	99	False			
+P0C0S8	H2A type 1	74	118	False			
+P0C0S8	H2A type 1	74	119	False			
+P0C0S8	H2A type 1	74	125	False			
+P0C0S8	H2A type 1	74	127	False			
+P0C0S8	H2A type 1	74	129	False			
+P0C0S8	H2A type 1	75	95	False			
+P0C0S8	H2A type 1	75	99	False			
+P0C0S8	H2A type 1	75	118	False			
+P0C0S8	H2A type 1	75	119	False			
+P0C0S8	H2A type 1	75	125	False			
+P0C0S8	H2A type 1	75	127	False			
+P0C0S8	H2A type 1	75	129	False			
+P0C0S8	H2A type 1	95	99	False	P,Q,R,S,T,U,V,W,X		
+P0C0S8	H2A type 1	95	118	False	P,Q,R,S,T,U,V,W,X		
+P0C0S8	H2A type 1	95	119	False	P,Q,R,S,T,U,V,W,X		
+P0C0S8	H2A type 1	95	125	False	P,Q,R,S,T,U,V,W,X		
+P0C0S8	H2A type 1	95	127	False	P,Q,R,S,T,U,V,W,X		
+P0C0S8	H2A type 1	95	129	False	P,Q,R,S,T,U,V,W,X		
+P0C0S8	H2A type 1	99	118	False	P,Q,R,S,T,U,V,W,X,Y,Z,AA,AE,AF,AG		
+P0C0S8	H2A type 1	99	119	False	P,Q,R,S,T,U,V,W,X,Y,Z,AA,AE,AF,AG		
+P0C0S8	H2A type 1	99	125	False	P,Q,R,S,T,U,V,W,X,Y,Z,AA		
+P0C0S8	H2A type 1	99	127	False	P,Q,R,S,T,U,V,W,X,Y,Z,AA		
+P0C0S8	H2A type 1	99	129	False	P,Q,R,S,T,U,V,W,X,Y,Z,AA		
+P0C0S8	H2A type 1	118	119	False	P,Q,R,S,T,U,V,W,X,Y,Z,AA,AE,AF,AG,AH,AI,AJ		
+P0C0S8	H2A type 1	118	125	False	P,Q,R,S,T,U,V,W,X,Y,Z,AA		
+P0C0S8	H2A type 1	118	127	False	P,Q,R,S,T,U,V,W,X,Y,Z,AA		
+P0C0S8	H2A type 1	118	129	False	P,Q,R,S,T,U,V,W,X,Y,Z,AA		
+P0C0S8	H2A type 1	119	125	False	P,Q,R,S,T,U,V,W,X,Y,Z,AA		
+P0C0S8	H2A type 1	119	127	False	P,Q,R,S,T,U,V,W,X,Y,Z,AA		
+P0C0S8	H2A type 1	119	129	False	P,Q,R,S,T,U,V,W,X,Y,Z,AA		
+P0C0S8	H2A type 1	125	127	False	P,Q,R,S,T,U,V,W,X,Y,Z,AA,AE,AF,AG,AH,AI,AJ		
+P0C0S8	H2A type 1	125	129	False	P,Q,R,S,T,U,V,W,X,Y,Z,AA,AE,AF,AG,AH,AI,AJ		
+P0C0S8	H2A type 1	127	129	False	P,Q,R,S,T,U,V,W,X,Y,Z,AA,AE,AF,AG,AH,AI,AJ		
+P62807	H2B type 1-C/E/F/G/I	5	11	True		AH,AJ	G,J,M
+P62807	H2B type 1-C/E/F/G/I	5	12	True		AH,AJ	G,J,M
+P62807	H2B type 1-C/E/F/G/I	5	15	True		AH,AJ	G,J,M
+P62807	H2B type 1-C/E/F/G/I	5	16	True		AH,AJ	G,J,M
+P62807	H2B type 1-C/E/F/G/I	5	20	True		AH,AJ	G,J,M
+P62807	H2B type 1-C/E/F/G/I	5	23	True		AH,AJ	G,J,M
+P62807	H2B type 1-C/E/F/G/I	5	24	True		AH,AJ	G,J,M
+P62807	H2B type 1-C/E/F/G/I	5	27	True		P,AH,AJ	G,J,M
+P62807	H2B type 1-C/E/F/G/I	5	28	True		P,AH,AJ	G,J,M
+P62807	H2B type 1-C/E/F/G/I	5	30	True		P,R,U,AH,AJ	G,J,M
+P62807	H2B type 1-C/E/F/G/I	5	34	False	S,T,V,W,Y,Z,AB,AC,AE,AF		
+P62807	H2B type 1-C/E/F/G/I	5	43	False			
+P62807	H2B type 1-C/E/F/G/I	5	46	False			
+P62807	H2B type 1-C/E/F/G/I	5	57	False			
+P62807	H2B type 1-C/E/F/G/I	5	85	False			
+P62807	H2B type 1-C/E/F/G/I	5	108	False			
+P62807	H2B type 1-C/E/F/G/I	5	116	False			
+P62807	H2B type 1-C/E/F/G/I	5	120	False			
+P62807	H2B type 1-C/E/F/G/I	5	125	False			
+P62807	H2B type 1-C/E/F/G/I	11	12	True			G,J,M
+P62807	H2B type 1-C/E/F/G/I	11	15	True			G,J,M
+P62807	H2B type 1-C/E/F/G/I	11	16	True			G,J,M
+P62807	H2B type 1-C/E/F/G/I	11	20	True		AH,AJ	G,J,M
+P62807	H2B type 1-C/E/F/G/I	11	23	True		AH,AJ	G,J,M
+P62807	H2B type 1-C/E/F/G/I	11	24	True		AH,AJ	G,J,M
+P62807	H2B type 1-C/E/F/G/I	11	27	True		P,AH,AJ	G,J,M
+P62807	H2B type 1-C/E/F/G/I	11	28	True		P,AH,AJ	G,J,M
+P62807	H2B type 1-C/E/F/G/I	11	30	True		P,R,U,AH,AJ	G,J,M
+P62807	H2B type 1-C/E/F/G/I	11	34	False	S,T,V,W,Y,Z,AB,AC,AE,AF		
+P62807	H2B type 1-C/E/F/G/I	11	43	False			
+P62807	H2B type 1-C/E/F/G/I	11	46	False			
+P62807	H2B type 1-C/E/F/G/I	11	57	False			
+P62807	H2B type 1-C/E/F/G/I	11	85	False			
+P62807	H2B type 1-C/E/F/G/I	11	108	False			
+P62807	H2B type 1-C/E/F/G/I	11	116	False			
+P62807	H2B type 1-C/E/F/G/I	11	120	False			
+P62807	H2B type 1-C/E/F/G/I	11	125	False			
+P62807	H2B type 1-C/E/F/G/I	12	15	True			G,J,M
+P62807	H2B type 1-C/E/F/G/I	12	16	True			G,J,M
+P62807	H2B type 1-C/E/F/G/I	12	20	True		AH,AJ	G,J,M
+P62807	H2B type 1-C/E/F/G/I	12	23	True		AH,AJ	G,J,M
+P62807	H2B type 1-C/E/F/G/I	12	24	True		AH,AJ	G,J,M
+P62807	H2B type 1-C/E/F/G/I	12	27	True		P,AH,AJ	G,J,M
+P62807	H2B type 1-C/E/F/G/I	12	28	True		P,AH,AJ	G,J,M
+P62807	H2B type 1-C/E/F/G/I	12	30	True		P,R,U,AH,AJ	G,J,M
+P62807	H2B type 1-C/E/F/G/I	12	34	False	S,T,V,W,Y,Z,AB,AC,AE,AF		
+P62807	H2B type 1-C/E/F/G/I	12	43	False			
+P62807	H2B type 1-C/E/F/G/I	12	46	False			
+P62807	H2B type 1-C/E/F/G/I	12	57	False			
+P62807	H2B type 1-C/E/F/G/I	12	85	False			
+P62807	H2B type 1-C/E/F/G/I	12	108	False			
+P62807	H2B type 1-C/E/F/G/I	12	116	False			
+P62807	H2B type 1-C/E/F/G/I	12	120	False			
+P62807	H2B type 1-C/E/F/G/I	12	125	False			
+P62807	H2B type 1-C/E/F/G/I	15	16	True			G,J,M
+P62807	H2B type 1-C/E/F/G/I	15	20	True		AH,AJ	G,J,M
+P62807	H2B type 1-C/E/F/G/I	15	23	True		AH,AJ	G,J,M
+P62807	H2B type 1-C/E/F/G/I	15	24	True		AH,AJ	G,J,M
+P62807	H2B type 1-C/E/F/G/I	15	27	True		P,AH,AJ	G,J,M
+P62807	H2B type 1-C/E/F/G/I	15	28	True		P,AH,AJ	G,J,M
+P62807	H2B type 1-C/E/F/G/I	15	30	True		P,R,U,AH,AJ	G,J,M
+P62807	H2B type 1-C/E/F/G/I	15	34	False	S,T,V,W,Y,Z,AB,AC,AE,AF		
+P62807	H2B type 1-C/E/F/G/I	15	43	False			
+P62807	H2B type 1-C/E/F/G/I	15	46	False			
+P62807	H2B type 1-C/E/F/G/I	15	57	False			
+P62807	H2B type 1-C/E/F/G/I	15	85	False			
+P62807	H2B type 1-C/E/F/G/I	15	108	False			
+P62807	H2B type 1-C/E/F/G/I	15	116	False			
+P62807	H2B type 1-C/E/F/G/I	15	120	False			
+P62807	H2B type 1-C/E/F/G/I	15	125	False			
+P62807	H2B type 1-C/E/F/G/I	16	20	True		AH,AJ	G,J,M
+P62807	H2B type 1-C/E/F/G/I	16	23	True		AH,AJ	G,J,M
+P62807	H2B type 1-C/E/F/G/I	16	24	True		AH,AJ	G,J,M
+P62807	H2B type 1-C/E/F/G/I	16	27	True		P,AH,AJ	G,J,M
+P62807	H2B type 1-C/E/F/G/I	16	28	True		P,AH,AJ	G,J,M
+P62807	H2B type 1-C/E/F/G/I	16	30	True		P,R,U,AH,AJ	G,J,M
+P62807	H2B type 1-C/E/F/G/I	16	34	False	S,T,V,W,Y,Z,AB,AC,AE,AF		
+P62807	H2B type 1-C/E/F/G/I	16	43	False			
+P62807	H2B type 1-C/E/F/G/I	16	46	False			
+P62807	H2B type 1-C/E/F/G/I	16	57	False			
+P62807	H2B type 1-C/E/F/G/I	16	85	False			
+P62807	H2B type 1-C/E/F/G/I	16	108	False			
+P62807	H2B type 1-C/E/F/G/I	16	116	False			
+P62807	H2B type 1-C/E/F/G/I	16	120	False			
+P62807	H2B type 1-C/E/F/G/I	16	125	False			
+P62807	H2B type 1-C/E/F/G/I	20	23	True			G,J,M
+P62807	H2B type 1-C/E/F/G/I	20	24	True			G,J,M
+P62807	H2B type 1-C/E/F/G/I	20	27	True		P	G,J,M
+P62807	H2B type 1-C/E/F/G/I	20	28	True		P	G,J,M
+P62807	H2B type 1-C/E/F/G/I	20	30	True		P,R,U,AJ	G,J,M
+P62807	H2B type 1-C/E/F/G/I	20	34	False	S,T,V,W,Y,Z,AB,AC,AE,AF,AH,AI		
+P62807	H2B type 1-C/E/F/G/I	20	43	False			
+P62807	H2B type 1-C/E/F/G/I	20	46	False			
+P62807	H2B type 1-C/E/F/G/I	20	57	False			
+P62807	H2B type 1-C/E/F/G/I	20	85	False			
+P62807	H2B type 1-C/E/F/G/I	20	108	False			
+P62807	H2B type 1-C/E/F/G/I	20	116	False			
+P62807	H2B type 1-C/E/F/G/I	20	120	False			
+P62807	H2B type 1-C/E/F/G/I	20	125	False			
+P62807	H2B type 1-C/E/F/G/I	23	24	True			G,J,M
+P62807	H2B type 1-C/E/F/G/I	23	27	True		P	G,J,M
+P62807	H2B type 1-C/E/F/G/I	23	28	True		P	G,J,M
+P62807	H2B type 1-C/E/F/G/I	23	30	True		P,R,U	G,J,M
+P62807	H2B type 1-C/E/F/G/I	23	34	False	S,T,V,W,Y,Z,AB,AC,AE,AF,AH,AI		
+P62807	H2B type 1-C/E/F/G/I	23	43	False			
+P62807	H2B type 1-C/E/F/G/I	23	46	False			
+P62807	H2B type 1-C/E/F/G/I	23	57	False			
+P62807	H2B type 1-C/E/F/G/I	23	85	False			
+P62807	H2B type 1-C/E/F/G/I	23	108	False			
+P62807	H2B type 1-C/E/F/G/I	23	116	False			
+P62807	H2B type 1-C/E/F/G/I	23	120	False			
+P62807	H2B type 1-C/E/F/G/I	23	125	False			
+P62807	H2B type 1-C/E/F/G/I	24	27	True		P	G,J,M
+P62807	H2B type 1-C/E/F/G/I	24	28	True		P	G,J,M
+P62807	H2B type 1-C/E/F/G/I	24	30	True		P,R,U	G,J,M
+P62807	H2B type 1-C/E/F/G/I	24	34	False	S,T,V,W,Y,Z,AB,AC,AE,AF,AH,AI		
+P62807	H2B type 1-C/E/F/G/I	24	43	False			
+P62807	H2B type 1-C/E/F/G/I	24	46	False			
+P62807	H2B type 1-C/E/F/G/I	24	57	False			
+P62807	H2B type 1-C/E/F/G/I	24	85	False			
+P62807	H2B type 1-C/E/F/G/I	24	108	False			
+P62807	H2B type 1-C/E/F/G/I	24	116	False			
+P62807	H2B type 1-C/E/F/G/I	24	120	False			
+P62807	H2B type 1-C/E/F/G/I	24	125	False			
+P62807	H2B type 1-C/E/F/G/I	27	28	True			G,J,M
+P62807	H2B type 1-C/E/F/G/I	27	30	True			G,J,M
+P62807	H2B type 1-C/E/F/G/I	27	34	False	P,Q,S,T,V,W,Y,Z,AB,AC,AE,AF,AH,AI		
+P62807	H2B type 1-C/E/F/G/I	27	43	False	P,Q,S,T		
+P62807	H2B type 1-C/E/F/G/I	27	46	False	P,Q,S,T		
+P62807	H2B type 1-C/E/F/G/I	27	57	False			
+P62807	H2B type 1-C/E/F/G/I	27	85	False			
+P62807	H2B type 1-C/E/F/G/I	27	108	False			
+P62807	H2B type 1-C/E/F/G/I	27	116	False			
+P62807	H2B type 1-C/E/F/G/I	27	120	False			
+P62807	H2B type 1-C/E/F/G/I	27	125	False			
+P62807	H2B type 1-C/E/F/G/I	28	30	True			G,J,M
+P62807	H2B type 1-C/E/F/G/I	28	34	False	P,Q,S,T,V,W,Y,Z,AB,AC,AE,AF,AH,AI		
+P62807	H2B type 1-C/E/F/G/I	28	43	False	P,Q,S,T		
+P62807	H2B type 1-C/E/F/G/I	28	46	False	P,Q,S,T		
+P62807	H2B type 1-C/E/F/G/I	28	57	False			
+P62807	H2B type 1-C/E/F/G/I	28	85	False			
+P62807	H2B type 1-C/E/F/G/I	28	108	False			
+P62807	H2B type 1-C/E/F/G/I	28	116	False			
+P62807	H2B type 1-C/E/F/G/I	28	120	False			
+P62807	H2B type 1-C/E/F/G/I	28	125	False			
+P62807	H2B type 1-C/E/F/G/I	30	34	False	P,Q,S,T,V,W,Y,Z,AB,AC,AE,AF,AH,AI		
+P62807	H2B type 1-C/E/F/G/I	30	43	False	P,Q,S,T		
+P62807	H2B type 1-C/E/F/G/I	30	46	False	P,Q,S,T		
+P62807	H2B type 1-C/E/F/G/I	30	57	False			
+P62807	H2B type 1-C/E/F/G/I	30	85	False			
+P62807	H2B type 1-C/E/F/G/I	30	108	False			
+P62807	H2B type 1-C/E/F/G/I	30	116	False			
+P62807	H2B type 1-C/E/F/G/I	30	120	False			
+P62807	H2B type 1-C/E/F/G/I	30	125	False			
+P62807	H2B type 1-C/E/F/G/I	34	43	True		V,Y,AA,AB,AD,AE,AG	G,J,M,AH,AJ
+P62807	H2B type 1-C/E/F/G/I	34	46	True		V,Y,AA,AB,AD,AE,AG,AH,AJ	G,J,M
+P62807	H2B type 1-C/E/F/G/I	34	57	True		P,S,U,V,Y,AA,AB,AD,AE,AG,AH,AJ	G,J,M
+P62807	H2B type 1-C/E/F/G/I	34	85	False			
+P62807	H2B type 1-C/E/F/G/I	34	108	False			
+P62807	H2B type 1-C/E/F/G/I	34	116	False			
+P62807	H2B type 1-C/E/F/G/I	34	120	False			
+P62807	H2B type 1-C/E/F/G/I	34	125	False			
+P62807	H2B type 1-C/E/F/G/I	43	46	True			G,J,M,AH,AJ
+P62807	H2B type 1-C/E/F/G/I	43	57	True		P	G,J,M,AH,AJ
+P62807	H2B type 1-C/E/F/G/I	43	85	False			
+P62807	H2B type 1-C/E/F/G/I	43	108	False			
+P62807	H2B type 1-C/E/F/G/I	43	116	False			
+P62807	H2B type 1-C/E/F/G/I	43	120	False			
+P62807	H2B type 1-C/E/F/G/I	43	125	False			
+P62807	H2B type 1-C/E/F/G/I	46	57	True		P,AH,AJ	G,J,M
+P62807	H2B type 1-C/E/F/G/I	46	85	False			
+P62807	H2B type 1-C/E/F/G/I	46	108	False			
+P62807	H2B type 1-C/E/F/G/I	46	116	False			
+P62807	H2B type 1-C/E/F/G/I	46	120	False			
+P62807	H2B type 1-C/E/F/G/I	46	125	False			
+P62807	H2B type 1-C/E/F/G/I	57	85	False			
+P62807	H2B type 1-C/E/F/G/I	57	108	False			
+P62807	H2B type 1-C/E/F/G/I	57	116	False			
+P62807	H2B type 1-C/E/F/G/I	57	120	False			
+P62807	H2B type 1-C/E/F/G/I	57	125	False			
+P62807	H2B type 1-C/E/F/G/I	85	108	False	AB,AC		
+P62807	H2B type 1-C/E/F/G/I	85	116	False	AB,AC		
+P62807	H2B type 1-C/E/F/G/I	85	120	False	AB,AC		
+P62807	H2B type 1-C/E/F/G/I	85	125	False			
+P62807	H2B type 1-C/E/F/G/I	108	116	True		AH,AJ	G,J,M,P
+P62807	H2B type 1-C/E/F/G/I	108	120	True			G,J,M,P,AH,AJ
+P62807	H2B type 1-C/E/F/G/I	108	125	True		AB,AE,AG,AH,AJ	G,J,M,P
+P62807	H2B type 1-C/E/F/G/I	116	120	True			G,J,M,P,AH,AJ
+P62807	H2B type 1-C/E/F/G/I	116	125	True		AB,AH,AJ	G,J,M,P
+P62807	H2B type 1-C/E/F/G/I	120	125	True		AB	G,J,M,P,AH,AJ
+P68431	H3.1	4	9	True		AH,AJ	G,J,M,P,S,V,AB
+P68431	H3.1	4	14	True		AH,AJ	G,J,M,P,S,V,AB
+P68431	H3.1	4	18	False	Y,Z,AE,AF		
+P68431	H3.1	4	23	False	AE,AF		
+P68431	H3.1	4	27	False	AE,AF		
+P68431	H3.1	4	36	False	AE,AF		
+P68431	H3.1	4	37	False	AE,AF		
+P68431	H3.1	4	56	False			
+P68431	H3.1	4	64	False			
+P68431	H3.1	4	79	False			
+P68431	H3.1	4	115	False			
+P68431	H3.1	4	122	False			
+P68431	H3.1	9	14	True			G,J,M,P,S,V,AB
+P68431	H3.1	9	18	True		AH,AJ	G,J,M,P,S,V,AB
+P68431	H3.1	9	23	True		Y,AA,AG	G,J,M,P,S,V,AB,AH,AJ
+P68431	H3.1	9	27	False	AE,AF		
+P68431	H3.1	9	36	False	AE,AF		
+P68431	H3.1	9	37	False	AE,AF		
+P68431	H3.1	9	56	False			
+P68431	H3.1	9	64	False			
+P68431	H3.1	9	79	False			
+P68431	H3.1	9	115	False			
+P68431	H3.1	9	122	False			
+P68431	H3.1	14	18	True		AJ	G,J,M,P,S,V,AB
+P68431	H3.1	14	23	True		Y,AA,AG	G,J,M,P,S,V,AB,AH,AJ
+P68431	H3.1	14	27	False	AE,AF		
+P68431	H3.1	14	36	False	AE,AF		
+P68431	H3.1	14	37	False	AE,AF		
+P68431	H3.1	14	56	False			
+P68431	H3.1	14	64	False			
+P68431	H3.1	14	79	False			
+P68431	H3.1	14	115	False			
+P68431	H3.1	14	122	False			
+P68431	H3.1	18	23	True		Y	G,J,M,P,S,V,AB,AH,AJ
+P68431	H3.1	18	27	True		Y,AA,AG,AH,AJ	G,J,M,P,S,V,AB
+P68431	H3.1	18	36	True		Y,AA,AG,AH,AJ	G,J,M,P,S,V,AB
+P68431	H3.1	18	37	True		Y,AA,AG,AH,AJ	G,J,M,P,S,V,AB
+P68431	H3.1	18	56	False			
+P68431	H3.1	18	64	False			
+P68431	H3.1	18	79	False			
+P68431	H3.1	18	115	False			
+P68431	H3.1	18	122	False			
+P68431	H3.1	23	27	True			G,J,M,P,S,V,AB,AH,AJ
+P68431	H3.1	23	36	True			G,J,M,P,S,V,AB,AH,AJ
+P68431	H3.1	23	37	True			G,J,M,P,S,V,AB,AH,AJ
+P68431	H3.1	23	56	False			
+P68431	H3.1	23	64	False			
+P68431	H3.1	23	79	False			
+P68431	H3.1	23	115	False			
+P68431	H3.1	23	122	False			
+P68431	H3.1	27	36	True		AH,AJ	G,J,M,P,S,V,AB
+P68431	H3.1	27	37	True		AH,AJ	G,J,M,P,S,V,AB
+P68431	H3.1	27	56	False			
+P68431	H3.1	27	64	False			
+P68431	H3.1	27	79	False			
+P68431	H3.1	27	115	False			
+P68431	H3.1	27	122	False			
+P68431	H3.1	36	37	True			G,J,M,P,S,V,AB
+P68431	H3.1	36	56	False			
+P68431	H3.1	36	64	False			
+P68431	H3.1	36	79	False			
+P68431	H3.1	36	115	False			
+P68431	H3.1	36	122	False			
+P68431	H3.1	37	56	False			
+P68431	H3.1	37	64	False			
+P68431	H3.1	37	79	False			
+P68431	H3.1	37	115	False			
+P68431	H3.1	37	122	False			
+P68431	H3.1	56	64	True		U,X,Y,AA,AE,AG,AH,AJ	G,J,M,P
+P68431	H3.1	56	79	False			
+P68431	H3.1	56	115	False			
+P68431	H3.1	56	122	False			
+P68431	H3.1	64	79	False	V,W		
+P68431	H3.1	64	115	False			
+P68431	H3.1	64	122	False			
+P68431	H3.1	79	115	False			
+P68431	H3.1	79	122	False			
+P68431	H3.1	115	122	False	P,Q,R,S,T,U,V,W,X,Y,Z,AA,AB,AC,AD,AE,AF,AG		
+P84243	H3.3	4	9	True		AH,AJ	G,J,M,P,S,V,AB
+P84243	H3.3	4	14	True		AH,AJ	G,J,M,P,S,V,AB
+P84243	H3.3	4	18	False	Y,Z,AE,AF		
+P84243	H3.3	4	23	False	AE,AF		
+P84243	H3.3	4	27	False	AE,AF		
+P84243	H3.3	4	36	False	AE,AF		
+P84243	H3.3	4	37	False	AE,AF		
+P84243	H3.3	4	56	False			
+P84243	H3.3	4	64	False			
+P84243	H3.3	4	79	False			
+P84243	H3.3	4	115	False			
+P84243	H3.3	4	122	False			
+P84243	H3.3	9	14	True			G,J,M,P,S,V,AB
+P84243	H3.3	9	18	True		AH,AJ	G,J,M,P,S,V,AB
+P84243	H3.3	9	23	True		Y,AA,AG	G,J,M,P,S,V,AB,AH,AJ
+P84243	H3.3	9	27	False	AE,AF		
+P84243	H3.3	9	36	False	AE,AF		
+P84243	H3.3	9	37	False	AE,AF		
+P84243	H3.3	9	56	False			
+P84243	H3.3	9	64	False			
+P84243	H3.3	9	79	False			
+P84243	H3.3	9	115	False			
+P84243	H3.3	9	122	False			
+P84243	H3.3	14	18	True		AJ	G,J,M,P,S,V,AB
+P84243	H3.3	14	23	True		Y,AA,AG	G,J,M,P,S,V,AB,AH,AJ
+P84243	H3.3	14	27	False	AE,AF		
+P84243	H3.3	14	36	False	AE,AF		
+P84243	H3.3	14	37	False	AE,AF		
+P84243	H3.3	14	56	False			
+P84243	H3.3	14	64	False			
+P84243	H3.3	14	79	False			
+P84243	H3.3	14	115	False			
+P84243	H3.3	14	122	False			
+P84243	H3.3	18	23	True		Y	G,J,M,P,S,V,AB,AH,AJ
+P84243	H3.3	18	27	True		Y,AA,AG,AH,AJ	G,J,M,P,S,V,AB
+P84243	H3.3	18	36	True		Y,AA,AG,AH,AJ	G,J,M,P,S,V,AB
+P84243	H3.3	18	37	True		Y,AA,AG,AH,AJ	G,J,M,P,S,V,AB
+P84243	H3.3	18	56	False			
+P84243	H3.3	18	64	False			
+P84243	H3.3	18	79	False			
+P84243	H3.3	18	115	False			
+P84243	H3.3	18	122	False			
+P84243	H3.3	23	27	True			G,J,M,P,S,V,AB,AH,AJ
+P84243	H3.3	23	36	True			G,J,M,P,S,V,AB,AH,AJ
+P84243	H3.3	23	37	True			G,J,M,P,S,V,AB,AH,AJ
+P84243	H3.3	23	56	False			
+P84243	H3.3	23	64	False			
+P84243	H3.3	23	79	False			
+P84243	H3.3	23	115	False			
+P84243	H3.3	23	122	False			
+P84243	H3.3	27	36	True		AH,AJ	G,J,M,P,S,V,AB
+P84243	H3.3	27	37	True		AH,AJ	G,J,M,P,S,V,AB
+P84243	H3.3	27	56	False			
+P84243	H3.3	27	64	False			
+P84243	H3.3	27	79	False			
+P84243	H3.3	27	115	False			
+P84243	H3.3	27	122	False			
+P84243	H3.3	36	37	True			G,J,M,P,S,V,AB
+P84243	H3.3	36	56	False			
+P84243	H3.3	36	64	False			
+P84243	H3.3	36	79	False			
+P84243	H3.3	36	115	False			
+P84243	H3.3	36	122	False			
+P84243	H3.3	37	56	False			
+P84243	H3.3	37	64	False			
+P84243	H3.3	37	79	False			
+P84243	H3.3	37	115	False			
+P84243	H3.3	37	122	False			
+P84243	H3.3	56	64	True		U,X,Y,AA,AE,AG,AH,AJ	G,J,M,P
+P84243	H3.3	56	79	False			
+P84243	H3.3	56	115	False			
+P84243	H3.3	56	122	False			
+P84243	H3.3	64	79	False	V,W		
+P84243	H3.3	64	115	False			
+P84243	H3.3	64	122	False			
+P84243	H3.3	79	115	False			
+P84243	H3.3	79	122	False			
+P84243	H3.3	115	122	False	P,Q,R,S,T,U,V,W,X,Y,Z,AA,AB,AC,AD,AE,AF,AG		
+P62805	H4	5	8	True			G,J,M,V,AB
+P62805	H4	5	12	True			G,J,M,V,AB
+P62805	H4	5	16	True		AH,AJ	G,J,M,V,AB
+P62805	H4	5	20	False	P,Q,S,T,Y,Z		
+P62805	H4	5	31	False			
+P62805	H4	5	44	False			
+P62805	H4	5	59	False			
+P62805	H4	5	77	False			
+P62805	H4	5	79	False			
+P62805	H4	5	91	False			
+P62805	H4	8	12	True			G,J,M,V,AB
+P62805	H4	8	16	True		AH,AJ	G,J,M,V,AB
+P62805	H4	8	20	False	P,Q,S,T,Y,Z		
+P62805	H4	8	31	False			
+P62805	H4	8	44	False			
+P62805	H4	8	59	False			
+P62805	H4	8	77	False			
+P62805	H4	8	79	False			
+P62805	H4	8	91	False			
+P62805	H4	12	16	True			G,J,M,V,AB
+P62805	H4	12	20	False	P,Q,S,T,Y,Z,AE,AF,AH,AI		
+P62805	H4	12	31	False	Y,Z		
+P62805	H4	12	44	False			
+P62805	H4	12	59	False			
+P62805	H4	12	77	False			
+P62805	H4	12	79	False			
+P62805	H4	12	91	False			
+P62805	H4	16	20	False	P,Q,S,T,Y,Z,AE,AF,AH,AI		
+P62805	H4	16	31	False	Y,Z		
+P62805	H4	16	44	False			
+P62805	H4	16	59	False			
+P62805	H4	16	77	False			
+P62805	H4	16	79	False			
+P62805	H4	16	91	False			
+P62805	H4	20	31	True		S,AA,AG,AH,AJ	G,J,M,P,V,AB
+P62805	H4	20	44	False			
+P62805	H4	20	59	False			
+P62805	H4	20	77	False			
+P62805	H4	20	79	False			
+P62805	H4	20	91	False			
+P62805	H4	31	44	False	S,T,Y,Z,AE,AF		
+P62805	H4	31	59	False			
+P62805	H4	31	77	False			
+P62805	H4	31	79	False			
+P62805	H4	31	91	False			
+P62805	H4	44	59	False			
+P62805	H4	44	77	False			
+P62805	H4	44	79	False			
+P62805	H4	44	91	False			
+P62805	H4	59	77	True		S,U,V,X,Y,AA,AB,AD,AE,AG	G,J,M,P,AH,AJ
+P62805	H4	59	79	False			
+P62805	H4	59	91	False			
+P62805	H4	77	79	True			G,J,M
+P62805	H4	77	91	True		R,U,Y,AA,AD,AE,AG,AH,AJ	G,J,M
+P62805	H4	79	91	True		Y,AA,AE,AG,AH,AJ	G,J,M

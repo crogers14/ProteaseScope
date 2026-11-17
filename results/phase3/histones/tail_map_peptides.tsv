@@ -1,0 +1,1922 @@
+# ProteaseScope 0.2.0 - Histone outputs (Phase 3) - Histone tail peptide maps: peptides
+# PREDICTED (in silico) results. These are predictions from cleavage rules, not observed data.
+# Generated: 2026-11-14T11:35:13-05:00
+# Proteins digested: human_histones.fasta (54 entries) + histone_isoforms.fasta (1 entries)
+# Uniqueness background: human_histones.fasta (54 entries) + histone_isoforms.fasta (1 entries); a peptide maps to every entry whose sequence contains it (I = L)
+# Baseline:
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 1:
+#   Digest: Trypsin/P (PSI-MS) [single]
+#     Trypsin/P (PSI-MS): regex (?<=[KR])  [PSI-MS MS:1001313, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 2: parallel digests (union of peptide sets)
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+#   Digest: Trypsin/P (PSI-MS) [single]
+#     Trypsin/P (PSI-MS): regex (?<=[KR])  [PSI-MS MS:1001313, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 3:
+#   Digest: Trypsin (PSI-MS) + Trypsin/P (PSI-MS) [sequential (union of cut sites)]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Trypsin/P (PSI-MS): regex (?<=[KR])  [PSI-MS MS:1001313, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 4:
+#   Digest: Arg-C (PSI-MS) [single]
+#     Arg-C (PSI-MS): regex (?<=R)(?!P)  [PSI-MS MS:1001303, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 5: parallel digests (union of peptide sets)
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+#   Digest: Arg-C (PSI-MS) [single]
+#     Arg-C (PSI-MS): regex (?<=R)(?!P)  [PSI-MS MS:1001303, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 6:
+#   Digest: Trypsin (PSI-MS) + Arg-C (PSI-MS) [sequential (union of cut sites)]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Arg-C (PSI-MS): regex (?<=R)(?!P)  [PSI-MS MS:1001303, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 7:
+#   Digest: Lys-C (PSI-MS) [single]
+#     Lys-C (PSI-MS): regex (?<=K)(?!P)  [PSI-MS MS:1001309, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 8: parallel digests (union of peptide sets)
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+#   Digest: Lys-C (PSI-MS) [single]
+#     Lys-C (PSI-MS): regex (?<=K)(?!P)  [PSI-MS MS:1001309, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 9:
+#   Digest: Trypsin (PSI-MS) + Lys-C (PSI-MS) [sequential (union of cut sites)]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Lys-C (PSI-MS): regex (?<=K)(?!P)  [PSI-MS MS:1001309, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 10:
+#   Digest: Lys-C/P (PSI-MS) [single]
+#     Lys-C/P (PSI-MS): regex (?<=K)  [PSI-MS MS:1001310, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 11: parallel digests (union of peptide sets)
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+#   Digest: Lys-C/P (PSI-MS) [single]
+#     Lys-C/P (PSI-MS): regex (?<=K)  [PSI-MS MS:1001310, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 12:
+#   Digest: Trypsin (PSI-MS) + Lys-C/P (PSI-MS) [sequential (union of cut sites)]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Lys-C/P (PSI-MS): regex (?<=K)  [PSI-MS MS:1001310, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 13:
+#   Digest: Lys-N (PSI-MS) [single]
+#     Lys-N (PSI-MS): regex (?=K)  [PSI-MS MS:1003093, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009. Taouatas N et al. (2008) Nat Methods 5:405-407 (Lys-N cleaves N-terminal to K).
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 14: parallel digests (union of peptide sets)
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+#   Digest: Lys-N (PSI-MS) [single]
+#     Lys-N (PSI-MS): regex (?=K)  [PSI-MS MS:1003093, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009. Taouatas N et al. (2008) Nat Methods 5:405-407 (Lys-N cleaves N-terminal to K).
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 15:
+#   Digest: Trypsin (PSI-MS) + Lys-N (PSI-MS) [sequential (union of cut sites)]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Lys-N (PSI-MS): regex (?=K)  [PSI-MS MS:1003093, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009. Taouatas N et al. (2008) Nat Methods 5:405-407 (Lys-N cleaves N-terminal to K).
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 16:
+#   Digest: Asp-N (PSI-MS) [single]
+#     Asp-N (PSI-MS): regex (?=[BD])  [PSI-MS MS:1001304, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 17: parallel digests (union of peptide sets)
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+#   Digest: Asp-N (PSI-MS) [single]
+#     Asp-N (PSI-MS): regex (?=[BD])  [PSI-MS MS:1001304, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 18:
+#   Digest: Trypsin (PSI-MS) + Asp-N (PSI-MS) [sequential (union of cut sites)]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Asp-N (PSI-MS): regex (?=[BD])  [PSI-MS MS:1001304, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 19:
+#   Digest: Asp-N ambic (PSI-MS) [single]
+#     Asp-N ambic (PSI-MS): regex (?=[DE])  [PSI-MS MS:1001305, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 20: parallel digests (union of peptide sets)
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+#   Digest: Asp-N ambic (PSI-MS) [single]
+#     Asp-N ambic (PSI-MS): regex (?=[DE])  [PSI-MS MS:1001305, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 21:
+#   Digest: Trypsin (PSI-MS) + Asp-N ambic (PSI-MS) [sequential (union of cut sites)]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Asp-N ambic (PSI-MS): regex (?=[DE])  [PSI-MS MS:1001305, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 22:
+#   Digest: Glu-C (PSI-MS) [single]
+#     Glu-C (PSI-MS): regex (?<=[^E]E)  [PSI-MS MS:1001917, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 23: parallel digests (union of peptide sets)
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+#   Digest: Glu-C (PSI-MS) [single]
+#     Glu-C (PSI-MS): regex (?<=[^E]E)  [PSI-MS MS:1001917, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 24:
+#   Digest: Trypsin (PSI-MS) + Glu-C (PSI-MS) [sequential (union of cut sites)]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Glu-C (PSI-MS): regex (?<=[^E]E)  [PSI-MS MS:1001917, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 25:
+#   Digest: Chymotrypsin (PSI-MS) [single]
+#     Chymotrypsin (PSI-MS): regex (?<=[FYWL])(?!P)  [PSI-MS MS:1001306, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 26: parallel digests (union of peptide sets)
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+#   Digest: Chymotrypsin (PSI-MS) [single]
+#     Chymotrypsin (PSI-MS): regex (?<=[FYWL])(?!P)  [PSI-MS MS:1001306, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 27:
+#   Digest: Trypsin (PSI-MS) + Chymotrypsin (PSI-MS) [sequential (union of cut sites)]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Chymotrypsin (PSI-MS): regex (?<=[FYWL])(?!P)  [PSI-MS MS:1001306, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 28:
+#   Digest: Chymotrypsin high specificity (ExPASy) [single]
+#     Chymotrypsin high specificity (ExPASy): regex (?<=[FY])(?=[^P])|(?<=W)(?=[^MP])  [ExPASy]
+#       Citation: ExPASy PeptideCutter cleavage rules; Gasteiger E et al. (2005) The Proteomics Protocols Handbook, Humana Press, 571-607. As implemented in Protein Cleaver and the R/Bioconductor package cleaver.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 29: parallel digests (union of peptide sets)
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+#   Digest: Chymotrypsin high specificity (ExPASy) [single]
+#     Chymotrypsin high specificity (ExPASy): regex (?<=[FY])(?=[^P])|(?<=W)(?=[^MP])  [ExPASy]
+#       Citation: ExPASy PeptideCutter cleavage rules; Gasteiger E et al. (2005) The Proteomics Protocols Handbook, Humana Press, 571-607. As implemented in Protein Cleaver and the R/Bioconductor package cleaver.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 30:
+#   Digest: Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy) [sequential (union of cut sites)]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Chymotrypsin high specificity (ExPASy): regex (?<=[FY])(?=[^P])|(?<=W)(?=[^MP])  [ExPASy]
+#       Citation: ExPASy PeptideCutter cleavage rules; Gasteiger E et al. (2005) The Proteomics Protocols Handbook, Humana Press, 571-607. As implemented in Protein Cleaver and the R/Bioconductor package cleaver.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 31:
+#   Digest: Chymotrypsin low specificity (ExPASy) [single]
+#     Chymotrypsin low specificity (ExPASy): regex (?<=[FLY])(?=[^P])|(?<=W)(?=[^MP])|(?<=M)(?=[^PY])|(?<=H)(?=[^DMPW])  [ExPASy]
+#       Citation: ExPASy PeptideCutter cleavage rules; Gasteiger E et al. (2005) The Proteomics Protocols Handbook, Humana Press, 571-607. As implemented in Protein Cleaver and the R/Bioconductor package cleaver.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 32: parallel digests (union of peptide sets)
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+#   Digest: Chymotrypsin low specificity (ExPASy) [single]
+#     Chymotrypsin low specificity (ExPASy): regex (?<=[FLY])(?=[^P])|(?<=W)(?=[^MP])|(?<=M)(?=[^PY])|(?<=H)(?=[^DMPW])  [ExPASy]
+#       Citation: ExPASy PeptideCutter cleavage rules; Gasteiger E et al. (2005) The Proteomics Protocols Handbook, Humana Press, 571-607. As implemented in Protein Cleaver and the R/Bioconductor package cleaver.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 33:
+#   Digest: Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy) [sequential (union of cut sites)]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Chymotrypsin low specificity (ExPASy): regex (?<=[FLY])(?=[^P])|(?<=W)(?=[^MP])|(?<=M)(?=[^PY])|(?<=H)(?=[^DMPW])  [ExPASy]
+#       Citation: ExPASy PeptideCutter cleavage rules; Gasteiger E et al. (2005) The Proteomics Protocols Handbook, Humana Press, 571-607. As implemented in Protein Cleaver and the R/Bioconductor package cleaver.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 34:
+#   Digest: Proteinase K (ExPASy) [single]
+#     Proteinase K (ExPASy): regex (?<=[AEFILTVWY])  [ExPASy]
+#       Citation: ExPASy PeptideCutter cleavage rules; Gasteiger E et al. (2005) The Proteomics Protocols Handbook, Humana Press, 571-607. As implemented in Protein Cleaver and the R/Bioconductor package cleaver.
+#       Flags: nonspecific, low confidence
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 35: parallel digests (union of peptide sets)
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+#   Digest: Proteinase K (ExPASy) [single]
+#     Proteinase K (ExPASy): regex (?<=[AEFILTVWY])  [ExPASy]
+#       Citation: ExPASy PeptideCutter cleavage rules; Gasteiger E et al. (2005) The Proteomics Protocols Handbook, Humana Press, 571-607. As implemented in Protein Cleaver and the R/Bioconductor package cleaver.
+#       Flags: nonspecific, low confidence
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Alternative 36:
+#   Digest: Trypsin (PSI-MS) + Proteinase K (ExPASy) [sequential (union of cut sites)]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Proteinase K (ExPASy): regex (?<=[AEFILTVWY])  [ExPASy]
+#       Citation: ExPASy PeptideCutter cleavage rules; Gasteiger E et al. (2005) The Proteomics Protocols Handbook, Humana Press, 571-607. As implemented in Protein Cleaver and the R/Bioconductor package cleaver.
+#       Flags: nonspecific, low confidence
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Numbering: UniProt (initiator Met = 1); *_mature = UniProt - 1 when Met is removed.
+# Masses: neutral monoisotopic and average (ExPASy average residue masses); m/z = (M + z*1.007276)/z.
+# Counts: peptides are counted by position (entry, start, end).
+accession	display_name	digest	peptide	start	end	start_mature	end_mature	length	n_K
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K	SGRGKQGGKAR	2	12	1	11	11	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K	GKQGGKAR	5	12	4	11	8	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K	GKQGGKARAKAKTR	5	18	4	17	14	4
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K	AKAKTR	13	18	12	17	6	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K	AKAKTRSSR	13	21	12	20	9	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K	SSRAGLQFPVGR	19	30	18	29	12	0
+P0C0S8	H2A type 1	Trypsin/P (PSI-MS)	SGRGKQGGKAR	2	12	1	11	11	2
+P0C0S8	H2A type 1	Trypsin/P (PSI-MS)	GKQGGKAR	5	12	4	11	8	2
+P0C0S8	H2A type 1	Trypsin/P (PSI-MS)	GKQGGKARAKAKTR	5	18	4	17	14	4
+P0C0S8	H2A type 1	Trypsin/P (PSI-MS)	AKAKTR	13	18	12	17	6	2
+P0C0S8	H2A type 1	Trypsin/P (PSI-MS)	AKAKTRSSR	13	21	12	20	9	2
+P0C0S8	H2A type 1	Trypsin/P (PSI-MS)	SSRAGLQFPVGR	19	30	18	29	12	0
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Trypsin/P (PSI-MS)	SGRGKQGGKAR	2	12	1	11	11	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Trypsin/P (PSI-MS)	GKQGGKAR	5	12	4	11	8	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Trypsin/P (PSI-MS)	GKQGGKARAKAKTR	5	18	4	17	14	4
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Trypsin/P (PSI-MS)	AKAKTR	13	18	12	17	6	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Trypsin/P (PSI-MS)	AKAKTRSSR	13	21	12	20	9	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Trypsin/P (PSI-MS)	SSRAGLQFPVGR	19	30	18	29	12	0
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Trypsin/P (PSI-MS)	SGRGKQGGKAR	2	12	1	11	11	2
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Trypsin/P (PSI-MS)	GKQGGKAR	5	12	4	11	8	2
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Trypsin/P (PSI-MS)	GKQGGKARAKAKTR	5	18	4	17	14	4
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Trypsin/P (PSI-MS)	AKAKTR	13	18	12	17	6	2
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Trypsin/P (PSI-MS)	AKAKTRSSR	13	21	12	20	9	2
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Trypsin/P (PSI-MS)	SSRAGLQFPVGR	19	30	18	29	12	0
+P0C0S8	H2A type 1	Arg-C (PSI-MS)	SGRGKQGGKAR	2	12	1	11	11	2
+P0C0S8	H2A type 1	Arg-C (PSI-MS)	GKQGGKAR	5	12	4	11	8	2
+P0C0S8	H2A type 1	Arg-C (PSI-MS)	GKQGGKARAKAKTR	5	18	4	17	14	4
+P0C0S8	H2A type 1	Arg-C (PSI-MS)	AKAKTR	13	18	12	17	6	2
+P0C0S8	H2A type 1	Arg-C (PSI-MS)	AKAKTRSSR	13	21	12	20	9	2
+P0C0S8	H2A type 1	Arg-C (PSI-MS)	SSRAGLQFPVGR	19	30	18	29	12	0
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Arg-C (PSI-MS)	SGRGKQGGKAR	2	12	1	11	11	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Arg-C (PSI-MS)	GKQGGKAR	5	12	4	11	8	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Arg-C (PSI-MS)	GKQGGKARAKAKTR	5	18	4	17	14	4
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Arg-C (PSI-MS)	AKAKTR	13	18	12	17	6	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Arg-C (PSI-MS)	AKAKTRSSR	13	21	12	20	9	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Arg-C (PSI-MS)	SSRAGLQFPVGR	19	30	18	29	12	0
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Arg-C (PSI-MS)	SGRGKQGGKAR	2	12	1	11	11	2
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Arg-C (PSI-MS)	GKQGGKAR	5	12	4	11	8	2
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Arg-C (PSI-MS)	GKQGGKARAKAKTR	5	18	4	17	14	4
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Arg-C (PSI-MS)	AKAKTR	13	18	12	17	6	2
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Arg-C (PSI-MS)	AKAKTRSSR	13	21	12	20	9	2
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Arg-C (PSI-MS)	SSRAGLQFPVGR	19	30	18	29	12	0
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C (PSI-MS)	SGRGKQGGKAR	2	12	1	11	11	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C (PSI-MS)	GKQGGKAR	5	12	4	11	8	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C (PSI-MS)	GKQGGKARAKAKTR	5	18	4	17	14	4
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C (PSI-MS)	AKAKTR	13	18	12	17	6	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C (PSI-MS)	AKAKTRSSR	13	21	12	20	9	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C (PSI-MS)	SSRAGLQFPVGR	19	30	18	29	12	0
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Lys-C (PSI-MS)	SGRGKQGGKAR	2	12	1	11	11	2
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Lys-C (PSI-MS)	GKQGGKAR	5	12	4	11	8	2
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Lys-C (PSI-MS)	GKQGGKARAKAKTR	5	18	4	17	14	4
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Lys-C (PSI-MS)	AKAKTR	13	18	12	17	6	2
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Lys-C (PSI-MS)	AKAKTRSSR	13	21	12	20	9	2
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Lys-C (PSI-MS)	SSRAGLQFPVGR	19	30	18	29	12	0
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C/P (PSI-MS)	SGRGKQGGKAR	2	12	1	11	11	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C/P (PSI-MS)	GKQGGKAR	5	12	4	11	8	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C/P (PSI-MS)	GKQGGKARAKAKTR	5	18	4	17	14	4
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C/P (PSI-MS)	AKAKTR	13	18	12	17	6	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C/P (PSI-MS)	AKAKTRSSR	13	21	12	20	9	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C/P (PSI-MS)	SSRAGLQFPVGR	19	30	18	29	12	0
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Lys-C/P (PSI-MS)	SGRGKQGGKAR	2	12	1	11	11	2
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Lys-C/P (PSI-MS)	GKQGGKAR	5	12	4	11	8	2
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Lys-C/P (PSI-MS)	GKQGGKARAKAKTR	5	18	4	17	14	4
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Lys-C/P (PSI-MS)	AKAKTR	13	18	12	17	6	2
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Lys-C/P (PSI-MS)	AKAKTRSSR	13	21	12	20	9	2
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Lys-C/P (PSI-MS)	SSRAGLQFPVGR	19	30	18	29	12	0
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-N (PSI-MS)	SGRGKQGGKAR	2	12	1	11	11	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-N (PSI-MS)	GKQGGKAR	5	12	4	11	8	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-N (PSI-MS)	GKQGGKARAKAKTR	5	18	4	17	14	4
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-N (PSI-MS)	AKAKTR	13	18	12	17	6	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-N (PSI-MS)	AKAKTRSSR	13	21	12	20	9	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-N (PSI-MS)	SSRAGLQFPVGR	19	30	18	29	12	0
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Lys-N (PSI-MS)	SGRGKQGGKAR	2	12	1	11	11	2
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Lys-N (PSI-MS)	GKQGGKAR	5	12	4	11	8	2
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Lys-N (PSI-MS)	GKQGGKARAKAKTR	5	18	4	17	14	4
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Lys-N (PSI-MS)	AKAKTR	13	18	12	17	6	2
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Lys-N (PSI-MS)	AKAKTRSSR	13	21	12	20	9	2
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Lys-N (PSI-MS)	SSRAGLQFPVGR	19	30	18	29	12	0
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	SGRGKQGGKAR	2	12	1	11	11	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	GKQGGKAR	5	12	4	11	8	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	GKQGGKARAKAKTR	5	18	4	17	14	4
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	AKAKTR	13	18	12	17	6	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	AKAKTRSSR	13	21	12	20	9	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	SSRAGLQFPVGR	19	30	18	29	12	0
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Asp-N (PSI-MS)	SGRGKQGGKAR	2	12	1	11	11	2
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Asp-N (PSI-MS)	GKQGGKAR	5	12	4	11	8	2
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Asp-N (PSI-MS)	GKQGGKARAKAKTR	5	18	4	17	14	4
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Asp-N (PSI-MS)	AKAKTR	13	18	12	17	6	2
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Asp-N (PSI-MS)	AKAKTRSSR	13	21	12	20	9	2
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Asp-N (PSI-MS)	SSRAGLQFPVGR	19	30	18	29	12	0
+P0C0S8	H2A type 1	Asp-N ambic (PSI-MS)	SGRGKQGGKARAKAKTRSSRAGLQFPVGRVHRLLRKGNYA	2	41	1	40	40	5
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	SGRGKQGGKAR	2	12	1	11	11	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	SGRGKQGGKARAKAKTRSSRAGLQFPVGRVHRLLRKGNYA	2	41	1	40	40	5
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	GKQGGKAR	5	12	4	11	8	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	GKQGGKARAKAKTR	5	18	4	17	14	4
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	AKAKTR	13	18	12	17	6	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	AKAKTRSSR	13	21	12	20	9	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	SSRAGLQFPVGR	19	30	18	29	12	0
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	SGRGKQGGKAR	2	12	1	11	11	2
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	GKQGGKAR	5	12	4	11	8	2
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	GKQGGKARAKAKTR	5	18	4	17	14	4
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	AKAKTR	13	18	12	17	6	2
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	AKAKTRSSR	13	21	12	20	9	2
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	SSRAGLQFPVGR	19	30	18	29	12	0
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	SGRGKQGGKAR	2	12	1	11	11	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	GKQGGKAR	5	12	4	11	8	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	GKQGGKARAKAKTR	5	18	4	17	14	4
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	AKAKTR	13	18	12	17	6	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	AKAKTRSSR	13	21	12	20	9	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	SSRAGLQFPVGR	19	30	18	29	12	0
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Glu-C (PSI-MS)	SGRGKQGGKAR	2	12	1	11	11	2
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Glu-C (PSI-MS)	GKQGGKAR	5	12	4	11	8	2
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Glu-C (PSI-MS)	GKQGGKARAKAKTR	5	18	4	17	14	4
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Glu-C (PSI-MS)	AKAKTR	13	18	12	17	6	2
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Glu-C (PSI-MS)	AKAKTRSSR	13	21	12	20	9	2
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Glu-C (PSI-MS)	SSRAGLQFPVGR	19	30	18	29	12	0
+P0C0S8	H2A type 1	Chymotrypsin (PSI-MS)	SGRGKQGGKARAKAKTRSSRAGL	2	24	1	23	23	4
+P0C0S8	H2A type 1	Chymotrypsin (PSI-MS)	SGRGKQGGKARAKAKTRSSRAGLQFPVGRVHRL	2	34	1	33	33	4
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	SGRGKQGGKAR	2	12	1	11	11	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	SGRGKQGGKARAKAKTRSSRAGL	2	24	1	23	23	4
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	SGRGKQGGKARAKAKTRSSRAGLQFPVGRVHRL	2	34	1	33	33	4
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	GKQGGKAR	5	12	4	11	8	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	GKQGGKARAKAKTR	5	18	4	17	14	4
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	AKAKTR	13	18	12	17	6	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	AKAKTRSSR	13	21	12	20	9	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	SSRAGLQFPVGR	19	30	18	29	12	0
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	SGRGKQGGKAR	2	12	1	11	11	2
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	GKQGGKAR	5	12	4	11	8	2
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	GKQGGKARAKAKTR	5	18	4	17	14	4
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	AKAKTR	13	18	12	17	6	2
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	AKAKTRSSR	13	21	12	20	9	2
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	SSRAGL	19	24	18	23	6	0
+P0C0S8	H2A type 1	Chymotrypsin high specificity (ExPASy)	SGRGKQGGKARAKAKTRSSRAGLQFPVGRVHRLLRKGNY	2	40	1	39	39	5
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	SGRGKQGGKAR	2	12	1	11	11	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	SGRGKQGGKARAKAKTRSSRAGLQFPVGRVHRLLRKGNY	2	40	1	39	39	5
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	GKQGGKAR	5	12	4	11	8	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	GKQGGKARAKAKTR	5	18	4	17	14	4
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	AKAKTR	13	18	12	17	6	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	AKAKTRSSR	13	21	12	20	9	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	SSRAGLQFPVGR	19	30	18	29	12	0
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	SGRGKQGGKAR	2	12	1	11	11	2
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	GKQGGKAR	5	12	4	11	8	2
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	GKQGGKARAKAKTR	5	18	4	17	14	4
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	AKAKTR	13	18	12	17	6	2
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	AKAKTRSSR	13	21	12	20	9	2
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	SSRAGLQFPVGR	19	30	18	29	12	0
+P0C0S8	H2A type 1	Chymotrypsin low specificity (ExPASy)	SGRGKQGGKARAKAKTRSSRAGL	2	24	1	23	23	4
+P0C0S8	H2A type 1	Chymotrypsin low specificity (ExPASy)	SGRGKQGGKARAKAKTRSSRAGLQFPVGRVH	2	32	1	31	31	4
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	SGRGKQGGKAR	2	12	1	11	11	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	SGRGKQGGKARAKAKTRSSRAGL	2	24	1	23	23	4
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	SGRGKQGGKARAKAKTRSSRAGLQFPVGRVH	2	32	1	31	31	4
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	GKQGGKAR	5	12	4	11	8	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	GKQGGKARAKAKTR	5	18	4	17	14	4
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	AKAKTR	13	18	12	17	6	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	AKAKTRSSR	13	21	12	20	9	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	SSRAGLQFPVGR	19	30	18	29	12	0
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	SGRGKQGGKAR	2	12	1	11	11	2
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	GKQGGKAR	5	12	4	11	8	2
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	GKQGGKARAKAKTR	5	18	4	17	14	4
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	AKAKTR	13	18	12	17	6	2
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	AKAKTRSSR	13	21	12	20	9	2
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	SSRAGL	19	24	18	23	6	0
+P0C0S8	H2A type 1	Proteinase K (ExPASy)	SGRGKQGGKA	2	11	1	10	10	2
+P0C0S8	H2A type 1	Proteinase K (ExPASy)	SGRGKQGGKARA	2	13	1	12	12	2
+P0C0S8	H2A type 1	Proteinase K (ExPASy)	RAKA	12	15	11	14	4	1
+P0C0S8	H2A type 1	Proteinase K (ExPASy)	KAKT	14	17	13	16	4	2
+P0C0S8	H2A type 1	Proteinase K (ExPASy)	KTRSSRA	16	22	15	21	7	1
+P0C0S8	H2A type 1	Proteinase K (ExPASy)	RSSRA	18	22	17	21	5	0
+P0C0S8	H2A type 1	Proteinase K (ExPASy)	RSSRAGL	18	24	17	23	7	0
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	SGRGKQGGKA	2	11	1	10	10	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	SGRGKQGGKAR	2	12	1	11	11	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	SGRGKQGGKARA	2	13	1	12	12	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	GKQGGKAR	5	12	4	11	8	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	GKQGGKARAKAKTR	5	18	4	17	14	4
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	RAKA	12	15	11	14	4	1
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	AKAKTR	13	18	12	17	6	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	AKAKTRSSR	13	21	12	20	9	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	KAKT	14	17	13	16	4	2
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	KTRSSRA	16	22	15	21	7	1
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	RSSRA	18	22	17	21	5	0
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	RSSRAGL	18	24	17	23	7	0
+P0C0S8	H2A type 1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	SSRAGLQFPVGR	19	30	18	29	12	0
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Proteinase K (ExPASy)	SGRGKQGGKA	2	11	1	10	10	2
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Proteinase K (ExPASy)	GKQGGKA	5	11	4	10	7	2
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Proteinase K (ExPASy)	GKQGGKAR	5	12	4	11	8	2
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Proteinase K (ExPASy)	KAKT	14	17	13	16	4	2
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Proteinase K (ExPASy)	RSSR	18	21	17	20	4	0
+P0C0S8	H2A type 1	Trypsin (PSI-MS) + Proteinase K (ExPASy)	SSRA	19	22	18	21	4	0
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K	PEPAKSAPAPKKGSKKAVTKAQKKDGKKR	2	30	1	29	29	10
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K	PEPAKSAPAPKKGSKKAVTKAQKKDGKKRKR	2	32	1	31	31	11
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K	KRSR	31	34	30	33	4	1
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K	KESYSVYVYKVLKQVHPDTGISSKAMGIMNSFVNDIFER	35	73	34	72	39	4
+P62807	H2B type 1-C/E/F/G/I	Trypsin/P (PSI-MS)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKR	2	30	1	29	29	10
+P62807	H2B type 1-C/E/F/G/I	Trypsin/P (PSI-MS)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKRKR	2	32	1	31	31	11
+P62807	H2B type 1-C/E/F/G/I	Trypsin/P (PSI-MS)	KRSR	31	34	30	33	4	1
+P62807	H2B type 1-C/E/F/G/I	Trypsin/P (PSI-MS)	KESYSVYVYKVLKQVHPDTGISSKAMGIMNSFVNDIFER	35	73	34	72	39	4
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Trypsin/P (PSI-MS)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKR	2	30	1	29	29	10
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Trypsin/P (PSI-MS)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKRKR	2	32	1	31	31	11
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Trypsin/P (PSI-MS)	KRSR	31	34	30	33	4	1
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Trypsin/P (PSI-MS)	KESYSVYVYKVLKQVHPDTGISSKAMGIMNSFVNDIFER	35	73	34	72	39	4
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Trypsin/P (PSI-MS)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKR	2	30	1	29	29	10
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Trypsin/P (PSI-MS)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKRKR	2	32	1	31	31	11
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Trypsin/P (PSI-MS)	KRSR	31	34	30	33	4	1
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Trypsin/P (PSI-MS)	KESYSVYVYKVLKQVHPDTGISSKAMGIMNSFVNDIFER	35	73	34	72	39	4
+P62807	H2B type 1-C/E/F/G/I	Arg-C (PSI-MS)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKR	2	30	1	29	29	10
+P62807	H2B type 1-C/E/F/G/I	Arg-C (PSI-MS)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKRKR	2	32	1	31	31	11
+P62807	H2B type 1-C/E/F/G/I	Arg-C (PSI-MS)	KRSR	31	34	30	33	4	1
+P62807	H2B type 1-C/E/F/G/I	Arg-C (PSI-MS)	KESYSVYVYKVLKQVHPDTGISSKAMGIMNSFVNDIFER	35	73	34	72	39	4
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Arg-C (PSI-MS)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKR	2	30	1	29	29	10
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Arg-C (PSI-MS)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKRKR	2	32	1	31	31	11
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Arg-C (PSI-MS)	KRSR	31	34	30	33	4	1
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Arg-C (PSI-MS)	KESYSVYVYKVLKQVHPDTGISSKAMGIMNSFVNDIFER	35	73	34	72	39	4
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Arg-C (PSI-MS)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKR	2	30	1	29	29	10
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Arg-C (PSI-MS)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKRKR	2	32	1	31	31	11
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Arg-C (PSI-MS)	KRSR	31	34	30	33	4	1
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Arg-C (PSI-MS)	KESYSVYVYKVLKQVHPDTGISSKAMGIMNSFVNDIFER	35	73	34	72	39	4
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C (PSI-MS)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKR	2	30	1	29	29	10
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C (PSI-MS)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKRKR	2	32	1	31	31	11
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C (PSI-MS)	KRSR	31	34	30	33	4	1
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C (PSI-MS)	KESYSVYVYKVLKQVHPDTGISSKAMGIMNSFVNDIFER	35	73	34	72	39	4
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Lys-C (PSI-MS)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKR	2	30	1	29	29	10
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Lys-C (PSI-MS)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKRKR	2	32	1	31	31	11
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Lys-C (PSI-MS)	KRSR	31	34	30	33	4	1
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Lys-C (PSI-MS)	KESYSVYVYKVLKQVHPDTGISSKAMGIMNSFVNDIFER	35	73	34	72	39	4
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C/P (PSI-MS)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKR	2	30	1	29	29	10
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C/P (PSI-MS)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKRKR	2	32	1	31	31	11
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C/P (PSI-MS)	KRSR	31	34	30	33	4	1
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C/P (PSI-MS)	KESYSVYVYKVLKQVHPDTGISSKAMGIMNSFVNDIFER	35	73	34	72	39	4
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Lys-C/P (PSI-MS)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKR	2	30	1	29	29	10
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Lys-C/P (PSI-MS)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKRKR	2	32	1	31	31	11
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Lys-C/P (PSI-MS)	KRSR	31	34	30	33	4	1
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Lys-C/P (PSI-MS)	KESYSVYVYKVLKQVHPDTGISSKAMGIMNSFVNDIFER	35	73	34	72	39	4
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-N (PSI-MS)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKR	2	30	1	29	29	10
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-N (PSI-MS)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKRKR	2	32	1	31	31	11
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-N (PSI-MS)	KRSR	31	34	30	33	4	1
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-N (PSI-MS)	KESYSVYVYKVLKQVHPDTGISSKAMGIMNSFVNDIFER	35	73	34	72	39	4
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Lys-N (PSI-MS)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKR	2	30	1	29	29	10
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Lys-N (PSI-MS)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKRKR	2	32	1	31	31	11
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Lys-N (PSI-MS)	KRSR	31	34	30	33	4	1
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Lys-N (PSI-MS)	KESYSVYVYKVLKQVHPDTGISSKAMGIMNSFVNDIFER	35	73	34	72	39	4
+P62807	H2B type 1-C/E/F/G/I	Asp-N (PSI-MS)	PEPAKSAPAPKKGSKKAVTKAQKK	2	25	1	24	24	8
+P62807	H2B type 1-C/E/F/G/I	Asp-N (PSI-MS)	DGKKRKRSRKESYSVYVYKVLKQVHP	26	51	25	50	26	6
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	PEPAKSAPAPKKGSKKAVTKAQKK	2	25	1	24	24	8
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKR	2	30	1	29	29	10
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKRKR	2	32	1	31	31	11
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	DGKKRKRSRKESYSVYVYKVLKQVHP	26	51	25	50	26	6
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	KRSR	31	34	30	33	4	1
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	KESYSVYVYKVLKQVHPDTGISSKAMGIMNSFVNDIFER	35	73	34	72	39	4
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Asp-N (PSI-MS)	PEPAKSAPAPKKGSKKAVTKAQKK	2	25	1	24	24	8
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Asp-N (PSI-MS)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKR	2	30	1	29	29	10
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Asp-N (PSI-MS)	DGKKR	26	30	25	29	5	2
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Asp-N (PSI-MS)	DGKKRKR	26	32	25	31	7	3
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Asp-N (PSI-MS)	KRSR	31	34	30	33	4	1
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Asp-N (PSI-MS)	SRKESYSVYVYKVLKQVHP	33	51	32	50	19	3
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Asp-N (PSI-MS)	KESYSVYVYKVLKQVHP	35	51	34	50	17	3
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Asp-N (PSI-MS)	KESYSVYVYKVLKQVHPDTGISSKAMGIMNSFVN	35	68	34	67	34	4
+P62807	H2B type 1-C/E/F/G/I	Asp-N ambic (PSI-MS)	PEPAKSAPAPKKGSKKAVTKAQKK	2	25	1	24	24	8
+P62807	H2B type 1-C/E/F/G/I	Asp-N ambic (PSI-MS)	EPAKSAPAPKKGSKKAVTKAQKK	3	25	2	24	23	8
+P62807	H2B type 1-C/E/F/G/I	Asp-N ambic (PSI-MS)	EPAKSAPAPKKGSKKAVTKAQKKDGKKRKRSRK	3	35	2	34	33	12
+P62807	H2B type 1-C/E/F/G/I	Asp-N ambic (PSI-MS)	DGKKRKRSRK	26	35	25	34	10	4
+P62807	H2B type 1-C/E/F/G/I	Asp-N ambic (PSI-MS)	DGKKRKRSRKESYSVYVYKVLKQVHP	26	51	25	50	26	6
+P62807	H2B type 1-C/E/F/G/I	Asp-N ambic (PSI-MS)	ESYSVYVYKVLKQVHP	36	51	35	50	16	2
+P62807	H2B type 1-C/E/F/G/I	Asp-N ambic (PSI-MS)	ESYSVYVYKVLKQVHPDTGISSKAMGIMNSFVN	36	68	35	67	33	3
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	PEPAKSAPAPKKGSKKAVTKAQKK	2	25	1	24	24	8
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKR	2	30	1	29	29	10
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKRKR	2	32	1	31	31	11
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	EPAKSAPAPKKGSKKAVTKAQKK	3	25	2	24	23	8
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	EPAKSAPAPKKGSKKAVTKAQKKDGKKRKRSRK	3	35	2	34	33	12
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	DGKKRKRSRK	26	35	25	34	10	4
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	DGKKRKRSRKESYSVYVYKVLKQVHP	26	51	25	50	26	6
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	KRSR	31	34	30	33	4	1
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	KESYSVYVYKVLKQVHPDTGISSKAMGIMNSFVNDIFER	35	73	34	72	39	4
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	ESYSVYVYKVLKQVHP	36	51	35	50	16	2
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	ESYSVYVYKVLKQVHPDTGISSKAMGIMNSFVN	36	68	35	67	33	3
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	PEPAKSAPAPKKGSKKAVTKAQKK	2	25	1	24	24	8
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	EPAKSAPAPKKGSKKAVTKAQKK	3	25	2	24	23	8
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	EPAKSAPAPKKGSKKAVTKAQKKDGKKR	3	30	2	29	28	10
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	DGKKR	26	30	25	29	5	2
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	DGKKRKR	26	32	25	31	7	3
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	KRSR	31	34	30	33	4	1
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	KESYSVYVYKVLKQVHP	35	51	34	50	17	3
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	ESYSVYVYKVLKQVHP	36	51	35	50	16	2
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	ESYSVYVYKVLKQVHPDTGISSKAMGIMNSFVN	36	68	35	67	33	3
+P62807	H2B type 1-C/E/F/G/I	Glu-C (PSI-MS)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKRKRSRKE	2	36	1	35	35	12
+P62807	H2B type 1-C/E/F/G/I	Glu-C (PSI-MS)	PAKSAPAPKKGSKKAVTKAQKKDGKKRKRSRKE	4	36	3	35	33	12
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKR	2	30	1	29	29	10
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKRKR	2	32	1	31	31	11
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKRKRSRKE	2	36	1	35	35	12
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	PAKSAPAPKKGSKKAVTKAQKKDGKKRKRSRKE	4	36	3	35	33	12
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	KRSR	31	34	30	33	4	1
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	KESYSVYVYKVLKQVHPDTGISSKAMGIMNSFVNDIFER	35	73	34	72	39	4
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Glu-C (PSI-MS)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKR	2	30	1	29	29	10
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Glu-C (PSI-MS)	PAKSAPAPKKGSKKAVTKAQKKDGKKR	4	30	3	29	27	10
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Glu-C (PSI-MS)	PAKSAPAPKKGSKKAVTKAQKKDGKKRKR	4	32	3	31	29	11
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Glu-C (PSI-MS)	KRSR	31	34	30	33	4	1
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Glu-C (PSI-MS)	SRKE	33	36	32	35	4	1
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Glu-C (PSI-MS)	KESYSVYVYKVLKQVHPDTGISSKAMGIMNSFVNDIFE	35	72	34	71	38	4
+P62807	H2B type 1-C/E/F/G/I	Chymotrypsin (PSI-MS)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKRKRSRKESY	2	38	1	37	37	12
+P62807	H2B type 1-C/E/F/G/I	Chymotrypsin (PSI-MS)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKRKRSRKESYSVY	2	41	1	40	40	12
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKR	2	30	1	29	29	10
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKRKR	2	32	1	31	31	11
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKRKRSRKESY	2	38	1	37	37	12
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKRKRSRKESYSVY	2	41	1	40	40	12
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	KRSR	31	34	30	33	4	1
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	KESYSVYVYKVLKQVHPDTGISSKAMGIMNSFVNDIFER	35	73	34	72	39	4
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKR	2	30	1	29	29	10
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKRKR	2	32	1	31	31	11
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	KRSR	31	34	30	33	4	1
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	SRKESY	33	38	32	37	6	1
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	KESY	35	38	34	37	4	1
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	KESYSVY	35	41	34	40	7	1
+P62807	H2B type 1-C/E/F/G/I	Chymotrypsin high specificity (ExPASy)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKRKRSRKESY	2	38	1	37	37	12
+P62807	H2B type 1-C/E/F/G/I	Chymotrypsin high specificity (ExPASy)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKRKRSRKESYSVY	2	41	1	40	40	12
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKR	2	30	1	29	29	10
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKRKR	2	32	1	31	31	11
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKRKRSRKESY	2	38	1	37	37	12
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKRKRSRKESYSVY	2	41	1	40	40	12
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	KRSR	31	34	30	33	4	1
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	KESYSVYVYKVLKQVHPDTGISSKAMGIMNSFVNDIFER	35	73	34	72	39	4
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKR	2	30	1	29	29	10
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKRKR	2	32	1	31	31	11
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	KRSR	31	34	30	33	4	1
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	SRKESY	33	38	32	37	6	1
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	KESY	35	38	34	37	4	1
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	KESYSVY	35	41	34	40	7	1
+P62807	H2B type 1-C/E/F/G/I	Chymotrypsin low specificity (ExPASy)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKRKRSRKESY	2	38	1	37	37	12
+P62807	H2B type 1-C/E/F/G/I	Chymotrypsin low specificity (ExPASy)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKRKRSRKESYSVY	2	41	1	40	40	12
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKR	2	30	1	29	29	10
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKRKR	2	32	1	31	31	11
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKRKRSRKESY	2	38	1	37	37	12
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKRKRSRKESYSVY	2	41	1	40	40	12
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	KRSR	31	34	30	33	4	1
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	KESYSVYVYKVLKQVHPDTGISSKAMGIMNSFVNDIFER	35	73	34	72	39	4
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKR	2	30	1	29	29	10
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKRKR	2	32	1	31	31	11
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	KRSR	31	34	30	33	4	1
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	SRKESY	33	38	32	37	6	1
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	KESY	35	38	34	37	4	1
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	KESYSVY	35	41	34	40	7	1
+P62807	H2B type 1-C/E/F/G/I	Proteinase K (ExPASy)	PEPA	2	5	1	4	4	0
+P62807	H2B type 1-C/E/F/G/I	Proteinase K (ExPASy)	PAKSA	4	8	3	7	5	1
+P62807	H2B type 1-C/E/F/G/I	Proteinase K (ExPASy)	KSAPA	6	10	5	9	5	1
+P62807	H2B type 1-C/E/F/G/I	Proteinase K (ExPASy)	PAPKKGSKKA	9	18	8	17	10	4
+P62807	H2B type 1-C/E/F/G/I	Proteinase K (ExPASy)	PKKGSKKA	11	18	10	17	8	4
+P62807	H2B type 1-C/E/F/G/I	Proteinase K (ExPASy)	PKKGSKKAV	11	19	10	18	9	4
+P62807	H2B type 1-C/E/F/G/I	Proteinase K (ExPASy)	KAQKKDGKKRKRSRKE	21	36	20	35	16	7
+P62807	H2B type 1-C/E/F/G/I	Proteinase K (ExPASy)	QKKDGKKRKRSRKE	23	36	22	35	14	6
+P62807	H2B type 1-C/E/F/G/I	Proteinase K (ExPASy)	QKKDGKKRKRSRKESY	23	38	22	37	16	6
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	PEPA	2	5	1	4	4	0
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKR	2	30	1	29	29	10
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	PEPAKSAPAPKKGSKKAVTKAQKKDGKKRKR	2	32	1	31	31	11
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	PAKSA	4	8	3	7	5	1
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	KSAPA	6	10	5	9	5	1
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	PAPKKGSKKA	9	18	8	17	10	4
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	PKKGSKKA	11	18	10	17	8	4
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	PKKGSKKAV	11	19	10	18	9	4
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	KAQKKDGKKRKRSRKE	21	36	20	35	16	7
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	QKKDGKKRKRSRKE	23	36	22	35	14	6
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	QKKDGKKRKRSRKESY	23	38	22	37	16	6
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	KRSR	31	34	30	33	4	1
+P62807	H2B type 1-C/E/F/G/I	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	KESYSVYVYKVLKQVHPDTGISSKAMGIMNSFVNDIFER	35	73	34	72	39	4
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Proteinase K (ExPASy)	PEPA	2	5	1	4	4	0
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Proteinase K (ExPASy)	PAKSA	4	8	3	7	5	1
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Proteinase K (ExPASy)	KSAPA	6	10	5	9	5	1
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Proteinase K (ExPASy)	PAPKKGSKKA	9	18	8	17	10	4
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Proteinase K (ExPASy)	PKKGSKKA	11	18	10	17	8	4
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Proteinase K (ExPASy)	PKKGSKKAV	11	19	10	18	9	4
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Proteinase K (ExPASy)	KAQKKDGKKR	21	30	20	29	10	5
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Proteinase K (ExPASy)	QKKDGKKR	23	30	22	29	8	4
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Proteinase K (ExPASy)	QKKDGKKRKR	23	32	22	31	10	5
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Proteinase K (ExPASy)	KRSR	31	34	30	33	4	1
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Proteinase K (ExPASy)	SRKE	33	36	32	35	4	1
+P62807	H2B type 1-C/E/F/G/I	Trypsin (PSI-MS) + Proteinase K (ExPASy)	KESY	35	38	34	37	4	1
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K	ARTKQTAR	2	9	1	8	8	1
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K	TKQTAR	4	9	3	8	6	1
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K	KSTGGKAPR	10	18	9	17	9	2
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K	KSTGGKAPRKQLATKAAR	10	27	9	26	18	4
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K	KQLATKAAR	19	27	18	26	9	2
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K	KQLATKAARKSAPATGGVKKPHR	19	41	18	40	23	5
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K	KSAPATGGVKKPHR	28	41	27	40	14	3
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K	KSAPATGGVKKPHRYRPGTVALR	28	50	27	49	23	3
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K	YRPGTVALR	42	50	41	49	9	0
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K	YRPGTVALREIR	42	53	41	52	12	0
+P68431	H3.1	Trypsin/P (PSI-MS)	ARTKQTAR	2	9	1	8	8	1
+P68431	H3.1	Trypsin/P (PSI-MS)	TKQTAR	4	9	3	8	6	1
+P68431	H3.1	Trypsin/P (PSI-MS)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P68431	H3.1	Trypsin/P (PSI-MS)	KSTGGKAPR	10	18	9	17	9	2
+P68431	H3.1	Trypsin/P (PSI-MS)	KSTGGKAPRKQLATKAAR	10	27	9	26	18	4
+P68431	H3.1	Trypsin/P (PSI-MS)	KQLATKAAR	19	27	18	26	9	2
+P68431	H3.1	Trypsin/P (PSI-MS)	KQLATKAARKSAPATGGVKKPHR	19	41	18	40	23	5
+P68431	H3.1	Trypsin/P (PSI-MS)	KSAPATGGVKKPHR	28	41	27	40	14	3
+P68431	H3.1	Trypsin/P (PSI-MS)	KSAPATGGVKKPHRYR	28	43	27	42	16	3
+P68431	H3.1	Trypsin/P (PSI-MS)	YRPGTVALR	42	50	41	49	9	0
+P68431	H3.1	Trypsin/P (PSI-MS)	PGTVALR	44	50	43	49	7	0
+P68431	H3.1	Trypsin/P (PSI-MS)	PGTVALREIR	44	53	43	52	10	0
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Trypsin/P (PSI-MS)	ARTKQTAR	2	9	1	8	8	1
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Trypsin/P (PSI-MS)	TKQTAR	4	9	3	8	6	1
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Trypsin/P (PSI-MS)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Trypsin/P (PSI-MS)	KSTGGKAPR	10	18	9	17	9	2
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Trypsin/P (PSI-MS)	KSTGGKAPRKQLATKAAR	10	27	9	26	18	4
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Trypsin/P (PSI-MS)	KQLATKAAR	19	27	18	26	9	2
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Trypsin/P (PSI-MS)	KQLATKAARKSAPATGGVKKPHR	19	41	18	40	23	5
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Trypsin/P (PSI-MS)	KSAPATGGVKKPHR	28	41	27	40	14	3
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Trypsin/P (PSI-MS)	KSAPATGGVKKPHRYR	28	43	27	42	16	3
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Trypsin/P (PSI-MS)	KSAPATGGVKKPHRYRPGTVALR	28	50	27	49	23	3
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Trypsin/P (PSI-MS)	YRPGTVALR	42	50	41	49	9	0
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Trypsin/P (PSI-MS)	YRPGTVALREIR	42	53	41	52	12	0
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Trypsin/P (PSI-MS)	PGTVALR	44	50	43	49	7	0
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Trypsin/P (PSI-MS)	PGTVALREIR	44	53	43	52	10	0
+P68431	H3.1	Trypsin (PSI-MS) + Trypsin/P (PSI-MS)	ARTKQTAR	2	9	1	8	8	1
+P68431	H3.1	Trypsin (PSI-MS) + Trypsin/P (PSI-MS)	TKQTAR	4	9	3	8	6	1
+P68431	H3.1	Trypsin (PSI-MS) + Trypsin/P (PSI-MS)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P68431	H3.1	Trypsin (PSI-MS) + Trypsin/P (PSI-MS)	KSTGGKAPR	10	18	9	17	9	2
+P68431	H3.1	Trypsin (PSI-MS) + Trypsin/P (PSI-MS)	KSTGGKAPRKQLATKAAR	10	27	9	26	18	4
+P68431	H3.1	Trypsin (PSI-MS) + Trypsin/P (PSI-MS)	KQLATKAAR	19	27	18	26	9	2
+P68431	H3.1	Trypsin (PSI-MS) + Trypsin/P (PSI-MS)	KQLATKAARKSAPATGGVKKPHR	19	41	18	40	23	5
+P68431	H3.1	Trypsin (PSI-MS) + Trypsin/P (PSI-MS)	KSAPATGGVKKPHR	28	41	27	40	14	3
+P68431	H3.1	Trypsin (PSI-MS) + Trypsin/P (PSI-MS)	KSAPATGGVKKPHRYR	28	43	27	42	16	3
+P68431	H3.1	Trypsin (PSI-MS) + Trypsin/P (PSI-MS)	YRPGTVALR	42	50	41	49	9	0
+P68431	H3.1	Trypsin (PSI-MS) + Trypsin/P (PSI-MS)	PGTVALR	44	50	43	49	7	0
+P68431	H3.1	Trypsin (PSI-MS) + Trypsin/P (PSI-MS)	PGTVALREIR	44	53	43	52	10	0
+P68431	H3.1	Arg-C (PSI-MS)	ARTKQTAR	2	9	1	8	8	1
+P68431	H3.1	Arg-C (PSI-MS)	TKQTAR	4	9	3	8	6	1
+P68431	H3.1	Arg-C (PSI-MS)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P68431	H3.1	Arg-C (PSI-MS)	KSTGGKAPR	10	18	9	17	9	2
+P68431	H3.1	Arg-C (PSI-MS)	KSTGGKAPRKQLATKAAR	10	27	9	26	18	4
+P68431	H3.1	Arg-C (PSI-MS)	KQLATKAAR	19	27	18	26	9	2
+P68431	H3.1	Arg-C (PSI-MS)	KQLATKAARKSAPATGGVKKPHR	19	41	18	40	23	5
+P68431	H3.1	Arg-C (PSI-MS)	KSAPATGGVKKPHR	28	41	27	40	14	3
+P68431	H3.1	Arg-C (PSI-MS)	KSAPATGGVKKPHRYRPGTVALR	28	50	27	49	23	3
+P68431	H3.1	Arg-C (PSI-MS)	YRPGTVALR	42	50	41	49	9	0
+P68431	H3.1	Arg-C (PSI-MS)	YRPGTVALREIR	42	53	41	52	12	0
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Arg-C (PSI-MS)	ARTKQTAR	2	9	1	8	8	1
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Arg-C (PSI-MS)	TKQTAR	4	9	3	8	6	1
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Arg-C (PSI-MS)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Arg-C (PSI-MS)	KSTGGKAPR	10	18	9	17	9	2
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Arg-C (PSI-MS)	KSTGGKAPRKQLATKAAR	10	27	9	26	18	4
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Arg-C (PSI-MS)	KQLATKAAR	19	27	18	26	9	2
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Arg-C (PSI-MS)	KQLATKAARKSAPATGGVKKPHR	19	41	18	40	23	5
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Arg-C (PSI-MS)	KSAPATGGVKKPHR	28	41	27	40	14	3
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Arg-C (PSI-MS)	KSAPATGGVKKPHRYRPGTVALR	28	50	27	49	23	3
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Arg-C (PSI-MS)	YRPGTVALR	42	50	41	49	9	0
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Arg-C (PSI-MS)	YRPGTVALREIR	42	53	41	52	12	0
+P68431	H3.1	Trypsin (PSI-MS) + Arg-C (PSI-MS)	ARTKQTAR	2	9	1	8	8	1
+P68431	H3.1	Trypsin (PSI-MS) + Arg-C (PSI-MS)	TKQTAR	4	9	3	8	6	1
+P68431	H3.1	Trypsin (PSI-MS) + Arg-C (PSI-MS)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P68431	H3.1	Trypsin (PSI-MS) + Arg-C (PSI-MS)	KSTGGKAPR	10	18	9	17	9	2
+P68431	H3.1	Trypsin (PSI-MS) + Arg-C (PSI-MS)	KSTGGKAPRKQLATKAAR	10	27	9	26	18	4
+P68431	H3.1	Trypsin (PSI-MS) + Arg-C (PSI-MS)	KQLATKAAR	19	27	18	26	9	2
+P68431	H3.1	Trypsin (PSI-MS) + Arg-C (PSI-MS)	KQLATKAARKSAPATGGVKKPHR	19	41	18	40	23	5
+P68431	H3.1	Trypsin (PSI-MS) + Arg-C (PSI-MS)	KSAPATGGVKKPHR	28	41	27	40	14	3
+P68431	H3.1	Trypsin (PSI-MS) + Arg-C (PSI-MS)	KSAPATGGVKKPHRYRPGTVALR	28	50	27	49	23	3
+P68431	H3.1	Trypsin (PSI-MS) + Arg-C (PSI-MS)	YRPGTVALR	42	50	41	49	9	0
+P68431	H3.1	Trypsin (PSI-MS) + Arg-C (PSI-MS)	YRPGTVALREIR	42	53	41	52	12	0
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C (PSI-MS)	ARTKQTAR	2	9	1	8	8	1
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C (PSI-MS)	TKQTAR	4	9	3	8	6	1
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C (PSI-MS)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C (PSI-MS)	KSTGGKAPR	10	18	9	17	9	2
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C (PSI-MS)	KSTGGKAPRKQLATKAAR	10	27	9	26	18	4
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C (PSI-MS)	KQLATKAAR	19	27	18	26	9	2
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C (PSI-MS)	KQLATKAARKSAPATGGVKKPHR	19	41	18	40	23	5
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C (PSI-MS)	KSAPATGGVKKPHR	28	41	27	40	14	3
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C (PSI-MS)	KSAPATGGVKKPHRYRPGTVALR	28	50	27	49	23	3
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C (PSI-MS)	YRPGTVALR	42	50	41	49	9	0
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C (PSI-MS)	YRPGTVALREIR	42	53	41	52	12	0
+P68431	H3.1	Trypsin (PSI-MS) + Lys-C (PSI-MS)	ARTKQTAR	2	9	1	8	8	1
+P68431	H3.1	Trypsin (PSI-MS) + Lys-C (PSI-MS)	TKQTAR	4	9	3	8	6	1
+P68431	H3.1	Trypsin (PSI-MS) + Lys-C (PSI-MS)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P68431	H3.1	Trypsin (PSI-MS) + Lys-C (PSI-MS)	KSTGGKAPR	10	18	9	17	9	2
+P68431	H3.1	Trypsin (PSI-MS) + Lys-C (PSI-MS)	KSTGGKAPRKQLATKAAR	10	27	9	26	18	4
+P68431	H3.1	Trypsin (PSI-MS) + Lys-C (PSI-MS)	KQLATKAAR	19	27	18	26	9	2
+P68431	H3.1	Trypsin (PSI-MS) + Lys-C (PSI-MS)	KQLATKAARKSAPATGGVKKPHR	19	41	18	40	23	5
+P68431	H3.1	Trypsin (PSI-MS) + Lys-C (PSI-MS)	KSAPATGGVKKPHR	28	41	27	40	14	3
+P68431	H3.1	Trypsin (PSI-MS) + Lys-C (PSI-MS)	KSAPATGGVKKPHRYRPGTVALR	28	50	27	49	23	3
+P68431	H3.1	Trypsin (PSI-MS) + Lys-C (PSI-MS)	YRPGTVALR	42	50	41	49	9	0
+P68431	H3.1	Trypsin (PSI-MS) + Lys-C (PSI-MS)	YRPGTVALREIR	42	53	41	52	12	0
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C/P (PSI-MS)	ARTKQTAR	2	9	1	8	8	1
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C/P (PSI-MS)	TKQTAR	4	9	3	8	6	1
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C/P (PSI-MS)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C/P (PSI-MS)	KSTGGKAPR	10	18	9	17	9	2
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C/P (PSI-MS)	KSTGGKAPRKQLATKAAR	10	27	9	26	18	4
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C/P (PSI-MS)	KQLATKAAR	19	27	18	26	9	2
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C/P (PSI-MS)	KQLATKAARKSAPATGGVKKPHR	19	41	18	40	23	5
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C/P (PSI-MS)	KSAPATGGVKKPHR	28	41	27	40	14	3
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C/P (PSI-MS)	KSAPATGGVKKPHRYRPGTVALR	28	50	27	49	23	3
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C/P (PSI-MS)	YRPGTVALR	42	50	41	49	9	0
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C/P (PSI-MS)	YRPGTVALREIR	42	53	41	52	12	0
+P68431	H3.1	Trypsin (PSI-MS) + Lys-C/P (PSI-MS)	ARTKQTAR	2	9	1	8	8	1
+P68431	H3.1	Trypsin (PSI-MS) + Lys-C/P (PSI-MS)	TKQTAR	4	9	3	8	6	1
+P68431	H3.1	Trypsin (PSI-MS) + Lys-C/P (PSI-MS)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P68431	H3.1	Trypsin (PSI-MS) + Lys-C/P (PSI-MS)	KSTGGKAPR	10	18	9	17	9	2
+P68431	H3.1	Trypsin (PSI-MS) + Lys-C/P (PSI-MS)	KSTGGKAPRKQLATKAAR	10	27	9	26	18	4
+P68431	H3.1	Trypsin (PSI-MS) + Lys-C/P (PSI-MS)	KQLATKAAR	19	27	18	26	9	2
+P68431	H3.1	Trypsin (PSI-MS) + Lys-C/P (PSI-MS)	KQLATKAARKSAPATGGVKKPHR	19	41	18	40	23	5
+P68431	H3.1	Trypsin (PSI-MS) + Lys-C/P (PSI-MS)	KSAPATGGVKKPHR	28	41	27	40	14	3
+P68431	H3.1	Trypsin (PSI-MS) + Lys-C/P (PSI-MS)	KSAPATGGVKKPHRYRPGTVALR	28	50	27	49	23	3
+P68431	H3.1	Trypsin (PSI-MS) + Lys-C/P (PSI-MS)	YRPGTVALR	42	50	41	49	9	0
+P68431	H3.1	Trypsin (PSI-MS) + Lys-C/P (PSI-MS)	YRPGTVALREIR	42	53	41	52	12	0
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-N (PSI-MS)	ARTKQTAR	2	9	1	8	8	1
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-N (PSI-MS)	TKQTAR	4	9	3	8	6	1
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-N (PSI-MS)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-N (PSI-MS)	KSTGGKAPR	10	18	9	17	9	2
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-N (PSI-MS)	KSTGGKAPRKQLATKAAR	10	27	9	26	18	4
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-N (PSI-MS)	KQLATKAAR	19	27	18	26	9	2
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-N (PSI-MS)	KQLATKAARKSAPATGGVKKPHR	19	41	18	40	23	5
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-N (PSI-MS)	KSAPATGGVKKPHR	28	41	27	40	14	3
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-N (PSI-MS)	KSAPATGGVKKPHRYRPGTVALR	28	50	27	49	23	3
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-N (PSI-MS)	YRPGTVALR	42	50	41	49	9	0
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-N (PSI-MS)	YRPGTVALREIR	42	53	41	52	12	0
+P68431	H3.1	Trypsin (PSI-MS) + Lys-N (PSI-MS)	ARTKQTAR	2	9	1	8	8	1
+P68431	H3.1	Trypsin (PSI-MS) + Lys-N (PSI-MS)	TKQTAR	4	9	3	8	6	1
+P68431	H3.1	Trypsin (PSI-MS) + Lys-N (PSI-MS)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P68431	H3.1	Trypsin (PSI-MS) + Lys-N (PSI-MS)	KSTGGKAPR	10	18	9	17	9	2
+P68431	H3.1	Trypsin (PSI-MS) + Lys-N (PSI-MS)	KSTGGKAPRKQLATKAAR	10	27	9	26	18	4
+P68431	H3.1	Trypsin (PSI-MS) + Lys-N (PSI-MS)	KQLATKAAR	19	27	18	26	9	2
+P68431	H3.1	Trypsin (PSI-MS) + Lys-N (PSI-MS)	KQLATKAARKSAPATGGVKKPHR	19	41	18	40	23	5
+P68431	H3.1	Trypsin (PSI-MS) + Lys-N (PSI-MS)	KSAPATGGVKKPHR	28	41	27	40	14	3
+P68431	H3.1	Trypsin (PSI-MS) + Lys-N (PSI-MS)	KSAPATGGVKKPHRYRPGTVALR	28	50	27	49	23	3
+P68431	H3.1	Trypsin (PSI-MS) + Lys-N (PSI-MS)	YRPGTVALR	42	50	41	49	9	0
+P68431	H3.1	Trypsin (PSI-MS) + Lys-N (PSI-MS)	YRPGTVALREIR	42	53	41	52	12	0
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	ARTKQTAR	2	9	1	8	8	1
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	TKQTAR	4	9	3	8	6	1
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	KSTGGKAPR	10	18	9	17	9	2
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	KSTGGKAPRKQLATKAAR	10	27	9	26	18	4
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	KQLATKAAR	19	27	18	26	9	2
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	KQLATKAARKSAPATGGVKKPHR	19	41	18	40	23	5
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	KSAPATGGVKKPHR	28	41	27	40	14	3
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	KSAPATGGVKKPHRYRPGTVALR	28	50	27	49	23	3
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	YRPGTVALR	42	50	41	49	9	0
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	YRPGTVALREIR	42	53	41	52	12	0
+P68431	H3.1	Trypsin (PSI-MS) + Asp-N (PSI-MS)	ARTKQTAR	2	9	1	8	8	1
+P68431	H3.1	Trypsin (PSI-MS) + Asp-N (PSI-MS)	TKQTAR	4	9	3	8	6	1
+P68431	H3.1	Trypsin (PSI-MS) + Asp-N (PSI-MS)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P68431	H3.1	Trypsin (PSI-MS) + Asp-N (PSI-MS)	KSTGGKAPR	10	18	9	17	9	2
+P68431	H3.1	Trypsin (PSI-MS) + Asp-N (PSI-MS)	KSTGGKAPRKQLATKAAR	10	27	9	26	18	4
+P68431	H3.1	Trypsin (PSI-MS) + Asp-N (PSI-MS)	KQLATKAAR	19	27	18	26	9	2
+P68431	H3.1	Trypsin (PSI-MS) + Asp-N (PSI-MS)	KQLATKAARKSAPATGGVKKPHR	19	41	18	40	23	5
+P68431	H3.1	Trypsin (PSI-MS) + Asp-N (PSI-MS)	KSAPATGGVKKPHR	28	41	27	40	14	3
+P68431	H3.1	Trypsin (PSI-MS) + Asp-N (PSI-MS)	KSAPATGGVKKPHRYRPGTVALR	28	50	27	49	23	3
+P68431	H3.1	Trypsin (PSI-MS) + Asp-N (PSI-MS)	YRPGTVALR	42	50	41	49	9	0
+P68431	H3.1	Trypsin (PSI-MS) + Asp-N (PSI-MS)	YRPGTVALREIR	42	53	41	52	12	0
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	ARTKQTAR	2	9	1	8	8	1
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	TKQTAR	4	9	3	8	6	1
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	KSTGGKAPR	10	18	9	17	9	2
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	KSTGGKAPRKQLATKAAR	10	27	9	26	18	4
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	KQLATKAAR	19	27	18	26	9	2
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	KQLATKAARKSAPATGGVKKPHR	19	41	18	40	23	5
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	KSAPATGGVKKPHR	28	41	27	40	14	3
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	KSAPATGGVKKPHRYRPGTVALR	28	50	27	49	23	3
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	YRPGTVALR	42	50	41	49	9	0
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	YRPGTVALREIR	42	53	41	52	12	0
+P68431	H3.1	Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	ARTKQTAR	2	9	1	8	8	1
+P68431	H3.1	Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	TKQTAR	4	9	3	8	6	1
+P68431	H3.1	Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P68431	H3.1	Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	KSTGGKAPR	10	18	9	17	9	2
+P68431	H3.1	Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	KSTGGKAPRKQLATKAAR	10	27	9	26	18	4
+P68431	H3.1	Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	KQLATKAAR	19	27	18	26	9	2
+P68431	H3.1	Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	KQLATKAARKSAPATGGVKKPHR	19	41	18	40	23	5
+P68431	H3.1	Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	KSAPATGGVKKPHR	28	41	27	40	14	3
+P68431	H3.1	Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	KSAPATGGVKKPHRYRPGTVALR	28	50	27	49	23	3
+P68431	H3.1	Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	YRPGTVALR	42	50	41	49	9	0
+P68431	H3.1	Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	YRPGTVALREIR	42	53	41	52	12	0
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	ARTKQTAR	2	9	1	8	8	1
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	TKQTAR	4	9	3	8	6	1
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	KSTGGKAPR	10	18	9	17	9	2
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	KSTGGKAPRKQLATKAAR	10	27	9	26	18	4
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	KQLATKAAR	19	27	18	26	9	2
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	KQLATKAARKSAPATGGVKKPHR	19	41	18	40	23	5
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	KSAPATGGVKKPHR	28	41	27	40	14	3
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	KSAPATGGVKKPHRYRPGTVALR	28	50	27	49	23	3
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	YRPGTVALR	42	50	41	49	9	0
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	YRPGTVALREIR	42	53	41	52	12	0
+P68431	H3.1	Trypsin (PSI-MS) + Glu-C (PSI-MS)	ARTKQTAR	2	9	1	8	8	1
+P68431	H3.1	Trypsin (PSI-MS) + Glu-C (PSI-MS)	TKQTAR	4	9	3	8	6	1
+P68431	H3.1	Trypsin (PSI-MS) + Glu-C (PSI-MS)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P68431	H3.1	Trypsin (PSI-MS) + Glu-C (PSI-MS)	KSTGGKAPR	10	18	9	17	9	2
+P68431	H3.1	Trypsin (PSI-MS) + Glu-C (PSI-MS)	KSTGGKAPRKQLATKAAR	10	27	9	26	18	4
+P68431	H3.1	Trypsin (PSI-MS) + Glu-C (PSI-MS)	KQLATKAAR	19	27	18	26	9	2
+P68431	H3.1	Trypsin (PSI-MS) + Glu-C (PSI-MS)	KQLATKAARKSAPATGGVKKPHR	19	41	18	40	23	5
+P68431	H3.1	Trypsin (PSI-MS) + Glu-C (PSI-MS)	KSAPATGGVKKPHR	28	41	27	40	14	3
+P68431	H3.1	Trypsin (PSI-MS) + Glu-C (PSI-MS)	KSAPATGGVKKPHRYRPGTVALR	28	50	27	49	23	3
+P68431	H3.1	Trypsin (PSI-MS) + Glu-C (PSI-MS)	YRPGTVALR	42	50	41	49	9	0
+P68431	H3.1	Trypsin (PSI-MS) + Glu-C (PSI-MS)	YRPGTVALRE	42	51	41	50	10	0
+P68431	H3.1	Chymotrypsin (PSI-MS)	ARTKQTARKSTGGKAPRKQL	2	21	1	20	20	4
+P68431	H3.1	Chymotrypsin (PSI-MS)	ATKAARKSAPATGGVKKPHRY	22	42	21	41	21	4
+P68431	H3.1	Chymotrypsin (PSI-MS)	ATKAARKSAPATGGVKKPHRYRPGTVAL	22	49	21	48	28	4
+P68431	H3.1	Chymotrypsin (PSI-MS)	RPGTVAL	43	49	42	48	7	0
+P68431	H3.1	Chymotrypsin (PSI-MS)	RPGTVALREIRRY	43	55	42	54	13	0
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	ARTKQTAR	2	9	1	8	8	1
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	ARTKQTARKSTGGKAPRKQL	2	21	1	20	20	4
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	TKQTAR	4	9	3	8	6	1
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	KSTGGKAPR	10	18	9	17	9	2
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	KSTGGKAPRKQLATKAAR	10	27	9	26	18	4
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	KQLATKAAR	19	27	18	26	9	2
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	KQLATKAARKSAPATGGVKKPHR	19	41	18	40	23	5
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	ATKAARKSAPATGGVKKPHRY	22	42	21	41	21	4
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	ATKAARKSAPATGGVKKPHRYRPGTVAL	22	49	21	48	28	4
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	KSAPATGGVKKPHR	28	41	27	40	14	3
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	KSAPATGGVKKPHRYRPGTVALR	28	50	27	49	23	3
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	YRPGTVALR	42	50	41	49	9	0
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	YRPGTVALREIR	42	53	41	52	12	0
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	RPGTVAL	43	49	42	48	7	0
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	RPGTVALREIRRY	43	55	42	54	13	0
+P68431	H3.1	Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	ARTKQTAR	2	9	1	8	8	1
+P68431	H3.1	Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	TKQTAR	4	9	3	8	6	1
+P68431	H3.1	Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P68431	H3.1	Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	KSTGGKAPR	10	18	9	17	9	2
+P68431	H3.1	Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	KSTGGKAPRKQL	10	21	9	20	12	3
+P68431	H3.1	Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	KQLATKAAR	19	27	18	26	9	2
+P68431	H3.1	Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	ATKAAR	22	27	21	26	6	1
+P68431	H3.1	Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	ATKAARKSAPATGGVKKPHR	22	41	21	40	20	4
+P68431	H3.1	Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	KSAPATGGVKKPHR	28	41	27	40	14	3
+P68431	H3.1	Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	KSAPATGGVKKPHRY	28	42	27	41	15	3
+P68431	H3.1	Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	YRPGTVAL	42	49	41	48	8	0
+P68431	H3.1	Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	RPGTVAL	43	49	42	48	7	0
+P68431	H3.1	Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	RPGTVALR	43	50	42	49	8	0
+P68431	H3.1	Chymotrypsin high specificity (ExPASy)	RPGTVALREIRRY	43	55	42	54	13	0
+P68431	H3.1	Chymotrypsin high specificity (ExPASy)	RPGTVALREIRRYQKSTELLIRKLPF	43	68	42	67	26	2
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	ARTKQTAR	2	9	1	8	8	1
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	TKQTAR	4	9	3	8	6	1
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	KSTGGKAPR	10	18	9	17	9	2
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	KSTGGKAPRKQLATKAAR	10	27	9	26	18	4
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	KQLATKAAR	19	27	18	26	9	2
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	KQLATKAARKSAPATGGVKKPHR	19	41	18	40	23	5
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	KSAPATGGVKKPHR	28	41	27	40	14	3
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	KSAPATGGVKKPHRYRPGTVALR	28	50	27	49	23	3
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	YRPGTVALR	42	50	41	49	9	0
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	YRPGTVALREIR	42	53	41	52	12	0
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	RPGTVALREIRRY	43	55	42	54	13	0
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	RPGTVALREIRRYQKSTELLIRKLPF	43	68	42	67	26	2
+P68431	H3.1	Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	ARTKQTAR	2	9	1	8	8	1
+P68431	H3.1	Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	TKQTAR	4	9	3	8	6	1
+P68431	H3.1	Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P68431	H3.1	Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	KSTGGKAPR	10	18	9	17	9	2
+P68431	H3.1	Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	KSTGGKAPRKQLATKAAR	10	27	9	26	18	4
+P68431	H3.1	Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	KQLATKAAR	19	27	18	26	9	2
+P68431	H3.1	Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	KQLATKAARKSAPATGGVKKPHR	19	41	18	40	23	5
+P68431	H3.1	Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	KSAPATGGVKKPHR	28	41	27	40	14	3
+P68431	H3.1	Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	KSAPATGGVKKPHRY	28	42	27	41	15	3
+P68431	H3.1	Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	YRPGTVALR	42	50	41	49	9	0
+P68431	H3.1	Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	RPGTVALR	43	50	42	49	8	0
+P68431	H3.1	Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	RPGTVALREIR	43	53	42	52	11	0
+P68431	H3.1	Chymotrypsin low specificity (ExPASy)	ARTKQTARKSTGGKAPRKQL	2	21	1	20	20	4
+P68431	H3.1	Chymotrypsin low specificity (ExPASy)	ARTKQTARKSTGGKAPRKQLATKAARKSAPATGGVKKPH	2	40	1	39	39	8
+P68431	H3.1	Chymotrypsin low specificity (ExPASy)	ATKAARKSAPATGGVKKPH	22	40	21	39	19	4
+P68431	H3.1	Chymotrypsin low specificity (ExPASy)	ATKAARKSAPATGGVKKPHRY	22	42	21	41	21	4
+P68431	H3.1	Chymotrypsin low specificity (ExPASy)	RYRPGTVAL	41	49	40	48	9	0
+P68431	H3.1	Chymotrypsin low specificity (ExPASy)	RPGTVAL	43	49	42	48	7	0
+P68431	H3.1	Chymotrypsin low specificity (ExPASy)	RPGTVALREIRRY	43	55	42	54	13	0
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	ARTKQTAR	2	9	1	8	8	1
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	ARTKQTARKSTGGKAPRKQL	2	21	1	20	20	4
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	ARTKQTARKSTGGKAPRKQLATKAARKSAPATGGVKKPH	2	40	1	39	39	8
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	TKQTAR	4	9	3	8	6	1
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	KSTGGKAPR	10	18	9	17	9	2
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	KSTGGKAPRKQLATKAAR	10	27	9	26	18	4
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	KQLATKAAR	19	27	18	26	9	2
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	KQLATKAARKSAPATGGVKKPHR	19	41	18	40	23	5
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	ATKAARKSAPATGGVKKPH	22	40	21	39	19	4
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	ATKAARKSAPATGGVKKPHRY	22	42	21	41	21	4
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	KSAPATGGVKKPHR	28	41	27	40	14	3
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	KSAPATGGVKKPHRYRPGTVALR	28	50	27	49	23	3
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	RYRPGTVAL	41	49	40	48	9	0
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	YRPGTVALR	42	50	41	49	9	0
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	YRPGTVALREIR	42	53	41	52	12	0
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	RPGTVAL	43	49	42	48	7	0
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	RPGTVALREIRRY	43	55	42	54	13	0
+P68431	H3.1	Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	ARTKQTAR	2	9	1	8	8	1
+P68431	H3.1	Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	TKQTAR	4	9	3	8	6	1
+P68431	H3.1	Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P68431	H3.1	Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	KSTGGKAPR	10	18	9	17	9	2
+P68431	H3.1	Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	KSTGGKAPRKQL	10	21	9	20	12	3
+P68431	H3.1	Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	KQLATKAAR	19	27	18	26	9	2
+P68431	H3.1	Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	ATKAAR	22	27	21	26	6	1
+P68431	H3.1	Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	ATKAARKSAPATGGVKKPH	22	40	21	39	19	4
+P68431	H3.1	Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	KSAPATGGVKKPH	28	40	27	39	13	3
+P68431	H3.1	Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	KSAPATGGVKKPHR	28	41	27	40	14	3
+P68431	H3.1	Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	YRPGTVAL	42	49	41	48	8	0
+P68431	H3.1	Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	RPGTVAL	43	49	42	48	7	0
+P68431	H3.1	Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	RPGTVALR	43	50	42	49	8	0
+P68431	H3.1	Proteinase K (ExPASy)	RTKQT	3	7	2	6	5	1
+P68431	H3.1	Proteinase K (ExPASy)	KQTA	5	8	4	7	4	1
+P68431	H3.1	Proteinase K (ExPASy)	ARKST	8	12	7	11	5	1
+P68431	H3.1	Proteinase K (ExPASy)	RKST	9	12	8	11	4	1
+P68431	H3.1	Proteinase K (ExPASy)	RKSTGGKA	9	16	8	15	8	2
+P68431	H3.1	Proteinase K (ExPASy)	GGKA	13	16	12	15	4	1
+P68431	H3.1	Proteinase K (ExPASy)	GGKAPRKQL	13	21	12	20	9	2
+P68431	H3.1	Proteinase K (ExPASy)	PRKQL	17	21	16	20	5	1
+P68431	H3.1	Proteinase K (ExPASy)	PRKQLA	17	22	16	21	6	1
+P68431	H3.1	Proteinase K (ExPASy)	ARKSA	26	30	25	29	5	1
+P68431	H3.1	Proteinase K (ExPASy)	RKSA	27	30	26	29	4	1
+P68431	H3.1	Proteinase K (ExPASy)	RKSAPA	27	32	26	31	6	1
+P68431	H3.1	Proteinase K (ExPASy)	TGGV	33	36	32	35	4	0
+P68431	H3.1	Proteinase K (ExPASy)	GGVKKPHRY	34	42	33	41	9	2
+P68431	H3.1	Proteinase K (ExPASy)	KKPHRY	37	42	36	41	6	2
+P68431	H3.1	Proteinase K (ExPASy)	KKPHRYRPGT	37	46	36	45	10	2
+P68431	H3.1	Proteinase K (ExPASy)	RPGT	43	46	42	45	4	0
+P68431	H3.1	Proteinase K (ExPASy)	RPGTV	43	47	42	46	5	0
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	ARTKQTAR	2	9	1	8	8	1
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	RTKQT	3	7	2	6	5	1
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	TKQTAR	4	9	3	8	6	1
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	KQTA	5	8	4	7	4	1
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	ARKST	8	12	7	11	5	1
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	RKST	9	12	8	11	4	1
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	RKSTGGKA	9	16	8	15	8	2
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	KSTGGKAPR	10	18	9	17	9	2
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	KSTGGKAPRKQLATKAAR	10	27	9	26	18	4
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	GGKA	13	16	12	15	4	1
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	GGKAPRKQL	13	21	12	20	9	2
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	PRKQL	17	21	16	20	5	1
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	PRKQLA	17	22	16	21	6	1
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	KQLATKAAR	19	27	18	26	9	2
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	KQLATKAARKSAPATGGVKKPHR	19	41	18	40	23	5
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	ARKSA	26	30	25	29	5	1
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	RKSA	27	30	26	29	4	1
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	RKSAPA	27	32	26	31	6	1
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	KSAPATGGVKKPHR	28	41	27	40	14	3
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	KSAPATGGVKKPHRYRPGTVALR	28	50	27	49	23	3
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	TGGV	33	36	32	35	4	0
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	GGVKKPHRY	34	42	33	41	9	2
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	KKPHRY	37	42	36	41	6	2
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	KKPHRYRPGT	37	46	36	45	10	2
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	YRPGTVALR	42	50	41	49	9	0
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	YRPGTVALREIR	42	53	41	52	12	0
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	RPGT	43	46	42	45	4	0
+P68431	H3.1	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	RPGTV	43	47	42	46	5	0
+P68431	H3.1	Trypsin (PSI-MS) + Proteinase K (ExPASy)	TKQT	4	7	3	6	4	1
+P68431	H3.1	Trypsin (PSI-MS) + Proteinase K (ExPASy)	KQTA	5	8	4	7	4	1
+P68431	H3.1	Trypsin (PSI-MS) + Proteinase K (ExPASy)	RKST	9	12	8	11	4	1
+P68431	H3.1	Trypsin (PSI-MS) + Proteinase K (ExPASy)	KSTGGKA	10	16	9	15	7	2
+P68431	H3.1	Trypsin (PSI-MS) + Proteinase K (ExPASy)	GGKA	13	16	12	15	4	1
+P68431	H3.1	Trypsin (PSI-MS) + Proteinase K (ExPASy)	GGKAPR	13	18	12	17	6	1
+P68431	H3.1	Trypsin (PSI-MS) + Proteinase K (ExPASy)	PRKQL	17	21	16	20	5	1
+P68431	H3.1	Trypsin (PSI-MS) + Proteinase K (ExPASy)	KQLA	19	22	18	21	4	1
+P68431	H3.1	Trypsin (PSI-MS) + Proteinase K (ExPASy)	RKSA	27	30	26	29	4	1
+P68431	H3.1	Trypsin (PSI-MS) + Proteinase K (ExPASy)	KSAPA	28	32	27	31	5	1
+P68431	H3.1	Trypsin (PSI-MS) + Proteinase K (ExPASy)	TGGV	33	36	32	35	4	0
+P68431	H3.1	Trypsin (PSI-MS) + Proteinase K (ExPASy)	GGVKKPHR	34	41	33	40	8	2
+P68431	H3.1	Trypsin (PSI-MS) + Proteinase K (ExPASy)	KKPHR	37	41	36	40	5	2
+P68431	H3.1	Trypsin (PSI-MS) + Proteinase K (ExPASy)	KKPHRY	37	42	36	41	6	2
+P68431	H3.1	Trypsin (PSI-MS) + Proteinase K (ExPASy)	YRPGT	42	46	41	45	5	0
+P68431	H3.1	Trypsin (PSI-MS) + Proteinase K (ExPASy)	RPGT	43	46	42	45	4	0
+P68431	H3.1	Trypsin (PSI-MS) + Proteinase K (ExPASy)	RPGTV	43	47	42	46	5	0
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K	ARTKQTAR	2	9	1	8	8	1
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K	TKQTAR	4	9	3	8	6	1
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K	KSTGGKAPR	10	18	9	17	9	2
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K	KSTGGKAPRKQLATKAAR	10	27	9	26	18	4
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K	KQLATKAAR	19	27	18	26	9	2
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K	KQLATKAARKSAPSTGGVKKPHR	19	41	18	40	23	5
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K	KSAPSTGGVKKPHR	28	41	27	40	14	3
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K	KSAPSTGGVKKPHRYRPGTVALR	28	50	27	49	23	3
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K	YRPGTVALR	42	50	41	49	9	0
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K	YRPGTVALREIR	42	53	41	52	12	0
+P84243	H3.3	Trypsin/P (PSI-MS)	ARTKQTAR	2	9	1	8	8	1
+P84243	H3.3	Trypsin/P (PSI-MS)	TKQTAR	4	9	3	8	6	1
+P84243	H3.3	Trypsin/P (PSI-MS)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P84243	H3.3	Trypsin/P (PSI-MS)	KSTGGKAPR	10	18	9	17	9	2
+P84243	H3.3	Trypsin/P (PSI-MS)	KSTGGKAPRKQLATKAAR	10	27	9	26	18	4
+P84243	H3.3	Trypsin/P (PSI-MS)	KQLATKAAR	19	27	18	26	9	2
+P84243	H3.3	Trypsin/P (PSI-MS)	KQLATKAARKSAPSTGGVKKPHR	19	41	18	40	23	5
+P84243	H3.3	Trypsin/P (PSI-MS)	KSAPSTGGVKKPHR	28	41	27	40	14	3
+P84243	H3.3	Trypsin/P (PSI-MS)	KSAPSTGGVKKPHRYR	28	43	27	42	16	3
+P84243	H3.3	Trypsin/P (PSI-MS)	YRPGTVALR	42	50	41	49	9	0
+P84243	H3.3	Trypsin/P (PSI-MS)	PGTVALR	44	50	43	49	7	0
+P84243	H3.3	Trypsin/P (PSI-MS)	PGTVALREIR	44	53	43	52	10	0
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Trypsin/P (PSI-MS)	ARTKQTAR	2	9	1	8	8	1
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Trypsin/P (PSI-MS)	TKQTAR	4	9	3	8	6	1
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Trypsin/P (PSI-MS)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Trypsin/P (PSI-MS)	KSTGGKAPR	10	18	9	17	9	2
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Trypsin/P (PSI-MS)	KSTGGKAPRKQLATKAAR	10	27	9	26	18	4
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Trypsin/P (PSI-MS)	KQLATKAAR	19	27	18	26	9	2
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Trypsin/P (PSI-MS)	KQLATKAARKSAPSTGGVKKPHR	19	41	18	40	23	5
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Trypsin/P (PSI-MS)	KSAPSTGGVKKPHR	28	41	27	40	14	3
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Trypsin/P (PSI-MS)	KSAPSTGGVKKPHRYR	28	43	27	42	16	3
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Trypsin/P (PSI-MS)	KSAPSTGGVKKPHRYRPGTVALR	28	50	27	49	23	3
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Trypsin/P (PSI-MS)	YRPGTVALR	42	50	41	49	9	0
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Trypsin/P (PSI-MS)	YRPGTVALREIR	42	53	41	52	12	0
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Trypsin/P (PSI-MS)	PGTVALR	44	50	43	49	7	0
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Trypsin/P (PSI-MS)	PGTVALREIR	44	53	43	52	10	0
+P84243	H3.3	Trypsin (PSI-MS) + Trypsin/P (PSI-MS)	ARTKQTAR	2	9	1	8	8	1
+P84243	H3.3	Trypsin (PSI-MS) + Trypsin/P (PSI-MS)	TKQTAR	4	9	3	8	6	1
+P84243	H3.3	Trypsin (PSI-MS) + Trypsin/P (PSI-MS)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P84243	H3.3	Trypsin (PSI-MS) + Trypsin/P (PSI-MS)	KSTGGKAPR	10	18	9	17	9	2
+P84243	H3.3	Trypsin (PSI-MS) + Trypsin/P (PSI-MS)	KSTGGKAPRKQLATKAAR	10	27	9	26	18	4
+P84243	H3.3	Trypsin (PSI-MS) + Trypsin/P (PSI-MS)	KQLATKAAR	19	27	18	26	9	2
+P84243	H3.3	Trypsin (PSI-MS) + Trypsin/P (PSI-MS)	KQLATKAARKSAPSTGGVKKPHR	19	41	18	40	23	5
+P84243	H3.3	Trypsin (PSI-MS) + Trypsin/P (PSI-MS)	KSAPSTGGVKKPHR	28	41	27	40	14	3
+P84243	H3.3	Trypsin (PSI-MS) + Trypsin/P (PSI-MS)	KSAPSTGGVKKPHRYR	28	43	27	42	16	3
+P84243	H3.3	Trypsin (PSI-MS) + Trypsin/P (PSI-MS)	YRPGTVALR	42	50	41	49	9	0
+P84243	H3.3	Trypsin (PSI-MS) + Trypsin/P (PSI-MS)	PGTVALR	44	50	43	49	7	0
+P84243	H3.3	Trypsin (PSI-MS) + Trypsin/P (PSI-MS)	PGTVALREIR	44	53	43	52	10	0
+P84243	H3.3	Arg-C (PSI-MS)	ARTKQTAR	2	9	1	8	8	1
+P84243	H3.3	Arg-C (PSI-MS)	TKQTAR	4	9	3	8	6	1
+P84243	H3.3	Arg-C (PSI-MS)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P84243	H3.3	Arg-C (PSI-MS)	KSTGGKAPR	10	18	9	17	9	2
+P84243	H3.3	Arg-C (PSI-MS)	KSTGGKAPRKQLATKAAR	10	27	9	26	18	4
+P84243	H3.3	Arg-C (PSI-MS)	KQLATKAAR	19	27	18	26	9	2
+P84243	H3.3	Arg-C (PSI-MS)	KQLATKAARKSAPSTGGVKKPHR	19	41	18	40	23	5
+P84243	H3.3	Arg-C (PSI-MS)	KSAPSTGGVKKPHR	28	41	27	40	14	3
+P84243	H3.3	Arg-C (PSI-MS)	KSAPSTGGVKKPHRYRPGTVALR	28	50	27	49	23	3
+P84243	H3.3	Arg-C (PSI-MS)	YRPGTVALR	42	50	41	49	9	0
+P84243	H3.3	Arg-C (PSI-MS)	YRPGTVALREIR	42	53	41	52	12	0
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Arg-C (PSI-MS)	ARTKQTAR	2	9	1	8	8	1
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Arg-C (PSI-MS)	TKQTAR	4	9	3	8	6	1
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Arg-C (PSI-MS)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Arg-C (PSI-MS)	KSTGGKAPR	10	18	9	17	9	2
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Arg-C (PSI-MS)	KSTGGKAPRKQLATKAAR	10	27	9	26	18	4
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Arg-C (PSI-MS)	KQLATKAAR	19	27	18	26	9	2
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Arg-C (PSI-MS)	KQLATKAARKSAPSTGGVKKPHR	19	41	18	40	23	5
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Arg-C (PSI-MS)	KSAPSTGGVKKPHR	28	41	27	40	14	3
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Arg-C (PSI-MS)	KSAPSTGGVKKPHRYRPGTVALR	28	50	27	49	23	3
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Arg-C (PSI-MS)	YRPGTVALR	42	50	41	49	9	0
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Arg-C (PSI-MS)	YRPGTVALREIR	42	53	41	52	12	0
+P84243	H3.3	Trypsin (PSI-MS) + Arg-C (PSI-MS)	ARTKQTAR	2	9	1	8	8	1
+P84243	H3.3	Trypsin (PSI-MS) + Arg-C (PSI-MS)	TKQTAR	4	9	3	8	6	1
+P84243	H3.3	Trypsin (PSI-MS) + Arg-C (PSI-MS)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P84243	H3.3	Trypsin (PSI-MS) + Arg-C (PSI-MS)	KSTGGKAPR	10	18	9	17	9	2
+P84243	H3.3	Trypsin (PSI-MS) + Arg-C (PSI-MS)	KSTGGKAPRKQLATKAAR	10	27	9	26	18	4
+P84243	H3.3	Trypsin (PSI-MS) + Arg-C (PSI-MS)	KQLATKAAR	19	27	18	26	9	2
+P84243	H3.3	Trypsin (PSI-MS) + Arg-C (PSI-MS)	KQLATKAARKSAPSTGGVKKPHR	19	41	18	40	23	5
+P84243	H3.3	Trypsin (PSI-MS) + Arg-C (PSI-MS)	KSAPSTGGVKKPHR	28	41	27	40	14	3
+P84243	H3.3	Trypsin (PSI-MS) + Arg-C (PSI-MS)	KSAPSTGGVKKPHRYRPGTVALR	28	50	27	49	23	3
+P84243	H3.3	Trypsin (PSI-MS) + Arg-C (PSI-MS)	YRPGTVALR	42	50	41	49	9	0
+P84243	H3.3	Trypsin (PSI-MS) + Arg-C (PSI-MS)	YRPGTVALREIR	42	53	41	52	12	0
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C (PSI-MS)	ARTKQTAR	2	9	1	8	8	1
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C (PSI-MS)	TKQTAR	4	9	3	8	6	1
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C (PSI-MS)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C (PSI-MS)	KSTGGKAPR	10	18	9	17	9	2
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C (PSI-MS)	KSTGGKAPRKQLATKAAR	10	27	9	26	18	4
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C (PSI-MS)	KQLATKAAR	19	27	18	26	9	2
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C (PSI-MS)	KQLATKAARKSAPSTGGVKKPHR	19	41	18	40	23	5
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C (PSI-MS)	KSAPSTGGVKKPHR	28	41	27	40	14	3
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C (PSI-MS)	KSAPSTGGVKKPHRYRPGTVALR	28	50	27	49	23	3
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C (PSI-MS)	YRPGTVALR	42	50	41	49	9	0
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C (PSI-MS)	YRPGTVALREIR	42	53	41	52	12	0
+P84243	H3.3	Trypsin (PSI-MS) + Lys-C (PSI-MS)	ARTKQTAR	2	9	1	8	8	1
+P84243	H3.3	Trypsin (PSI-MS) + Lys-C (PSI-MS)	TKQTAR	4	9	3	8	6	1
+P84243	H3.3	Trypsin (PSI-MS) + Lys-C (PSI-MS)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P84243	H3.3	Trypsin (PSI-MS) + Lys-C (PSI-MS)	KSTGGKAPR	10	18	9	17	9	2
+P84243	H3.3	Trypsin (PSI-MS) + Lys-C (PSI-MS)	KSTGGKAPRKQLATKAAR	10	27	9	26	18	4
+P84243	H3.3	Trypsin (PSI-MS) + Lys-C (PSI-MS)	KQLATKAAR	19	27	18	26	9	2
+P84243	H3.3	Trypsin (PSI-MS) + Lys-C (PSI-MS)	KQLATKAARKSAPSTGGVKKPHR	19	41	18	40	23	5
+P84243	H3.3	Trypsin (PSI-MS) + Lys-C (PSI-MS)	KSAPSTGGVKKPHR	28	41	27	40	14	3
+P84243	H3.3	Trypsin (PSI-MS) + Lys-C (PSI-MS)	KSAPSTGGVKKPHRYRPGTVALR	28	50	27	49	23	3
+P84243	H3.3	Trypsin (PSI-MS) + Lys-C (PSI-MS)	YRPGTVALR	42	50	41	49	9	0
+P84243	H3.3	Trypsin (PSI-MS) + Lys-C (PSI-MS)	YRPGTVALREIR	42	53	41	52	12	0
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C/P (PSI-MS)	ARTKQTAR	2	9	1	8	8	1
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C/P (PSI-MS)	TKQTAR	4	9	3	8	6	1
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C/P (PSI-MS)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C/P (PSI-MS)	KSTGGKAPR	10	18	9	17	9	2
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C/P (PSI-MS)	KSTGGKAPRKQLATKAAR	10	27	9	26	18	4
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C/P (PSI-MS)	KQLATKAAR	19	27	18	26	9	2
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C/P (PSI-MS)	KQLATKAARKSAPSTGGVKKPHR	19	41	18	40	23	5
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C/P (PSI-MS)	KSAPSTGGVKKPHR	28	41	27	40	14	3
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C/P (PSI-MS)	KSAPSTGGVKKPHRYRPGTVALR	28	50	27	49	23	3
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C/P (PSI-MS)	YRPGTVALR	42	50	41	49	9	0
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C/P (PSI-MS)	YRPGTVALREIR	42	53	41	52	12	0
+P84243	H3.3	Trypsin (PSI-MS) + Lys-C/P (PSI-MS)	ARTKQTAR	2	9	1	8	8	1
+P84243	H3.3	Trypsin (PSI-MS) + Lys-C/P (PSI-MS)	TKQTAR	4	9	3	8	6	1
+P84243	H3.3	Trypsin (PSI-MS) + Lys-C/P (PSI-MS)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P84243	H3.3	Trypsin (PSI-MS) + Lys-C/P (PSI-MS)	KSTGGKAPR	10	18	9	17	9	2
+P84243	H3.3	Trypsin (PSI-MS) + Lys-C/P (PSI-MS)	KSTGGKAPRKQLATKAAR	10	27	9	26	18	4
+P84243	H3.3	Trypsin (PSI-MS) + Lys-C/P (PSI-MS)	KQLATKAAR	19	27	18	26	9	2
+P84243	H3.3	Trypsin (PSI-MS) + Lys-C/P (PSI-MS)	KQLATKAARKSAPSTGGVKKPHR	19	41	18	40	23	5
+P84243	H3.3	Trypsin (PSI-MS) + Lys-C/P (PSI-MS)	KSAPSTGGVKKPHR	28	41	27	40	14	3
+P84243	H3.3	Trypsin (PSI-MS) + Lys-C/P (PSI-MS)	KSAPSTGGVKKPHRYRPGTVALR	28	50	27	49	23	3
+P84243	H3.3	Trypsin (PSI-MS) + Lys-C/P (PSI-MS)	YRPGTVALR	42	50	41	49	9	0
+P84243	H3.3	Trypsin (PSI-MS) + Lys-C/P (PSI-MS)	YRPGTVALREIR	42	53	41	52	12	0
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-N (PSI-MS)	ARTKQTAR	2	9	1	8	8	1
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-N (PSI-MS)	TKQTAR	4	9	3	8	6	1
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-N (PSI-MS)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-N (PSI-MS)	KSTGGKAPR	10	18	9	17	9	2
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-N (PSI-MS)	KSTGGKAPRKQLATKAAR	10	27	9	26	18	4
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-N (PSI-MS)	KQLATKAAR	19	27	18	26	9	2
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-N (PSI-MS)	KQLATKAARKSAPSTGGVKKPHR	19	41	18	40	23	5
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-N (PSI-MS)	KSAPSTGGVKKPHR	28	41	27	40	14	3
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-N (PSI-MS)	KSAPSTGGVKKPHRYRPGTVALR	28	50	27	49	23	3
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-N (PSI-MS)	YRPGTVALR	42	50	41	49	9	0
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-N (PSI-MS)	YRPGTVALREIR	42	53	41	52	12	0
+P84243	H3.3	Trypsin (PSI-MS) + Lys-N (PSI-MS)	ARTKQTAR	2	9	1	8	8	1
+P84243	H3.3	Trypsin (PSI-MS) + Lys-N (PSI-MS)	TKQTAR	4	9	3	8	6	1
+P84243	H3.3	Trypsin (PSI-MS) + Lys-N (PSI-MS)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P84243	H3.3	Trypsin (PSI-MS) + Lys-N (PSI-MS)	KSTGGKAPR	10	18	9	17	9	2
+P84243	H3.3	Trypsin (PSI-MS) + Lys-N (PSI-MS)	KSTGGKAPRKQLATKAAR	10	27	9	26	18	4
+P84243	H3.3	Trypsin (PSI-MS) + Lys-N (PSI-MS)	KQLATKAAR	19	27	18	26	9	2
+P84243	H3.3	Trypsin (PSI-MS) + Lys-N (PSI-MS)	KQLATKAARKSAPSTGGVKKPHR	19	41	18	40	23	5
+P84243	H3.3	Trypsin (PSI-MS) + Lys-N (PSI-MS)	KSAPSTGGVKKPHR	28	41	27	40	14	3
+P84243	H3.3	Trypsin (PSI-MS) + Lys-N (PSI-MS)	KSAPSTGGVKKPHRYRPGTVALR	28	50	27	49	23	3
+P84243	H3.3	Trypsin (PSI-MS) + Lys-N (PSI-MS)	YRPGTVALR	42	50	41	49	9	0
+P84243	H3.3	Trypsin (PSI-MS) + Lys-N (PSI-MS)	YRPGTVALREIR	42	53	41	52	12	0
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	ARTKQTAR	2	9	1	8	8	1
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	TKQTAR	4	9	3	8	6	1
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	KSTGGKAPR	10	18	9	17	9	2
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	KSTGGKAPRKQLATKAAR	10	27	9	26	18	4
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	KQLATKAAR	19	27	18	26	9	2
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	KQLATKAARKSAPSTGGVKKPHR	19	41	18	40	23	5
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	KSAPSTGGVKKPHR	28	41	27	40	14	3
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	KSAPSTGGVKKPHRYRPGTVALR	28	50	27	49	23	3
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	YRPGTVALR	42	50	41	49	9	0
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	YRPGTVALREIR	42	53	41	52	12	0
+P84243	H3.3	Trypsin (PSI-MS) + Asp-N (PSI-MS)	ARTKQTAR	2	9	1	8	8	1
+P84243	H3.3	Trypsin (PSI-MS) + Asp-N (PSI-MS)	TKQTAR	4	9	3	8	6	1
+P84243	H3.3	Trypsin (PSI-MS) + Asp-N (PSI-MS)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P84243	H3.3	Trypsin (PSI-MS) + Asp-N (PSI-MS)	KSTGGKAPR	10	18	9	17	9	2
+P84243	H3.3	Trypsin (PSI-MS) + Asp-N (PSI-MS)	KSTGGKAPRKQLATKAAR	10	27	9	26	18	4
+P84243	H3.3	Trypsin (PSI-MS) + Asp-N (PSI-MS)	KQLATKAAR	19	27	18	26	9	2
+P84243	H3.3	Trypsin (PSI-MS) + Asp-N (PSI-MS)	KQLATKAARKSAPSTGGVKKPHR	19	41	18	40	23	5
+P84243	H3.3	Trypsin (PSI-MS) + Asp-N (PSI-MS)	KSAPSTGGVKKPHR	28	41	27	40	14	3
+P84243	H3.3	Trypsin (PSI-MS) + Asp-N (PSI-MS)	KSAPSTGGVKKPHRYRPGTVALR	28	50	27	49	23	3
+P84243	H3.3	Trypsin (PSI-MS) + Asp-N (PSI-MS)	YRPGTVALR	42	50	41	49	9	0
+P84243	H3.3	Trypsin (PSI-MS) + Asp-N (PSI-MS)	YRPGTVALREIR	42	53	41	52	12	0
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	ARTKQTAR	2	9	1	8	8	1
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	TKQTAR	4	9	3	8	6	1
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	KSTGGKAPR	10	18	9	17	9	2
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	KSTGGKAPRKQLATKAAR	10	27	9	26	18	4
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	KQLATKAAR	19	27	18	26	9	2
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	KQLATKAARKSAPSTGGVKKPHR	19	41	18	40	23	5
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	KSAPSTGGVKKPHR	28	41	27	40	14	3
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	KSAPSTGGVKKPHRYRPGTVALR	28	50	27	49	23	3
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	YRPGTVALR	42	50	41	49	9	0
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	YRPGTVALREIR	42	53	41	52	12	0
+P84243	H3.3	Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	ARTKQTAR	2	9	1	8	8	1
+P84243	H3.3	Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	TKQTAR	4	9	3	8	6	1
+P84243	H3.3	Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P84243	H3.3	Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	KSTGGKAPR	10	18	9	17	9	2
+P84243	H3.3	Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	KSTGGKAPRKQLATKAAR	10	27	9	26	18	4
+P84243	H3.3	Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	KQLATKAAR	19	27	18	26	9	2
+P84243	H3.3	Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	KQLATKAARKSAPSTGGVKKPHR	19	41	18	40	23	5
+P84243	H3.3	Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	KSAPSTGGVKKPHR	28	41	27	40	14	3
+P84243	H3.3	Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	KSAPSTGGVKKPHRYRPGTVALR	28	50	27	49	23	3
+P84243	H3.3	Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	YRPGTVALR	42	50	41	49	9	0
+P84243	H3.3	Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	YRPGTVALREIR	42	53	41	52	12	0
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	ARTKQTAR	2	9	1	8	8	1
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	TKQTAR	4	9	3	8	6	1
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	KSTGGKAPR	10	18	9	17	9	2
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	KSTGGKAPRKQLATKAAR	10	27	9	26	18	4
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	KQLATKAAR	19	27	18	26	9	2
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	KQLATKAARKSAPSTGGVKKPHR	19	41	18	40	23	5
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	KSAPSTGGVKKPHR	28	41	27	40	14	3
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	KSAPSTGGVKKPHRYRPGTVALR	28	50	27	49	23	3
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	YRPGTVALR	42	50	41	49	9	0
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	YRPGTVALREIR	42	53	41	52	12	0
+P84243	H3.3	Trypsin (PSI-MS) + Glu-C (PSI-MS)	ARTKQTAR	2	9	1	8	8	1
+P84243	H3.3	Trypsin (PSI-MS) + Glu-C (PSI-MS)	TKQTAR	4	9	3	8	6	1
+P84243	H3.3	Trypsin (PSI-MS) + Glu-C (PSI-MS)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P84243	H3.3	Trypsin (PSI-MS) + Glu-C (PSI-MS)	KSTGGKAPR	10	18	9	17	9	2
+P84243	H3.3	Trypsin (PSI-MS) + Glu-C (PSI-MS)	KSTGGKAPRKQLATKAAR	10	27	9	26	18	4
+P84243	H3.3	Trypsin (PSI-MS) + Glu-C (PSI-MS)	KQLATKAAR	19	27	18	26	9	2
+P84243	H3.3	Trypsin (PSI-MS) + Glu-C (PSI-MS)	KQLATKAARKSAPSTGGVKKPHR	19	41	18	40	23	5
+P84243	H3.3	Trypsin (PSI-MS) + Glu-C (PSI-MS)	KSAPSTGGVKKPHR	28	41	27	40	14	3
+P84243	H3.3	Trypsin (PSI-MS) + Glu-C (PSI-MS)	KSAPSTGGVKKPHRYRPGTVALR	28	50	27	49	23	3
+P84243	H3.3	Trypsin (PSI-MS) + Glu-C (PSI-MS)	YRPGTVALR	42	50	41	49	9	0
+P84243	H3.3	Trypsin (PSI-MS) + Glu-C (PSI-MS)	YRPGTVALRE	42	51	41	50	10	0
+P84243	H3.3	Chymotrypsin (PSI-MS)	ARTKQTARKSTGGKAPRKQL	2	21	1	20	20	4
+P84243	H3.3	Chymotrypsin (PSI-MS)	ATKAARKSAPSTGGVKKPHRY	22	42	21	41	21	4
+P84243	H3.3	Chymotrypsin (PSI-MS)	ATKAARKSAPSTGGVKKPHRYRPGTVAL	22	49	21	48	28	4
+P84243	H3.3	Chymotrypsin (PSI-MS)	RPGTVAL	43	49	42	48	7	0
+P84243	H3.3	Chymotrypsin (PSI-MS)	RPGTVALREIRRY	43	55	42	54	13	0
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	ARTKQTAR	2	9	1	8	8	1
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	ARTKQTARKSTGGKAPRKQL	2	21	1	20	20	4
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	TKQTAR	4	9	3	8	6	1
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	KSTGGKAPR	10	18	9	17	9	2
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	KSTGGKAPRKQLATKAAR	10	27	9	26	18	4
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	KQLATKAAR	19	27	18	26	9	2
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	KQLATKAARKSAPSTGGVKKPHR	19	41	18	40	23	5
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	ATKAARKSAPSTGGVKKPHRY	22	42	21	41	21	4
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	ATKAARKSAPSTGGVKKPHRYRPGTVAL	22	49	21	48	28	4
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	KSAPSTGGVKKPHR	28	41	27	40	14	3
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	KSAPSTGGVKKPHRYRPGTVALR	28	50	27	49	23	3
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	YRPGTVALR	42	50	41	49	9	0
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	YRPGTVALREIR	42	53	41	52	12	0
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	RPGTVAL	43	49	42	48	7	0
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	RPGTVALREIRRY	43	55	42	54	13	0
+P84243	H3.3	Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	ARTKQTAR	2	9	1	8	8	1
+P84243	H3.3	Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	TKQTAR	4	9	3	8	6	1
+P84243	H3.3	Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P84243	H3.3	Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	KSTGGKAPR	10	18	9	17	9	2
+P84243	H3.3	Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	KSTGGKAPRKQL	10	21	9	20	12	3
+P84243	H3.3	Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	KQLATKAAR	19	27	18	26	9	2
+P84243	H3.3	Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	ATKAAR	22	27	21	26	6	1
+P84243	H3.3	Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	ATKAARKSAPSTGGVKKPHR	22	41	21	40	20	4
+P84243	H3.3	Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	KSAPSTGGVKKPHR	28	41	27	40	14	3
+P84243	H3.3	Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	KSAPSTGGVKKPHRY	28	42	27	41	15	3
+P84243	H3.3	Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	YRPGTVAL	42	49	41	48	8	0
+P84243	H3.3	Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	RPGTVAL	43	49	42	48	7	0
+P84243	H3.3	Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	RPGTVALR	43	50	42	49	8	0
+P84243	H3.3	Chymotrypsin high specificity (ExPASy)	RPGTVALREIRRY	43	55	42	54	13	0
+P84243	H3.3	Chymotrypsin high specificity (ExPASy)	RPGTVALREIRRYQKSTELLIRKLPF	43	68	42	67	26	2
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	ARTKQTAR	2	9	1	8	8	1
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	TKQTAR	4	9	3	8	6	1
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	KSTGGKAPR	10	18	9	17	9	2
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	KSTGGKAPRKQLATKAAR	10	27	9	26	18	4
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	KQLATKAAR	19	27	18	26	9	2
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	KQLATKAARKSAPSTGGVKKPHR	19	41	18	40	23	5
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	KSAPSTGGVKKPHR	28	41	27	40	14	3
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	KSAPSTGGVKKPHRYRPGTVALR	28	50	27	49	23	3
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	YRPGTVALR	42	50	41	49	9	0
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	YRPGTVALREIR	42	53	41	52	12	0
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	RPGTVALREIRRY	43	55	42	54	13	0
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	RPGTVALREIRRYQKSTELLIRKLPF	43	68	42	67	26	2
+P84243	H3.3	Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	ARTKQTAR	2	9	1	8	8	1
+P84243	H3.3	Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	TKQTAR	4	9	3	8	6	1
+P84243	H3.3	Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P84243	H3.3	Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	KSTGGKAPR	10	18	9	17	9	2
+P84243	H3.3	Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	KSTGGKAPRKQLATKAAR	10	27	9	26	18	4
+P84243	H3.3	Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	KQLATKAAR	19	27	18	26	9	2
+P84243	H3.3	Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	KQLATKAARKSAPSTGGVKKPHR	19	41	18	40	23	5
+P84243	H3.3	Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	KSAPSTGGVKKPHR	28	41	27	40	14	3
+P84243	H3.3	Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	KSAPSTGGVKKPHRY	28	42	27	41	15	3
+P84243	H3.3	Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	YRPGTVALR	42	50	41	49	9	0
+P84243	H3.3	Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	RPGTVALR	43	50	42	49	8	0
+P84243	H3.3	Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	RPGTVALREIR	43	53	42	52	11	0
+P84243	H3.3	Chymotrypsin low specificity (ExPASy)	ARTKQTARKSTGGKAPRKQL	2	21	1	20	20	4
+P84243	H3.3	Chymotrypsin low specificity (ExPASy)	ARTKQTARKSTGGKAPRKQLATKAARKSAPSTGGVKKPH	2	40	1	39	39	8
+P84243	H3.3	Chymotrypsin low specificity (ExPASy)	ATKAARKSAPSTGGVKKPH	22	40	21	39	19	4
+P84243	H3.3	Chymotrypsin low specificity (ExPASy)	ATKAARKSAPSTGGVKKPHRY	22	42	21	41	21	4
+P84243	H3.3	Chymotrypsin low specificity (ExPASy)	RYRPGTVAL	41	49	40	48	9	0
+P84243	H3.3	Chymotrypsin low specificity (ExPASy)	RPGTVAL	43	49	42	48	7	0
+P84243	H3.3	Chymotrypsin low specificity (ExPASy)	RPGTVALREIRRY	43	55	42	54	13	0
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	ARTKQTAR	2	9	1	8	8	1
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	ARTKQTARKSTGGKAPRKQL	2	21	1	20	20	4
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	ARTKQTARKSTGGKAPRKQLATKAARKSAPSTGGVKKPH	2	40	1	39	39	8
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	TKQTAR	4	9	3	8	6	1
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	KSTGGKAPR	10	18	9	17	9	2
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	KSTGGKAPRKQLATKAAR	10	27	9	26	18	4
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	KQLATKAAR	19	27	18	26	9	2
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	KQLATKAARKSAPSTGGVKKPHR	19	41	18	40	23	5
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	ATKAARKSAPSTGGVKKPH	22	40	21	39	19	4
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	ATKAARKSAPSTGGVKKPHRY	22	42	21	41	21	4
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	KSAPSTGGVKKPHR	28	41	27	40	14	3
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	KSAPSTGGVKKPHRYRPGTVALR	28	50	27	49	23	3
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	RYRPGTVAL	41	49	40	48	9	0
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	YRPGTVALR	42	50	41	49	9	0
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	YRPGTVALREIR	42	53	41	52	12	0
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	RPGTVAL	43	49	42	48	7	0
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	RPGTVALREIRRY	43	55	42	54	13	0
+P84243	H3.3	Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	ARTKQTAR	2	9	1	8	8	1
+P84243	H3.3	Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	TKQTAR	4	9	3	8	6	1
+P84243	H3.3	Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P84243	H3.3	Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	KSTGGKAPR	10	18	9	17	9	2
+P84243	H3.3	Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	KSTGGKAPRKQL	10	21	9	20	12	3
+P84243	H3.3	Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	KQLATKAAR	19	27	18	26	9	2
+P84243	H3.3	Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	ATKAAR	22	27	21	26	6	1
+P84243	H3.3	Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	ATKAARKSAPSTGGVKKPH	22	40	21	39	19	4
+P84243	H3.3	Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	KSAPSTGGVKKPH	28	40	27	39	13	3
+P84243	H3.3	Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	KSAPSTGGVKKPHR	28	41	27	40	14	3
+P84243	H3.3	Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	YRPGTVAL	42	49	41	48	8	0
+P84243	H3.3	Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	RPGTVAL	43	49	42	48	7	0
+P84243	H3.3	Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	RPGTVALR	43	50	42	49	8	0
+P84243	H3.3	Proteinase K (ExPASy)	RTKQT	3	7	2	6	5	1
+P84243	H3.3	Proteinase K (ExPASy)	KQTA	5	8	4	7	4	1
+P84243	H3.3	Proteinase K (ExPASy)	ARKST	8	12	7	11	5	1
+P84243	H3.3	Proteinase K (ExPASy)	RKST	9	12	8	11	4	1
+P84243	H3.3	Proteinase K (ExPASy)	RKSTGGKA	9	16	8	15	8	2
+P84243	H3.3	Proteinase K (ExPASy)	GGKA	13	16	12	15	4	1
+P84243	H3.3	Proteinase K (ExPASy)	GGKAPRKQL	13	21	12	20	9	2
+P84243	H3.3	Proteinase K (ExPASy)	PRKQL	17	21	16	20	5	1
+P84243	H3.3	Proteinase K (ExPASy)	PRKQLA	17	22	16	21	6	1
+P84243	H3.3	Proteinase K (ExPASy)	ARKSA	26	30	25	29	5	1
+P84243	H3.3	Proteinase K (ExPASy)	RKSA	27	30	26	29	4	1
+P84243	H3.3	Proteinase K (ExPASy)	RKSAPST	27	33	26	32	7	1
+P84243	H3.3	Proteinase K (ExPASy)	PSTGGV	31	36	30	35	6	0
+P84243	H3.3	Proteinase K (ExPASy)	GGVKKPHRY	34	42	33	41	9	2
+P84243	H3.3	Proteinase K (ExPASy)	KKPHRY	37	42	36	41	6	2
+P84243	H3.3	Proteinase K (ExPASy)	KKPHRYRPGT	37	46	36	45	10	2
+P84243	H3.3	Proteinase K (ExPASy)	RPGT	43	46	42	45	4	0
+P84243	H3.3	Proteinase K (ExPASy)	RPGTV	43	47	42	46	5	0
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	ARTKQTAR	2	9	1	8	8	1
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	RTKQT	3	7	2	6	5	1
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	TKQTAR	4	9	3	8	6	1
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	TKQTARKSTGGKAPR	4	18	3	17	15	3
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	KQTA	5	8	4	7	4	1
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	ARKST	8	12	7	11	5	1
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	RKST	9	12	8	11	4	1
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	RKSTGGKA	9	16	8	15	8	2
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	KSTGGKAPR	10	18	9	17	9	2
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	KSTGGKAPRKQLATKAAR	10	27	9	26	18	4
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	GGKA	13	16	12	15	4	1
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	GGKAPRKQL	13	21	12	20	9	2
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	PRKQL	17	21	16	20	5	1
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	PRKQLA	17	22	16	21	6	1
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	KQLATKAAR	19	27	18	26	9	2
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	KQLATKAARKSAPSTGGVKKPHR	19	41	18	40	23	5
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	ARKSA	26	30	25	29	5	1
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	RKSA	27	30	26	29	4	1
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	RKSAPST	27	33	26	32	7	1
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	KSAPSTGGVKKPHR	28	41	27	40	14	3
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	KSAPSTGGVKKPHRYRPGTVALR	28	50	27	49	23	3
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	PSTGGV	31	36	30	35	6	0
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	GGVKKPHRY	34	42	33	41	9	2
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	KKPHRY	37	42	36	41	6	2
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	KKPHRYRPGT	37	46	36	45	10	2
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	YRPGTVALR	42	50	41	49	9	0
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	YRPGTVALREIR	42	53	41	52	12	0
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	RPGT	43	46	42	45	4	0
+P84243	H3.3	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	RPGTV	43	47	42	46	5	0
+P84243	H3.3	Trypsin (PSI-MS) + Proteinase K (ExPASy)	TKQT	4	7	3	6	4	1
+P84243	H3.3	Trypsin (PSI-MS) + Proteinase K (ExPASy)	KQTA	5	8	4	7	4	1
+P84243	H3.3	Trypsin (PSI-MS) + Proteinase K (ExPASy)	RKST	9	12	8	11	4	1
+P84243	H3.3	Trypsin (PSI-MS) + Proteinase K (ExPASy)	KSTGGKA	10	16	9	15	7	2
+P84243	H3.3	Trypsin (PSI-MS) + Proteinase K (ExPASy)	GGKA	13	16	12	15	4	1
+P84243	H3.3	Trypsin (PSI-MS) + Proteinase K (ExPASy)	GGKAPR	13	18	12	17	6	1
+P84243	H3.3	Trypsin (PSI-MS) + Proteinase K (ExPASy)	PRKQL	17	21	16	20	5	1
+P84243	H3.3	Trypsin (PSI-MS) + Proteinase K (ExPASy)	KQLA	19	22	18	21	4	1
+P84243	H3.3	Trypsin (PSI-MS) + Proteinase K (ExPASy)	RKSA	27	30	26	29	4	1
+P84243	H3.3	Trypsin (PSI-MS) + Proteinase K (ExPASy)	KSAPST	28	33	27	32	6	1
+P84243	H3.3	Trypsin (PSI-MS) + Proteinase K (ExPASy)	PSTGGV	31	36	30	35	6	0
+P84243	H3.3	Trypsin (PSI-MS) + Proteinase K (ExPASy)	GGVKKPHR	34	41	33	40	8	2
+P84243	H3.3	Trypsin (PSI-MS) + Proteinase K (ExPASy)	KKPHR	37	41	36	40	5	2
+P84243	H3.3	Trypsin (PSI-MS) + Proteinase K (ExPASy)	KKPHRY	37	42	36	41	6	2
+P84243	H3.3	Trypsin (PSI-MS) + Proteinase K (ExPASy)	YRPGT	42	46	41	45	5	0
+P84243	H3.3	Trypsin (PSI-MS) + Proteinase K (ExPASy)	RPGT	43	46	42	45	4	0
+P84243	H3.3	Trypsin (PSI-MS) + Proteinase K (ExPASy)	RPGTV	43	47	42	46	5	0
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K	SGRGKGGKGLGKGGAKR	2	18	1	17	17	4
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K	GKGGKGLGKGGAKR	5	18	4	17	14	4
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K	GKGGKGLGKGGAKRHR	5	20	4	19	16	4
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K	HRKVLR	19	24	18	23	6	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K	KVLR	21	24	20	23	4	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K	KVLRDNIQGITKPAIR	21	36	20	35	16	2
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K	DNIQGITKPAIR	25	36	24	35	12	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K	DNIQGITKPAIRR	25	37	24	36	13	1
+P62805	H4	Trypsin/P (PSI-MS)	SGRGKGGKGLGKGGAKR	2	18	1	17	17	4
+P62805	H4	Trypsin/P (PSI-MS)	GKGGKGLGKGGAKR	5	18	4	17	14	4
+P62805	H4	Trypsin/P (PSI-MS)	GKGGKGLGKGGAKRHR	5	20	4	19	16	4
+P62805	H4	Trypsin/P (PSI-MS)	HRKVLR	19	24	18	23	6	1
+P62805	H4	Trypsin/P (PSI-MS)	KVLR	21	24	20	23	4	1
+P62805	H4	Trypsin/P (PSI-MS)	KVLRDNIQGITKPAIR	21	36	20	35	16	2
+P62805	H4	Trypsin/P (PSI-MS)	DNIQGITKPAIR	25	36	24	35	12	1
+P62805	H4	Trypsin/P (PSI-MS)	DNIQGITKPAIRR	25	37	24	36	13	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Trypsin/P (PSI-MS)	SGRGKGGKGLGKGGAKR	2	18	1	17	17	4
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Trypsin/P (PSI-MS)	GKGGKGLGKGGAKR	5	18	4	17	14	4
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Trypsin/P (PSI-MS)	GKGGKGLGKGGAKRHR	5	20	4	19	16	4
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Trypsin/P (PSI-MS)	HRKVLR	19	24	18	23	6	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Trypsin/P (PSI-MS)	KVLR	21	24	20	23	4	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Trypsin/P (PSI-MS)	KVLRDNIQGITKPAIR	21	36	20	35	16	2
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Trypsin/P (PSI-MS)	DNIQGITKPAIR	25	36	24	35	12	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Trypsin/P (PSI-MS)	DNIQGITKPAIRR	25	37	24	36	13	1
+P62805	H4	Trypsin (PSI-MS) + Trypsin/P (PSI-MS)	SGRGKGGKGLGKGGAKR	2	18	1	17	17	4
+P62805	H4	Trypsin (PSI-MS) + Trypsin/P (PSI-MS)	GKGGKGLGKGGAKR	5	18	4	17	14	4
+P62805	H4	Trypsin (PSI-MS) + Trypsin/P (PSI-MS)	GKGGKGLGKGGAKRHR	5	20	4	19	16	4
+P62805	H4	Trypsin (PSI-MS) + Trypsin/P (PSI-MS)	HRKVLR	19	24	18	23	6	1
+P62805	H4	Trypsin (PSI-MS) + Trypsin/P (PSI-MS)	KVLR	21	24	20	23	4	1
+P62805	H4	Trypsin (PSI-MS) + Trypsin/P (PSI-MS)	KVLRDNIQGITKPAIR	21	36	20	35	16	2
+P62805	H4	Trypsin (PSI-MS) + Trypsin/P (PSI-MS)	DNIQGITKPAIR	25	36	24	35	12	1
+P62805	H4	Trypsin (PSI-MS) + Trypsin/P (PSI-MS)	DNIQGITKPAIRR	25	37	24	36	13	1
+P62805	H4	Arg-C (PSI-MS)	SGRGKGGKGLGKGGAKR	2	18	1	17	17	4
+P62805	H4	Arg-C (PSI-MS)	GKGGKGLGKGGAKR	5	18	4	17	14	4
+P62805	H4	Arg-C (PSI-MS)	GKGGKGLGKGGAKRHR	5	20	4	19	16	4
+P62805	H4	Arg-C (PSI-MS)	HRKVLR	19	24	18	23	6	1
+P62805	H4	Arg-C (PSI-MS)	KVLR	21	24	20	23	4	1
+P62805	H4	Arg-C (PSI-MS)	KVLRDNIQGITKPAIR	21	36	20	35	16	2
+P62805	H4	Arg-C (PSI-MS)	DNIQGITKPAIR	25	36	24	35	12	1
+P62805	H4	Arg-C (PSI-MS)	DNIQGITKPAIRR	25	37	24	36	13	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Arg-C (PSI-MS)	SGRGKGGKGLGKGGAKR	2	18	1	17	17	4
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Arg-C (PSI-MS)	GKGGKGLGKGGAKR	5	18	4	17	14	4
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Arg-C (PSI-MS)	GKGGKGLGKGGAKRHR	5	20	4	19	16	4
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Arg-C (PSI-MS)	HRKVLR	19	24	18	23	6	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Arg-C (PSI-MS)	KVLR	21	24	20	23	4	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Arg-C (PSI-MS)	KVLRDNIQGITKPAIR	21	36	20	35	16	2
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Arg-C (PSI-MS)	DNIQGITKPAIR	25	36	24	35	12	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Arg-C (PSI-MS)	DNIQGITKPAIRR	25	37	24	36	13	1
+P62805	H4	Trypsin (PSI-MS) + Arg-C (PSI-MS)	SGRGKGGKGLGKGGAKR	2	18	1	17	17	4
+P62805	H4	Trypsin (PSI-MS) + Arg-C (PSI-MS)	GKGGKGLGKGGAKR	5	18	4	17	14	4
+P62805	H4	Trypsin (PSI-MS) + Arg-C (PSI-MS)	GKGGKGLGKGGAKRHR	5	20	4	19	16	4
+P62805	H4	Trypsin (PSI-MS) + Arg-C (PSI-MS)	HRKVLR	19	24	18	23	6	1
+P62805	H4	Trypsin (PSI-MS) + Arg-C (PSI-MS)	KVLR	21	24	20	23	4	1
+P62805	H4	Trypsin (PSI-MS) + Arg-C (PSI-MS)	KVLRDNIQGITKPAIR	21	36	20	35	16	2
+P62805	H4	Trypsin (PSI-MS) + Arg-C (PSI-MS)	DNIQGITKPAIR	25	36	24	35	12	1
+P62805	H4	Trypsin (PSI-MS) + Arg-C (PSI-MS)	DNIQGITKPAIRR	25	37	24	36	13	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C (PSI-MS)	SGRGKGGKGLGKGGAKR	2	18	1	17	17	4
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C (PSI-MS)	GKGGKGLGKGGAKR	5	18	4	17	14	4
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C (PSI-MS)	GKGGKGLGKGGAKRHR	5	20	4	19	16	4
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C (PSI-MS)	HRKVLR	19	24	18	23	6	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C (PSI-MS)	KVLR	21	24	20	23	4	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C (PSI-MS)	KVLRDNIQGITKPAIR	21	36	20	35	16	2
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C (PSI-MS)	DNIQGITKPAIR	25	36	24	35	12	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C (PSI-MS)	DNIQGITKPAIRR	25	37	24	36	13	1
+P62805	H4	Trypsin (PSI-MS) + Lys-C (PSI-MS)	SGRGKGGKGLGKGGAKR	2	18	1	17	17	4
+P62805	H4	Trypsin (PSI-MS) + Lys-C (PSI-MS)	GKGGKGLGKGGAKR	5	18	4	17	14	4
+P62805	H4	Trypsin (PSI-MS) + Lys-C (PSI-MS)	GKGGKGLGKGGAKRHR	5	20	4	19	16	4
+P62805	H4	Trypsin (PSI-MS) + Lys-C (PSI-MS)	HRKVLR	19	24	18	23	6	1
+P62805	H4	Trypsin (PSI-MS) + Lys-C (PSI-MS)	KVLR	21	24	20	23	4	1
+P62805	H4	Trypsin (PSI-MS) + Lys-C (PSI-MS)	KVLRDNIQGITKPAIR	21	36	20	35	16	2
+P62805	H4	Trypsin (PSI-MS) + Lys-C (PSI-MS)	DNIQGITKPAIR	25	36	24	35	12	1
+P62805	H4	Trypsin (PSI-MS) + Lys-C (PSI-MS)	DNIQGITKPAIRR	25	37	24	36	13	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C/P (PSI-MS)	SGRGKGGKGLGKGGAKR	2	18	1	17	17	4
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C/P (PSI-MS)	GKGGKGLGKGGAKR	5	18	4	17	14	4
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C/P (PSI-MS)	GKGGKGLGKGGAKRHR	5	20	4	19	16	4
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C/P (PSI-MS)	HRKVLR	19	24	18	23	6	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C/P (PSI-MS)	KVLR	21	24	20	23	4	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C/P (PSI-MS)	KVLRDNIQGITKPAIR	21	36	20	35	16	2
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C/P (PSI-MS)	DNIQGITKPAIR	25	36	24	35	12	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-C/P (PSI-MS)	DNIQGITKPAIRR	25	37	24	36	13	1
+P62805	H4	Trypsin (PSI-MS) + Lys-C/P (PSI-MS)	SGRGKGGKGLGKGGAKR	2	18	1	17	17	4
+P62805	H4	Trypsin (PSI-MS) + Lys-C/P (PSI-MS)	GKGGKGLGKGGAKR	5	18	4	17	14	4
+P62805	H4	Trypsin (PSI-MS) + Lys-C/P (PSI-MS)	GKGGKGLGKGGAKRHR	5	20	4	19	16	4
+P62805	H4	Trypsin (PSI-MS) + Lys-C/P (PSI-MS)	HRKVLR	19	24	18	23	6	1
+P62805	H4	Trypsin (PSI-MS) + Lys-C/P (PSI-MS)	KVLR	21	24	20	23	4	1
+P62805	H4	Trypsin (PSI-MS) + Lys-C/P (PSI-MS)	KVLRDNIQGITKPAIR	21	36	20	35	16	2
+P62805	H4	Trypsin (PSI-MS) + Lys-C/P (PSI-MS)	DNIQGITKPAIR	25	36	24	35	12	1
+P62805	H4	Trypsin (PSI-MS) + Lys-C/P (PSI-MS)	DNIQGITKPAIRR	25	37	24	36	13	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-N (PSI-MS)	SGRGKGGKGLGKGGAKR	2	18	1	17	17	4
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-N (PSI-MS)	GKGGKGLGKGGAKR	5	18	4	17	14	4
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-N (PSI-MS)	GKGGKGLGKGGAKRHR	5	20	4	19	16	4
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-N (PSI-MS)	HRKVLR	19	24	18	23	6	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-N (PSI-MS)	KVLR	21	24	20	23	4	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-N (PSI-MS)	KVLRDNIQGITKPAIR	21	36	20	35	16	2
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-N (PSI-MS)	DNIQGITKPAIR	25	36	24	35	12	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Lys-N (PSI-MS)	DNIQGITKPAIRR	25	37	24	36	13	1
+P62805	H4	Trypsin (PSI-MS) + Lys-N (PSI-MS)	SGRGKGGKGLGKGGAKR	2	18	1	17	17	4
+P62805	H4	Trypsin (PSI-MS) + Lys-N (PSI-MS)	GKGGKGLGKGGAKR	5	18	4	17	14	4
+P62805	H4	Trypsin (PSI-MS) + Lys-N (PSI-MS)	GKGGKGLGKGGAKRHR	5	20	4	19	16	4
+P62805	H4	Trypsin (PSI-MS) + Lys-N (PSI-MS)	HRKVLR	19	24	18	23	6	1
+P62805	H4	Trypsin (PSI-MS) + Lys-N (PSI-MS)	KVLR	21	24	20	23	4	1
+P62805	H4	Trypsin (PSI-MS) + Lys-N (PSI-MS)	KVLRDNIQGITKPAIR	21	36	20	35	16	2
+P62805	H4	Trypsin (PSI-MS) + Lys-N (PSI-MS)	DNIQGITKPAIR	25	36	24	35	12	1
+P62805	H4	Trypsin (PSI-MS) + Lys-N (PSI-MS)	DNIQGITKPAIRR	25	37	24	36	13	1
+P62805	H4	Asp-N (PSI-MS)	SGRGKGGKGLGKGGAKRHRKVLR	2	24	1	23	23	5
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	SGRGKGGKGLGKGGAKR	2	18	1	17	17	4
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	SGRGKGGKGLGKGGAKRHRKVLR	2	24	1	23	23	5
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	GKGGKGLGKGGAKR	5	18	4	17	14	4
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	GKGGKGLGKGGAKRHR	5	20	4	19	16	4
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	HRKVLR	19	24	18	23	6	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	KVLR	21	24	20	23	4	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	KVLRDNIQGITKPAIR	21	36	20	35	16	2
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	DNIQGITKPAIR	25	36	24	35	12	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N (PSI-MS)	DNIQGITKPAIRR	25	37	24	36	13	1
+P62805	H4	Trypsin (PSI-MS) + Asp-N (PSI-MS)	SGRGKGGKGLGKGGAKR	2	18	1	17	17	4
+P62805	H4	Trypsin (PSI-MS) + Asp-N (PSI-MS)	GKGGKGLGKGGAKR	5	18	4	17	14	4
+P62805	H4	Trypsin (PSI-MS) + Asp-N (PSI-MS)	GKGGKGLGKGGAKRHR	5	20	4	19	16	4
+P62805	H4	Trypsin (PSI-MS) + Asp-N (PSI-MS)	HRKVLR	19	24	18	23	6	1
+P62805	H4	Trypsin (PSI-MS) + Asp-N (PSI-MS)	KVLR	21	24	20	23	4	1
+P62805	H4	Trypsin (PSI-MS) + Asp-N (PSI-MS)	KVLRDNIQGITKPAIR	21	36	20	35	16	2
+P62805	H4	Trypsin (PSI-MS) + Asp-N (PSI-MS)	DNIQGITKPAIR	25	36	24	35	12	1
+P62805	H4	Trypsin (PSI-MS) + Asp-N (PSI-MS)	DNIQGITKPAIRR	25	37	24	36	13	1
+P62805	H4	Asp-N ambic (PSI-MS)	SGRGKGGKGLGKGGAKRHRKVLR	2	24	1	23	23	5
+P62805	H4	Asp-N ambic (PSI-MS)	DNIQGITKPAIRRLARRGGVKRISGLIY	25	52	24	51	28	2
+P62805	H4	Asp-N ambic (PSI-MS)	DNIQGITKPAIRRLARRGGVKRISGLIYE	25	53	24	52	29	2
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	SGRGKGGKGLGKGGAKR	2	18	1	17	17	4
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	SGRGKGGKGLGKGGAKRHRKVLR	2	24	1	23	23	5
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	GKGGKGLGKGGAKR	5	18	4	17	14	4
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	GKGGKGLGKGGAKRHR	5	20	4	19	16	4
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	HRKVLR	19	24	18	23	6	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	KVLR	21	24	20	23	4	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	KVLRDNIQGITKPAIR	21	36	20	35	16	2
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	DNIQGITKPAIR	25	36	24	35	12	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	DNIQGITKPAIRR	25	37	24	36	13	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	DNIQGITKPAIRRLARRGGVKRISGLIY	25	52	24	51	28	2
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Asp-N ambic (PSI-MS)	DNIQGITKPAIRRLARRGGVKRISGLIYE	25	53	24	52	29	2
+P62805	H4	Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	SGRGKGGKGLGKGGAKR	2	18	1	17	17	4
+P62805	H4	Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	GKGGKGLGKGGAKR	5	18	4	17	14	4
+P62805	H4	Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	GKGGKGLGKGGAKRHR	5	20	4	19	16	4
+P62805	H4	Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	HRKVLR	19	24	18	23	6	1
+P62805	H4	Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	KVLR	21	24	20	23	4	1
+P62805	H4	Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	KVLRDNIQGITKPAIR	21	36	20	35	16	2
+P62805	H4	Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	DNIQGITKPAIR	25	36	24	35	12	1
+P62805	H4	Trypsin (PSI-MS) + Asp-N ambic (PSI-MS)	DNIQGITKPAIRR	25	37	24	36	13	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	SGRGKGGKGLGKGGAKR	2	18	1	17	17	4
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	GKGGKGLGKGGAKR	5	18	4	17	14	4
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	GKGGKGLGKGGAKRHR	5	20	4	19	16	4
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	HRKVLR	19	24	18	23	6	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	KVLR	21	24	20	23	4	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	KVLRDNIQGITKPAIR	21	36	20	35	16	2
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	DNIQGITKPAIR	25	36	24	35	12	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Glu-C (PSI-MS)	DNIQGITKPAIRR	25	37	24	36	13	1
+P62805	H4	Trypsin (PSI-MS) + Glu-C (PSI-MS)	SGRGKGGKGLGKGGAKR	2	18	1	17	17	4
+P62805	H4	Trypsin (PSI-MS) + Glu-C (PSI-MS)	GKGGKGLGKGGAKR	5	18	4	17	14	4
+P62805	H4	Trypsin (PSI-MS) + Glu-C (PSI-MS)	GKGGKGLGKGGAKRHR	5	20	4	19	16	4
+P62805	H4	Trypsin (PSI-MS) + Glu-C (PSI-MS)	HRKVLR	19	24	18	23	6	1
+P62805	H4	Trypsin (PSI-MS) + Glu-C (PSI-MS)	KVLR	21	24	20	23	4	1
+P62805	H4	Trypsin (PSI-MS) + Glu-C (PSI-MS)	KVLRDNIQGITKPAIR	21	36	20	35	16	2
+P62805	H4	Trypsin (PSI-MS) + Glu-C (PSI-MS)	DNIQGITKPAIR	25	36	24	35	12	1
+P62805	H4	Trypsin (PSI-MS) + Glu-C (PSI-MS)	DNIQGITKPAIRR	25	37	24	36	13	1
+P62805	H4	Chymotrypsin (PSI-MS)	SGRGKGGKGL	2	11	1	10	10	2
+P62805	H4	Chymotrypsin (PSI-MS)	SGRGKGGKGLGKGGAKRHRKVL	2	23	1	22	22	5
+P62805	H4	Chymotrypsin (PSI-MS)	GKGGAKRHRKVL	12	23	11	22	12	3
+P62805	H4	Chymotrypsin (PSI-MS)	GKGGAKRHRKVLRDNIQGITKPAIRRL	12	38	11	37	27	4
+P62805	H4	Chymotrypsin (PSI-MS)	RDNIQGITKPAIRRL	24	38	23	37	15	1
+P62805	H4	Chymotrypsin (PSI-MS)	RDNIQGITKPAIRRLARRGGVKRISGL	24	50	23	49	27	2
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	SGRGKGGKGL	2	11	1	10	10	2
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	SGRGKGGKGLGKGGAKR	2	18	1	17	17	4
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	SGRGKGGKGLGKGGAKRHRKVL	2	23	1	22	22	5
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	GKGGKGLGKGGAKR	5	18	4	17	14	4
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	GKGGKGLGKGGAKRHR	5	20	4	19	16	4
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	GKGGAKRHRKVL	12	23	11	22	12	3
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	GKGGAKRHRKVLRDNIQGITKPAIRRL	12	38	11	37	27	4
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	HRKVLR	19	24	18	23	6	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	KVLR	21	24	20	23	4	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	KVLRDNIQGITKPAIR	21	36	20	35	16	2
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	RDNIQGITKPAIRRL	24	38	23	37	15	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	RDNIQGITKPAIRRLARRGGVKRISGL	24	50	23	49	27	2
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	DNIQGITKPAIR	25	36	24	35	12	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin (PSI-MS)	DNIQGITKPAIRR	25	37	24	36	13	1
+P62805	H4	Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	SGRGKGGKGL	2	11	1	10	10	2
+P62805	H4	Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	GKGGKGL	5	11	4	10	7	2
+P62805	H4	Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	GKGGKGLGKGGAKR	5	18	4	17	14	4
+P62805	H4	Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	GKGGAKR	12	18	11	17	7	2
+P62805	H4	Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	GKGGAKRHR	12	20	11	19	9	2
+P62805	H4	Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	HRKVL	19	23	18	22	5	1
+P62805	H4	Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	KVLR	21	24	20	23	4	1
+P62805	H4	Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	RDNIQGITKPAIR	24	36	23	35	13	1
+P62805	H4	Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	DNIQGITKPAIR	25	36	24	35	12	1
+P62805	H4	Trypsin (PSI-MS) + Chymotrypsin (PSI-MS)	DNIQGITKPAIRR	25	37	24	36	13	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	SGRGKGGKGLGKGGAKR	2	18	1	17	17	4
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	GKGGKGLGKGGAKR	5	18	4	17	14	4
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	GKGGKGLGKGGAKRHR	5	20	4	19	16	4
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	HRKVLR	19	24	18	23	6	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	KVLR	21	24	20	23	4	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	KVLRDNIQGITKPAIR	21	36	20	35	16	2
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	DNIQGITKPAIR	25	36	24	35	12	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin high specificity (ExPASy)	DNIQGITKPAIRR	25	37	24	36	13	1
+P62805	H4	Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	SGRGKGGKGLGKGGAKR	2	18	1	17	17	4
+P62805	H4	Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	GKGGKGLGKGGAKR	5	18	4	17	14	4
+P62805	H4	Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	GKGGKGLGKGGAKRHR	5	20	4	19	16	4
+P62805	H4	Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	HRKVLR	19	24	18	23	6	1
+P62805	H4	Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	KVLR	21	24	20	23	4	1
+P62805	H4	Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	KVLRDNIQGITKPAIR	21	36	20	35	16	2
+P62805	H4	Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	DNIQGITKPAIR	25	36	24	35	12	1
+P62805	H4	Trypsin (PSI-MS) + Chymotrypsin high specificity (ExPASy)	DNIQGITKPAIRR	25	37	24	36	13	1
+P62805	H4	Chymotrypsin low specificity (ExPASy)	SGRGKGGKGL	2	11	1	10	10	2
+P62805	H4	Chymotrypsin low specificity (ExPASy)	SGRGKGGKGLGKGGAKRH	2	19	1	18	18	4
+P62805	H4	Chymotrypsin low specificity (ExPASy)	GKGGAKRH	12	19	11	18	8	2
+P62805	H4	Chymotrypsin low specificity (ExPASy)	GKGGAKRHRKVL	12	23	11	22	12	3
+P62805	H4	Chymotrypsin low specificity (ExPASy)	RKVL	20	23	19	22	4	1
+P62805	H4	Chymotrypsin low specificity (ExPASy)	RKVLRDNIQGITKPAIRRL	20	38	19	37	19	2
+P62805	H4	Chymotrypsin low specificity (ExPASy)	RDNIQGITKPAIRRL	24	38	23	37	15	1
+P62805	H4	Chymotrypsin low specificity (ExPASy)	RDNIQGITKPAIRRLARRGGVKRISGL	24	50	23	49	27	2
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	SGRGKGGKGL	2	11	1	10	10	2
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	SGRGKGGKGLGKGGAKR	2	18	1	17	17	4
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	SGRGKGGKGLGKGGAKRH	2	19	1	18	18	4
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	GKGGKGLGKGGAKR	5	18	4	17	14	4
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	GKGGKGLGKGGAKRHR	5	20	4	19	16	4
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	GKGGAKRH	12	19	11	18	8	2
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	GKGGAKRHRKVL	12	23	11	22	12	3
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	HRKVLR	19	24	18	23	6	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	RKVL	20	23	19	22	4	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	RKVLRDNIQGITKPAIRRL	20	38	19	37	19	2
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	KVLR	21	24	20	23	4	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	KVLRDNIQGITKPAIR	21	36	20	35	16	2
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	RDNIQGITKPAIRRL	24	38	23	37	15	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	RDNIQGITKPAIRRLARRGGVKRISGL	24	50	23	49	27	2
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	DNIQGITKPAIR	25	36	24	35	12	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Chymotrypsin low specificity (ExPASy)	DNIQGITKPAIRR	25	37	24	36	13	1
+P62805	H4	Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	SGRGKGGKGL	2	11	1	10	10	2
+P62805	H4	Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	GKGGKGL	5	11	4	10	7	2
+P62805	H4	Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	GKGGKGLGKGGAKR	5	18	4	17	14	4
+P62805	H4	Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	GKGGAKR	12	18	11	17	7	2
+P62805	H4	Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	GKGGAKRH	12	19	11	18	8	2
+P62805	H4	Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	RKVL	20	23	19	22	4	1
+P62805	H4	Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	KVLR	21	24	20	23	4	1
+P62805	H4	Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	RDNIQGITKPAIR	24	36	23	35	13	1
+P62805	H4	Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	DNIQGITKPAIR	25	36	24	35	12	1
+P62805	H4	Trypsin (PSI-MS) + Chymotrypsin low specificity (ExPASy)	DNIQGITKPAIRR	25	37	24	36	13	1
+P62805	H4	Proteinase K (ExPASy)	SGRGKGGKGL	2	11	1	10	10	2
+P62805	H4	Proteinase K (ExPASy)	SGRGKGGKGLGKGGA	2	16	1	15	15	3
+P62805	H4	Proteinase K (ExPASy)	GKGGA	12	16	11	15	5	1
+P62805	H4	Proteinase K (ExPASy)	GKGGAKRHRKV	12	22	11	21	11	3
+P62805	H4	Proteinase K (ExPASy)	KRHRKV	17	22	16	21	6	2
+P62805	H4	Proteinase K (ExPASy)	KRHRKVL	17	23	16	22	7	2
+P62805	H4	Proteinase K (ExPASy)	LRDNI	23	27	22	26	5	0
+P62805	H4	Proteinase K (ExPASy)	RDNI	24	27	23	26	4	0
+P62805	H4	Proteinase K (ExPASy)	RDNIQGI	24	30	23	29	7	0
+P62805	H4	Proteinase K (ExPASy)	QGIT	28	31	27	30	4	0
+P62805	H4	Proteinase K (ExPASy)	TKPA	31	34	30	33	4	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	SGRGKGGKGL	2	11	1	10	10	2
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	SGRGKGGKGLGKGGA	2	16	1	15	15	3
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	SGRGKGGKGLGKGGAKR	2	18	1	17	17	4
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	GKGGKGLGKGGAKR	5	18	4	17	14	4
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	GKGGKGLGKGGAKRHR	5	20	4	19	16	4
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	GKGGA	12	16	11	15	5	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	GKGGAKRHRKV	12	22	11	21	11	3
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	KRHRKV	17	22	16	21	6	2
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	KRHRKVL	17	23	16	22	7	2
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	HRKVLR	19	24	18	23	6	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	KVLR	21	24	20	23	4	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	KVLRDNIQGITKPAIR	21	36	20	35	16	2
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	LRDNI	23	27	22	26	5	0
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	RDNI	24	27	23	26	4	0
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	RDNIQGI	24	30	23	29	7	0
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	DNIQGITKPAIR	25	36	24	35	12	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	DNIQGITKPAIRR	25	37	24	36	13	1
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	QGIT	28	31	27	30	4	0
+P62805	H4	Histone PTM baseline: Trypsin (PSI-MS), propionylated K | Proteinase K (ExPASy)	TKPA	31	34	30	33	4	1
+P62805	H4	Trypsin (PSI-MS) + Proteinase K (ExPASy)	SGRGKGGKGL	2	11	1	10	10	2
+P62805	H4	Trypsin (PSI-MS) + Proteinase K (ExPASy)	GKGGKGL	5	11	4	10	7	2
+P62805	H4	Trypsin (PSI-MS) + Proteinase K (ExPASy)	GKGGKGLGKGGA	5	16	4	15	12	3
+P62805	H4	Trypsin (PSI-MS) + Proteinase K (ExPASy)	GKGGA	12	16	11	15	5	1
+P62805	H4	Trypsin (PSI-MS) + Proteinase K (ExPASy)	GKGGAKR	12	18	11	17	7	2
+P62805	H4	Trypsin (PSI-MS) + Proteinase K (ExPASy)	KRHR	17	20	16	19	4	1
+P62805	H4	Trypsin (PSI-MS) + Proteinase K (ExPASy)	HRKV	19	22	18	21	4	1
+P62805	H4	Trypsin (PSI-MS) + Proteinase K (ExPASy)	RDNI	24	27	23	26	4	0
+P62805	H4	Trypsin (PSI-MS) + Proteinase K (ExPASy)	DNIQGI	25	30	24	29	6	0
+P62805	H4	Trypsin (PSI-MS) + Proteinase K (ExPASy)	QGIT	28	31	27	30	4	0
+P62805	H4	Trypsin (PSI-MS) + Proteinase K (ExPASy)	TKPA	31	34	30	33	4	1

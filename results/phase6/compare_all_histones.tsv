@@ -1,0 +1,39 @@
+# Compared with: propionylation + trypsin · 4–40 aa · ≤1 missed cleavage
+# Strategy picker: compare across all histones
+goal	accession	histone	region_name	region	status	best	gain	cell
+see	P0C0S8	H2A type 1	N-terminal tail	1–20	already complete			already complete
+alone	P0C0S8	H2A type 1	N-terminal tail	1–20	best	trypsin / trypsin/P instead (no prop.)	+4 lysines measurable on their own	trypsin / trypsin/P instead (no prop.): +4 lysines measurable on their own
+separate	P0C0S8	H2A type 1	N-terminal tail	1–20	best	Lys-C / Lys-C/P instead (no prop.)	+2 lysine pairs can now be measured separately	Lys-C / Lys-C/P instead (no prop.): +2 lysine pairs can now be measured separately
+together	P0C0S8	H2A type 1	N-terminal tail	1–20	already complete			already complete
+marks	P0C0S8	H2A type 1	N-terminal tail	1–20	already complete			already complete
+variants	P0C0S8	H2A type 1	N-terminal tail	1–20	best	Asp-N (ambic) instead	+2 more variants told apart	Asp-N (ambic) instead: +2 more variants told apart
+see	P0C0S8	H2A type 1	C-terminal tail	110–129	best	trypsin → Asp-N (ambic)	+5 lysines seen	trypsin → Asp-N (ambic): +5 lysines seen
+alone	P0C0S8	H2A type 1	C-terminal tail	110–129	best	trypsin / trypsin/P / Lys-C / Lys-C/P instead (no prop.)	+2 lysines measurable on their own	trypsin / trypsin/P / Lys-C / Lys-C/P instead (no prop.): +2 lysines measurable on their own
+separate	P0C0S8	H2A type 1	C-terminal tail	110–129	best	trypsin / trypsin/P / Lys-C / Lys-C/P instead (no prop.)	+9 lysine pairs can now be measured separately	trypsin / trypsin/P / Lys-C / Lys-C/P instead (no prop.): +9 lysine pairs can now be measured separately
+together	P0C0S8	H2A type 1	C-terminal tail	110–129	best	trypsin → Asp-N (ambic)	+10 new lysine combinations on one peptide	trypsin → Asp-N (ambic): +10 new lysine combinations on one peptide
+marks	P0C0S8	H2A type 1	C-terminal tail	110–129	best	trypsin → Asp-N (ambic)	+3 known modification sites seen	trypsin → Asp-N (ambic): +3 known modification sites seen
+variants	P0C0S8	H2A type 1	C-terminal tail	110–129	best	trypsin → Asp-N (ambic)	+15 more variants told apart	trypsin → Asp-N (ambic): +15 more variants told apart
+see	P62807	H2B type 1-C/E/F/G/I	N-terminal tail	1–35	already complete			already complete
+alone	P62807	H2B type 1-C/E/F/G/I	N-terminal tail	1–35	best	+ separate Lys-C / Lys-C/P (no prop.)	+4 lysines measurable on their own	+ separate Lys-C / Lys-C/P (no prop.): +4 lysines measurable on their own
+separate	P62807	H2B type 1-C/E/F/G/I	N-terminal tail	1–35	best	+ separate Lys-C / Lys-C/P (no prop.)	+44 lysine pairs can now be measured separately	+ separate Lys-C / Lys-C/P (no prop.): +44 lysine pairs can now be measured separately
+together	P62807	H2B type 1-C/E/F/G/I	N-terminal tail	1–35	best	Asp-N (ambic) instead	+11 new lysine combinations on one peptide	Asp-N (ambic) instead: +11 new lysine combinations on one peptide
+marks	P62807	H2B type 1-C/E/F/G/I	N-terminal tail	1–35	already complete			already complete
+variants	P62807	H2B type 1-C/E/F/G/I	N-terminal tail	1–35	no improvement			no improvement
+see	P68431	H3.1	N-terminal tail	1–40	already complete			already complete
+alone	P68431	H3.1	N-terminal tail	1–40	best	trypsin instead (no prop.)	+7 lysines measurable on their own	trypsin instead (no prop.): +7 lysines measurable on their own
+separate	P68431	H3.1	N-terminal tail	1–40	best	Lys-C instead (no prop.)	+5 lysine pairs can now be measured separately	Lys-C instead (no prop.): +5 lysine pairs can now be measured separately
+together	P68431	H3.1	N-terminal tail	1–40	best	chymotrypsin (low specificity) instead	+11 new lysine combinations on one peptide	chymotrypsin (low specificity) instead: +11 new lysine combinations on one peptide
+marks	P68431	H3.1	N-terminal tail	1–40	already complete			already complete
+variants	P68431	H3.1	N-terminal tail	1–40	no improvement			no improvement
+see	P84243	H3.3	N-terminal tail	1–40	already complete			already complete
+alone	P84243	H3.3	N-terminal tail	1–40	best	trypsin instead (no prop.)	+7 lysines measurable on their own	trypsin instead (no prop.): +7 lysines measurable on their own
+separate	P84243	H3.3	N-terminal tail	1–40	best	Lys-C instead (no prop.)	+5 lysine pairs can now be measured separately	Lys-C instead (no prop.): +5 lysine pairs can now be measured separately
+together	P84243	H3.3	N-terminal tail	1–40	best	chymotrypsin (low specificity) instead	+11 new lysine combinations on one peptide	chymotrypsin (low specificity) instead: +11 new lysine combinations on one peptide
+marks	P84243	H3.3	N-terminal tail	1–40	already complete			already complete
+variants	P84243	H3.3	N-terminal tail	1–40	already complete			already complete
+see	P62805	H4	N-terminal tail	1–25	already complete			already complete
+alone	P62805	H4	N-terminal tail	1–25	best	Lys-N instead (no prop.)	+4 lysines measurable on their own	Lys-N instead (no prop.): +4 lysines measurable on their own
+separate	P62805	H4	N-terminal tail	1–25	best	Lys-C instead (no prop.)	+6 lysine pairs can now be measured separately	Lys-C instead (no prop.): +6 lysine pairs can now be measured separately
+together	P62805	H4	N-terminal tail	1–25	best	Asp-N (ambic) instead	+4 new lysine combinations on one peptide	Asp-N (ambic) instead: +4 new lysine combinations on one peptide
+marks	P62805	H4	N-terminal tail	1–25	already complete			already complete
+variants	P62805	H4	N-terminal tail	1–25	nothing to measure			nothing to measure

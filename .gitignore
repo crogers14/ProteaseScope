@@ -1,0 +1,29 @@
+# Python / tooling caches
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+.DS_Store
+
+# Local editor / assistant settings
+.claude/
+
+# Build outputs (CI rebuilds the site)
+build/
+site/
+dist/
+
+# Large raw downloads: the full UniProt FASTA (~29 MB) is re-created by
+# scripts/fetch_data.py; its source URL and release are kept in data/reference/metadata.json.
+# The app ships data/precomputed/reference.fasta.gz instead.
+data/reference/*.fasta
+data/reference/*.fasta.gz
+data/raw/
+
+# Node (Pyodide benchmarks)
+node_modules/
+bench/pyodide/package-lock.json

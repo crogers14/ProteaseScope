@@ -1,0 +1,73 @@
+# ProteaseScope 0.2.0 - Output 3: Identifiable proteins
+# PREDICTED (in silico) results. These are predictions from cleavage rules, not observed data.
+# Generated: 2026-11-14T10:51:15-05:00
+# Proteins digested: human_histones.fasta (54 entries)
+# Uniqueness background: UniProtKB/Swiss-Prot reviewed human proteome UP000005640 incl. isoforms, UniProt release 2026_04 (04-November-2026; downloaded 2026-11-14), 42,545 entries + human_histones.fasta (54 entries) (0 not already present); a peptide maps to every entry whose sequence contains it (I = L)
+# Digest:
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Numbering: UniProt (initiator Met = 1); *_mature = UniProt - 1 when Met is removed.
+# Masses: neutral monoisotopic and average (ExPASy average residue masses); m/z = (M + z*1.007276)/z.
+# Counts: peptides are counted by position (entry, start, end).
+accession	gene	protein_name	length	n_identifiable_peptides	n_unique_peptides	n_total_peptides	max_coverage_pct	unique_coverage_pct	confident
+O60814	H2BC12	Histone H2B type 1-K	126	13	0	9	100.0	0.0	False
+O75367	MACROH2A1	Core histone macro-H2A.1	369	15	0	13	42.119565217391305	0.0	False
+P04908	H2AC4	Histone H2A type 1-B/E	130	22	0	14	100.0	0.0	False
+P06899	H2BC11	Histone H2B type 1-J	126	13	0	9	100.0	0.0	False
+P07305	H1-0	Histone H1.0	194	8	3	7	50.77720207253886	23.83419689119171	True
+P0C0S5	H2AZ1	Histone H2A.Z	128	15	5	10	100.0	56.69291338582677	True
+P0C0S8	H2AC11	Histone H2A type 1	130	19	0	13	68.21705426356588	0.0	False
+P0C5Z0	H2AB2	Histone H2A-Bbd type 2/3	115	17	2	17	94.73684210526316	29.82456140350877	True
+P0DPK2	H3Y1	Histone H3.Y	136	26	5	19	98.51851851851852	30.37037037037037	True
+P0DPK5	H3Y2	Histone H3.X	147	28	8	19	100.0	39.726027397260275	True
+P10412	H1-4	Histone H1.4	219	6	4	5	35.77981651376147	24.31192660550459	True
+P16104	H2AX	Histone H2AX	143	19	6	13	61.971830985915496	39.436619718309856	True
+P16401	H1-5	Histone H1.5	226	3	3	4	36.0	36.0	True
+P16402	H1-3	Histone H1.3	221	3	1	5	35.90909090909091	15.0	False
+P16403	H1-2	Histone H1.2	213	3	1	4	36.79245283018868	15.09433962264151	False
+P20671	H2AC7	Histone H2A type 1-D	130	19	0	13	68.21705426356588	0.0	False
+P23527	H2BC17	Histone H2B type 1-O	126	13	0	9	100.0	0.0	False
+P33778	H2BC3	Histone H2B type 1-B	126	13	2	9	100.0	24.8	True
+P49450	CENPA	Histone H3-like centromeric protein A	140	24	4	22	99.28057553956835	39.568345323741006	True
+P57053	H2BC12L	Histone H2B type F-S	126	14	5	10	100.0	39.2	True
+P58876	H2BC5	Histone H2B type 1-D	126	13	2	9	100.0	24.8	True
+P60008	H1-9P	Putative histone H1.9	231	34	28	21	100.0	98.7012987012987	True
+P62805	H4C1	Histone H4	103	23	19	15	100.0	97.05882352941177	True
+P62807	H2BC4	Histone H2B type 1-C/E/F/G/I	126	13	0	9	100.0	0.0	False
+P68431	H3C1	Histone H3.1	136	24	1	18	100.0	24.444444444444443	False
+P84243	H3-3A	Histone H3.3	136	24	4	18	100.0	48.148148148148145	True
+Q02539	H1-1	Histone H1.1	215	3	3	5	35.981308411214954	35.981308411214954	True
+Q16695	H3-4	Histone H3.1t	136	24	6	18	100.0	62.96296296296296	True
+Q16777	H2AC20	Histone H2A type 2-C	129	20	1	13	100.0	31.25	False
+Q16778	H2BC21	Histone H2B type 2-E	126	13	0	9	100.0	0.0	False
+Q5QNW6	H2BC18	Histone H2B type 2-F	126	13	0	9	100.0	0.0	False
+Q5TEC6	H3-7	Histone H3-7	136	28	8	18	100.0	45.925925925925924	True
+Q6DN03	H2BC20P	Putative histone H2B type 2-C	193	27	4	19	100.0	25.520833333333332	True
+Q6DRA6	H2BC19P	Putative histone H2B type 2-D	164	24	2	16	100.0	17.791411042944784	True
+Q6FI13	H2AC18	Histone H2A type 2-A	130	19	0	13	68.21705426356588	0.0	False
+Q6NXT2	H3-5	Histone H3.3C	135	24	6	18	100.0	58.208955223880594	True
+Q71DI3	H3C15	Histone H3.2	136	24	1	18	100.0	24.444444444444443	False
+Q71UI9	H2AZ2	Histone H2A.V	128	15	0	10	100.0	0.0	False
+Q75WM6	H1-7	Testis-specific H1 histone	255	64	44	44	98.43137254901961	96.86274509803921	True
+Q7L7L0	H2AC25	Histone H2A type 3	130	22	0	14	100.0	0.0	False
+Q7Z2G1	H2BW1	Histone H2B type W-T	153	27	0	17	100.0	0.0	False
+Q8IUE6	H2AC21	Histone H2A type 2-B	130	19	2	13	68.21705426356588	8.527131782945736	True
+Q8N257	H2BC26	Histone H2B type 3-B	126	13	3	9	100.0	35.2	True
+Q92522	H1-10	Histone H1.10	213	17	15	14	79.71698113207547	79.71698113207547	True
+Q93077	H2AC6	Histone H2A type 1-C	130	22	0	14	100.0	0.0	False
+Q93079	H2BC9	Histone H2B type 1-H	126	13	0	9	100.0	0.0	False
+Q96A08	H2BC1	Histone H2B type 1-A	127	13	7	9	100.0	77.77777777777777	True
+Q96KK5	H2AC12	Histone H2A type 1-H	128	20	0	13	100.0	0.0	False
+Q96QV6	H2AC1	Histone H2A type 1-A	131	19	5	13	67.6923076923077	45.38461538461539	True
+Q99877	H2BC15	Histone H2B type 1-N	126	13	2	9	100.0	24.8	True
+Q99878	H2AC14	Histone H2A type 1-J	128	20	1	13	100.0	30.708661417322833	False
+Q99879	H2BC14	Histone H2B type 1-M	126	13	2	9	100.0	24.8	True
+Q99880	H2BC13	Histone H2B type 1-L	126	13	2	9	100.0	24.8	True
+Q9P0M6	MACROH2A2	Core histone macro-H2A.2	372	24	21	18	51.75202156334232	51.75202156334232	True

@@ -1,0 +1,70 @@
+# ProteaseScope 0.6.0.dev4 - Strategy picker: all strategies (advanced)
+# PREDICTED (in silico) results. These are predictions from cleavage rules, not observed data.
+# Generated: 2026-11-16T13:49:47-05:00
+# Proteins digested: H3.1 (P68431), residues 1-40 mature numbering (N-terminal tail)
+# Uniqueness background: variants: the other H3 entries of the histone annotation; a peptide tells entry B apart if B's full sequence does not contain it (I = L)
+# Digest:
+#   Digest: Trypsin (PSI-MS) [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: Propionylate before and after digestion
+#     Initiator Met removal: MetAP rule
+# Numbering: UniProt (initiator Met = 1); *_mature = UniProt - 1 when Met is removed.
+# Masses: neutral monoisotopic and average (ExPASy average residue masses); m/z = (M + z*1.007276)/z.
+# Counts: peptides are counted by position (entry, start, end).
+# Compared with: propionylation + trypsin · 4–40 aa · ≤1 missed cleavage
+# Measurable alone: peptides with at most 1 lysine(s) (all K on the peptide count). Known-mark filter: any.
+# Strategies: alone = enzyme instead of the standard digest; parallel = standard + separate enzyme digest (union of identifiable peptides); sequential = standard then enzyme in the same tube (union of cut sites, always propionylated). Unmodified = separate prep without propionylation (lysine-cleaving enzymes).
+# Candidate enzymes: Trypsin (PSI-MS), Trypsin/P (PSI-MS), Arg-C (PSI-MS), Lys-C (PSI-MS), Lys-C/P (PSI-MS), Lys-N (PSI-MS), Asp-N (PSI-MS), Asp-N ambic (PSI-MS), Glu-C (PSI-MS), Chymotrypsin (PSI-MS), Chymotrypsin high specificity (ExPASy), Chymotrypsin low specificity (ExPASy), ProAlanase (Literature)
+# Net = Strategy - Standard = Gained - Lost.
+strategy	code	kind	enzyme	variant	same_as_standard	listed_as	Lysines seen: standard	Lysines seen: strategy	Lysines seen: gained	Lysines seen: lost	Lysines seen: net	Lysines measurable alone: standard	Lysines measurable alone: strategy	Lysines measurable alone: gained	Lysines measurable alone: lost	Lysines measurable alone: net	Separable lysine pairs: standard	Separable lysine pairs: strategy	Separable lysine pairs: gained	Separable lysine pairs: lost	Separable lysine pairs: net	Lysine pairs on one peptide: standard	Lysine pairs on one peptide: strategy	Lysine pairs on one peptide: gained	Lysine pairs on one peptide: lost	Lysine pairs on one peptide: net	Known modification sites seen: standard	Known modification sites seen: strategy	Known modification sites seen: gained	Known modification sites seen: lost	Known modification sites seen: net	Variants told apart: standard	Variants told apart: strategy	Variants told apart: gained	Variants told apart: lost	Variants told apart: net	lysines lost	sample preps	enzyme steps	LC-MS runs	warnings
+Use trypsin instead (no propionylation)	Trypsin alone (unmodified)	alone	Trypsin (PSI-MS)	unmodified	False	Use trypsin instead (no propionylation)	8	8	0	0	0	1	8	7	0	7	23	28	5	0	5	17	4	0	13	-13	8	8	0	0	0	6	6	0	0	0	0	1	1	1	Unmodified lysines only
+Add a separate trypsin digest (no propionylation)	parallel + Trypsin (unmodified)	parallel	Trypsin (PSI-MS)	unmodified	False	Add a separate trypsin digest (no propionylation)	8	8	0	0	0	1	8	7	0	7	23	28	5	0	5	17	17	0	0	0	8	8	0	0	0	6	6	0	0	0	0	2	2	2	Unmodified lysines only
+Use trypsin/P instead	Trypsin/P alone	alone	Trypsin/P (PSI-MS)	propionylated	False	Use trypsin/P instead	8	8	0	0	0	1	1	0	0	0	23	23	0	0	0	17	17	0	0	0	8	8	0	0	0	6	6	0	0	0	0	1	1	1	
+Use trypsin/P instead (no propionylation)	Trypsin/P alone (unmodified)	alone	Trypsin/P (PSI-MS)	unmodified	False	Use trypsin/P instead (no propionylation)	8	8	0	0	0	1	8	7	0	7	23	28	5	0	5	17	4	0	13	-13	8	8	0	0	0	6	6	0	0	0	0	1	1	1	Unmodified lysines only
+Add a separate trypsin/P digest	parallel + Trypsin/P	parallel	Trypsin/P (PSI-MS)	propionylated	False	Add a separate trypsin/P digest	8	8	0	0	0	1	1	0	0	0	23	23	0	0	0	17	17	0	0	0	8	8	0	0	0	6	6	0	0	0	0	2	2	2	
+Add a separate trypsin/P digest (no propionylation)	parallel + Trypsin/P (unmodified)	parallel	Trypsin/P (PSI-MS)	unmodified	False	Add a separate trypsin/P digest (no propionylation)	8	8	0	0	0	1	8	7	0	7	23	28	5	0	5	17	17	0	0	0	8	8	0	0	0	6	6	0	0	0	0	2	2	2	Unmodified lysines only
+Follow trypsin with trypsin/P in the same tube	sequential + Trypsin/P	sequential	Trypsin/P (PSI-MS)	propionylated	False	Follow trypsin with trypsin/P in the same tube	8	8	0	0	0	1	1	0	0	0	23	23	0	0	0	17	17	0	0	0	8	8	0	0	0	6	6	0	0	0	0	1	2	1	
+Use Arg-C instead	Arg-C alone	alone	Arg-C (PSI-MS)	propionylated	True		8	8	0	0	0	1	1	0	0	0	23	23	0	0	0	17	17	0	0	0	8	8	0	0	0	6	6	0	0	0	0	1	1	1	
+Add a separate Arg-C digest	parallel + Arg-C	parallel	Arg-C (PSI-MS)	propionylated	True		8	8	0	0	0	1	1	0	0	0	23	23	0	0	0	17	17	0	0	0	8	8	0	0	0	6	6	0	0	0	0	2	2	2	
+Follow trypsin with Arg-C in the same tube	sequential + Arg-C	sequential	Arg-C (PSI-MS)	propionylated	True		8	8	0	0	0	1	1	0	0	0	23	23	0	0	0	17	17	0	0	0	8	8	0	0	0	6	6	0	0	0	0	1	2	1	
+Use Lys-C instead	Lys-C alone	alone	Lys-C (PSI-MS)	propionylated	False	Use Lys-C, Lys-C/P, Lys-N, Asp-N, Asp-N (ambic), Glu-C or chymotrypsin (high specificity) instead	8	0	0	8	-8	1	0	0	1	-1	23	0	0	23	-23	17	0	0	17	-17	8	0	0	8	-8	6	0	0	6	-6	8	1	1	1	
+Use Lys-C instead (no propionylation)	Lys-C alone (unmodified)	alone	Lys-C (PSI-MS)	unmodified	False	Use Lys-C instead (no propionylation)	8	8	0	0	0	1	7	6	0	6	23	28	5	0	5	17	7	0	10	-10	8	8	0	0	0	6	6	0	0	0	0	1	1	1	Unmodified lysines only
+Add a separate Lys-C digest	parallel + Lys-C	parallel	Lys-C (PSI-MS)	propionylated	True		8	8	0	0	0	1	1	0	0	0	23	23	0	0	0	17	17	0	0	0	8	8	0	0	0	6	6	0	0	0	0	2	2	2	
+Add a separate Lys-C digest (no propionylation)	parallel + Lys-C (unmodified)	parallel	Lys-C (PSI-MS)	unmodified	False	Add a separate Lys-C digest (no propionylation)	8	8	0	0	0	1	7	6	0	6	23	28	5	0	5	17	17	0	0	0	8	8	0	0	0	6	6	0	0	0	0	2	2	2	Unmodified lysines only
+Follow trypsin with Lys-C in the same tube	sequential + Lys-C	sequential	Lys-C (PSI-MS)	propionylated	True		8	8	0	0	0	1	1	0	0	0	23	23	0	0	0	17	17	0	0	0	8	8	0	0	0	6	6	0	0	0	0	1	2	1	
+Use Lys-C/P instead	Lys-C/P alone	alone	Lys-C/P (PSI-MS)	propionylated	False	Use Lys-C, Lys-C/P, Lys-N, Asp-N, Asp-N (ambic), Glu-C or chymotrypsin (high specificity) instead	8	0	0	8	-8	1	0	0	1	-1	23	0	0	23	-23	17	0	0	17	-17	8	0	0	8	-8	6	0	0	6	-6	8	1	1	1	
+Use Lys-C/P instead (no propionylation)	Lys-C/P alone (unmodified)	alone	Lys-C/P (PSI-MS)	unmodified	False	Use Lys-C/P instead (no propionylation)	8	8	0	0	0	1	7	6	0	6	23	28	5	0	5	17	7	0	10	-10	8	8	0	0	0	6	6	0	0	0	0	1	1	1	Unmodified lysines only
+Add a separate Lys-C/P digest	parallel + Lys-C/P	parallel	Lys-C/P (PSI-MS)	propionylated	True		8	8	0	0	0	1	1	0	0	0	23	23	0	0	0	17	17	0	0	0	8	8	0	0	0	6	6	0	0	0	0	2	2	2	
+Add a separate Lys-C/P digest (no propionylation)	parallel + Lys-C/P (unmodified)	parallel	Lys-C/P (PSI-MS)	unmodified	False	Add a separate Lys-C/P digest (no propionylation)	8	8	0	0	0	1	7	6	0	6	23	28	5	0	5	17	17	0	0	0	8	8	0	0	0	6	6	0	0	0	0	2	2	2	Unmodified lysines only
+Follow trypsin with Lys-C/P in the same tube	sequential + Lys-C/P	sequential	Lys-C/P (PSI-MS)	propionylated	True		8	8	0	0	0	1	1	0	0	0	23	23	0	0	0	17	17	0	0	0	8	8	0	0	0	6	6	0	0	0	0	1	2	1	
+Use Lys-N instead	Lys-N alone	alone	Lys-N (PSI-MS)	propionylated	False	Use Lys-C, Lys-C/P, Lys-N, Asp-N, Asp-N (ambic), Glu-C or chymotrypsin (high specificity) instead	8	0	0	8	-8	1	0	0	1	-1	23	0	0	23	-23	17	0	0	17	-17	8	0	0	8	-8	6	0	0	6	-6	8	1	1	1	
+Use Lys-N instead (no propionylation)	Lys-N alone (unmodified)	alone	Lys-N (PSI-MS)	unmodified	False	Use Lys-N instead (no propionylation)	8	8	0	0	0	1	7	6	0	6	23	28	5	0	5	17	7	0	10	-10	8	8	0	0	0	6	6	0	0	0	0	1	1	1	Unmodified lysines only
+Add a separate Lys-N digest	parallel + Lys-N	parallel	Lys-N (PSI-MS)	propionylated	True		8	8	0	0	0	1	1	0	0	0	23	23	0	0	0	17	17	0	0	0	8	8	0	0	0	6	6	0	0	0	0	2	2	2	
+Add a separate Lys-N digest (no propionylation)	parallel + Lys-N (unmodified)	parallel	Lys-N (PSI-MS)	unmodified	False	Add a separate Lys-N digest (no propionylation)	8	8	0	0	0	1	7	6	0	6	23	28	5	0	5	17	17	0	0	0	8	8	0	0	0	6	6	0	0	0	0	2	2	2	Unmodified lysines only
+Follow trypsin with Lys-N in the same tube	sequential + Lys-N	sequential	Lys-N (PSI-MS)	propionylated	True		8	8	0	0	0	1	1	0	0	0	23	23	0	0	0	17	17	0	0	0	8	8	0	0	0	6	6	0	0	0	0	1	2	1	
+Use Asp-N instead	Asp-N alone	alone	Asp-N (PSI-MS)	propionylated	False	Use Lys-C, Lys-C/P, Lys-N, Asp-N, Asp-N (ambic), Glu-C or chymotrypsin (high specificity) instead	8	0	0	8	-8	1	0	0	1	-1	23	0	0	23	-23	17	0	0	17	-17	8	0	0	8	-8	6	0	0	6	-6	8	1	1	1	
+Add a separate Asp-N digest	parallel + Asp-N	parallel	Asp-N (PSI-MS)	propionylated	True		8	8	0	0	0	1	1	0	0	0	23	23	0	0	0	17	17	0	0	0	8	8	0	0	0	6	6	0	0	0	0	2	2	2	
+Follow trypsin with Asp-N in the same tube	sequential + Asp-N	sequential	Asp-N (PSI-MS)	propionylated	True		8	8	0	0	0	1	1	0	0	0	23	23	0	0	0	17	17	0	0	0	8	8	0	0	0	6	6	0	0	0	0	1	2	1	
+Use Asp-N (ambic) instead	Asp-N ambic alone	alone	Asp-N ambic (PSI-MS)	propionylated	False	Use Lys-C, Lys-C/P, Lys-N, Asp-N, Asp-N (ambic), Glu-C or chymotrypsin (high specificity) instead	8	0	0	8	-8	1	0	0	1	-1	23	0	0	23	-23	17	0	0	17	-17	8	0	0	8	-8	6	0	0	6	-6	8	1	1	1	
+Add a separate Asp-N (ambic) digest	parallel + Asp-N ambic	parallel	Asp-N ambic (PSI-MS)	propionylated	True		8	8	0	0	0	1	1	0	0	0	23	23	0	0	0	17	17	0	0	0	8	8	0	0	0	6	6	0	0	0	0	2	2	2	
+Follow trypsin with Asp-N (ambic) in the same tube	sequential + Asp-N ambic	sequential	Asp-N ambic (PSI-MS)	propionylated	True		8	8	0	0	0	1	1	0	0	0	23	23	0	0	0	17	17	0	0	0	8	8	0	0	0	6	6	0	0	0	0	1	2	1	
+Use Glu-C instead	Glu-C alone	alone	Glu-C (PSI-MS)	propionylated	False	Use Lys-C, Lys-C/P, Lys-N, Asp-N, Asp-N (ambic), Glu-C or chymotrypsin (high specificity) instead	8	0	0	8	-8	1	0	0	1	-1	23	0	0	23	-23	17	0	0	17	-17	8	0	0	8	-8	6	0	0	6	-6	8	1	1	1	
+Add a separate Glu-C digest	parallel + Glu-C	parallel	Glu-C (PSI-MS)	propionylated	True		8	8	0	0	0	1	1	0	0	0	23	23	0	0	0	17	17	0	0	0	8	8	0	0	0	6	6	0	0	0	0	2	2	2	
+Follow trypsin with Glu-C in the same tube	sequential + Glu-C	sequential	Glu-C (PSI-MS)	propionylated	True		8	8	0	0	0	1	1	0	0	0	23	23	0	0	0	17	17	0	0	0	8	8	0	0	0	6	6	0	0	0	0	1	2	1	
+Use chymotrypsin instead	Chymotrypsin alone	alone	Chymotrypsin (PSI-MS)	propionylated	False	Use chymotrypsin instead	8	8	0	0	0	1	0	0	1	-1	23	16	1	8	-7	17	12	1	6	-5	8	8	0	0	0	6	6	0	0	0	0	1	1	1	
+Add a separate chymotrypsin digest	parallel + Chymotrypsin	parallel	Chymotrypsin (PSI-MS)	propionylated	False	Add a separate chymotrypsin digest	8	8	0	0	0	1	1	0	0	0	23	24	1	0	1	17	18	1	0	1	8	8	0	0	0	6	6	0	0	0	0	2	2	2	
+Follow trypsin with chymotrypsin in the same tube	sequential + Chymotrypsin	sequential	Chymotrypsin (PSI-MS)	propionylated	False	Follow trypsin with chymotrypsin in the same tube	8	8	0	0	0	1	2	1	0	1	23	24	1	0	1	17	12	0	5	-5	8	8	0	0	0	6	6	0	0	0	0	1	2	1	
+Use chymotrypsin (high specificity) instead	Chymotrypsin high specificity alone	alone	Chymotrypsin high specificity (ExPASy)	propionylated	False	Use Lys-C, Lys-C/P, Lys-N, Asp-N, Asp-N (ambic), Glu-C or chymotrypsin (high specificity) instead	8	0	0	8	-8	1	0	0	1	-1	23	0	0	23	-23	17	0	0	17	-17	8	0	0	8	-8	6	0	0	6	-6	8	1	1	1	
+Add a separate chymotrypsin (high specificity) digest	parallel + Chymotrypsin high specificity	parallel	Chymotrypsin high specificity (ExPASy)	propionylated	True		8	8	0	0	0	1	1	0	0	0	23	23	0	0	0	17	17	0	0	0	8	8	0	0	0	6	6	0	0	0	0	2	2	2	
+Follow trypsin with chymotrypsin (high specificity) in the same tube	sequential + Chymotrypsin high specificity	sequential	Chymotrypsin high specificity (ExPASy)	propionylated	False	Follow trypsin with chymotrypsin (high specificity) in the same tube	8	8	0	0	0	1	1	0	0	0	23	23	0	0	0	17	17	0	0	0	8	8	0	0	0	6	6	0	0	0	0	1	2	1	
+Use chymotrypsin (low specificity) instead	Chymotrypsin low specificity alone	alone	Chymotrypsin low specificity (ExPASy)	propionylated	False	Use chymotrypsin (low specificity) instead	8	8	0	0	0	1	0	0	1	-1	23	16	1	8	-7	17	28	11	0	11	8	8	0	0	0	6	6	0	0	0	0	1	1	1	
+Add a separate chymotrypsin (low specificity) digest	parallel + Chymotrypsin low specificity	parallel	Chymotrypsin low specificity (ExPASy)	propionylated	False	Add a separate chymotrypsin (low specificity) digest	8	8	0	0	0	1	1	0	0	0	23	24	1	0	1	17	28	11	0	11	8	8	0	0	0	6	6	0	0	0	0	2	2	2	
+Follow trypsin with chymotrypsin (low specificity) in the same tube	sequential + Chymotrypsin low specificity	sequential	Chymotrypsin low specificity (ExPASy)	propionylated	False	Follow trypsin with chymotrypsin (low specificity) in the same tube	8	8	0	0	0	1	2	1	0	1	23	24	1	0	1	17	12	0	5	-5	8	8	0	0	0	6	6	0	0	0	0	1	2	1	
+Use ProAlanase instead	ProAlanase alone	alone	ProAlanase (Literature)	propionylated	False	Use ProAlanase instead	8	8	0	0	0	1	4	3	0	3	23	26	3	0	3	17	5	0	12	-12	8	8	0	0	0	6	6	0	0	0	0	1	1	1	
+Add a separate ProAlanase digest	parallel + ProAlanase	parallel	ProAlanase (Literature)	propionylated	False	Add a separate ProAlanase digest	8	8	0	0	0	1	4	3	0	3	23	26	3	0	3	17	17	0	0	0	8	8	0	0	0	6	6	0	0	0	0	2	2	2	
+Follow trypsin with ProAlanase in the same tube	sequential + ProAlanase	sequential	ProAlanase (Literature)	propionylated	False	Follow trypsin with ProAlanase in the same tube	8	8	0	0	0	1	4	3	0	3	23	26	3	0	3	17	3	0	14	-14	8	8	0	0	0	6	6	0	0	0	0	1	2	1	

@@ -1,0 +1,73 @@
+# ProteaseScope 0.2.0 - Output 4: Cleaved peptide coverage per protein
+# PREDICTED (in silico) results. These are predictions from cleavage rules, not observed data.
+# Generated: 2026-11-14T10:51:15-05:00
+# Proteins digested: human_histones.fasta (54 entries)
+# Uniqueness background: UniProtKB/Swiss-Prot reviewed human proteome UP000005640 incl. isoforms, UniProt release 2026_04 (04-November-2026; downloaded 2026-11-14), 42,545 entries + human_histones.fasta (54 entries) (0 not already present); a peptide maps to every entry whose sequence contains it (I = L)
+# Digest:
+#   Digest: Histone PTM baseline: Trypsin (PSI-MS), propionylated K [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 4-40 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: protein + peptide N-term
+#     Initiator Met removal: MetAP rule
+# Numbering: UniProt (initiator Met = 1); *_mature = UniProt - 1 when Met is removed.
+# Masses: neutral monoisotopic and average (ExPASy average residue masses); m/z = (M + z*1.007276)/z.
+# Counts: peptides are counted by position (entry, start, end).
+accession	gene	mature_length	covered_residues	max_coverage_pct
+O60814	H2BC12	125	125	100.0
+O75367	MACROH2A1	368	155	42.119565217391305
+P04908	H2AC4	129	129	100.0
+P06899	H2BC11	125	125	100.0
+P07305	H1-0	193	98	50.77720207253886
+P0C0S5	H2AZ1	127	127	100.0
+P0C0S8	H2AC11	129	88	68.21705426356588
+P0C5Z0	H2AB2	114	108	94.73684210526316
+P0DPK2	H3Y1	135	133	98.51851851851852
+P0DPK5	H3Y2	146	146	100.0
+P10412	H1-4	218	78	35.77981651376147
+P16104	H2AX	142	88	61.971830985915496
+P16401	H1-5	225	81	36.0
+P16402	H1-3	220	79	35.90909090909091
+P16403	H1-2	212	78	36.79245283018868
+P20671	H2AC7	129	88	68.21705426356588
+P23527	H2BC17	125	125	100.0
+P33778	H2BC3	125	125	100.0
+P49450	CENPA	139	138	99.28057553956835
+P57053	H2BC12L	125	125	100.0
+P58876	H2BC5	125	125	100.0
+P60008	H1-9P	231	231	100.0
+P62805	H4C1	102	102	100.0
+P62807	H2BC4	125	125	100.0
+P68431	H3C1	135	135	100.0
+P84243	H3-3A	135	135	100.0
+Q02539	H1-1	214	77	35.981308411214954
+Q16695	H3-4	135	135	100.0
+Q16777	H2AC20	128	128	100.0
+Q16778	H2BC21	125	125	100.0
+Q5QNW6	H2BC18	125	125	100.0
+Q5TEC6	H3-7	135	135	100.0
+Q6DN03	H2BC20P	192	192	100.0
+Q6DRA6	H2BC19P	163	163	100.0
+Q6FI13	H2AC18	129	88	68.21705426356588
+Q6NXT2	H3-5	134	134	100.0
+Q71DI3	H3C15	135	135	100.0
+Q71UI9	H2AZ2	127	127	100.0
+Q75WM6	H1-7	255	251	98.43137254901961
+Q7L7L0	H2AC25	129	129	100.0
+Q7Z2G1	H2BW1	152	152	100.0
+Q8IUE6	H2AC21	129	88	68.21705426356588
+Q8N257	H2BC26	125	125	100.0
+Q92522	H1-10	212	169	79.71698113207547
+Q93077	H2AC6	129	129	100.0
+Q93079	H2BC9	125	125	100.0
+Q96A08	H2BC1	126	126	100.0
+Q96KK5	H2AC12	127	127	100.0
+Q96QV6	H2AC1	130	88	67.6923076923077
+Q99877	H2BC15	125	125	100.0
+Q99878	H2AC14	127	127	100.0
+Q99879	H2BC14	125	125	100.0
+Q99880	H2BC13	125	125	100.0
+Q9P0M6	MACROH2A2	371	192	51.75202156334232

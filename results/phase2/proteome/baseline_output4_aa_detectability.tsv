@@ -1,0 +1,41 @@
+# ProteaseScope 0.2.0 - Output 4: Amino acid detectability
+# PREDICTED (in silico) results. These are predictions from cleavage rules, not observed data.
+# Generated: 2026-11-14T10:51:25-05:00
+# Proteins digested: UniProtKB/Swiss-Prot reviewed human proteome UP000005640 incl. isoforms, UniProt release 2026_04 (04-November-2026; downloaded 2026-11-14), 42,545 entries
+# Uniqueness background: UniProtKB/Swiss-Prot reviewed human proteome UP000005640 incl. isoforms, UniProt release 2026_04 (04-November-2026; downloaded 2026-11-14), 42,545 entries; a peptide maps to every entry whose sequence contains it (I = L)
+# Digest:
+#   Digest: Proteome baseline: Trypsin (PSI-MS) [single]
+#     Trypsin (PSI-MS): regex (?<=[KR])(?!P)  [PSI-MS MS:1001251, psi-ms.obo v4.2.17]
+#       Citation: HUPO-PSI PSI-MS controlled vocabulary (psi-ms.obo v4.2.17); Mayer G et al. (2013) Database 2013:bat009.
+#     Peptide length: 7-30 aa
+#     Max missed cleavages: 1
+#     m/z filter: off
+#     Fixed modifications: Carbamidomethyl (C)
+#     Propionylation: none
+#     Initiator Met removal: MetAP rule
+# Numbering: UniProt (initiator Met = 1); *_mature = UniProt - 1 when Met is removed.
+# Masses: neutral monoisotopic and average (ExPASy average residue masses); m/z = (M + z*1.007276)/z.
+# Counts: peptides are counted by position (entry, start, end).
+residue	occurrences	on_identifiable_peptides	fraction_detectable	highlight
+A	1699130	1269213	0.7469781594109927	False
+C	535755	415154	0.7748952412949949	True
+D	1181002	924184	0.7825422818928334	False
+E	1772636	1419544	0.8008096416861669	False
+F	871404	666613	0.7649873078388439	False
+G	1591945	1178874	0.7405243271595439	False
+H	631425	490609	0.7769869739082235	False
+I	1069947	835955	0.7813050552971316	False
+K	1418256	1210380	0.8534284360510374	True
+L	2406047	1857757	0.7721199959934282	False
+M	500579	384900	0.7689096026800964	False
+N	887143	693243	0.7814332074986784	False
+P	1555393	1089651	0.7005631374192889	False
+Q	1177123	906222	0.7698617731536976	False
+R	1376964	1162078	0.8439421800424702	False
+S	2066793	1518667	0.7347939537244417	True
+T	1338497	988502	0.7385164105709613	True
+U	58	50	0.8620689655172413	False
+V	1473497	1123764	0.76265102677508	False
+W	293931	227318	0.7733719818596881	False
+X	4	4	1.0	False
+Y	641095	498311	0.7772810581895039	True
