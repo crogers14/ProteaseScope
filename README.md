@@ -4,6 +4,8 @@ In silico protease digestion and comparison: what each alternative digest lets y
 
 > **All results are predictions** from cleavage rules. They are not observed data. Every table, figure and export carries the settings that produced it.
 
+**Try it in your browser:** https://crogers14.github.io/ProteaseScope/ (beta). The app runs entirely in the browser with Shinylive; the first load downloads about 150 MB and can take a minute.
+
 ## Layout
 
 | Path | What it is |
@@ -57,7 +59,7 @@ uv run python scripts/precompute.py
 uv run python scripts/build_site.py
 ```
 
-This writes `site/`: the Shinylive app plus `data/precomputed/`, about 150 MB, with no file over 25 MB. Serve `site/` from any static host, for example GitHub Pages. To preview locally:
+This writes `site/`: the Shinylive app plus `data/precomputed/`, about 150 MB, with no file over 25 MB. Every page carries a `noindex` tag. Serve `site/` from any static host. To preview locally:
 
 ```bash
 python3 -m http.server --directory site 8020
@@ -70,3 +72,7 @@ The app runs on Pyodide 0.27.7 (bundled with Shinylive 0.10.16). This runs the c
 ```bash
 cd bench/pyodide && npm install && PYODIDE_PACKAGES=pytest node run.mjs run_tests.py ../..
 ```
+
+## Deployment
+
+Every push to `main` runs `.github/workflows/pages.yml`: ruff and pytest first, then `scripts/build_site.py`, then a deploy to GitHub Pages. Nothing is deployed if a test fails. The repository's Pages source must be set to **GitHub Actions** (Settings → Pages).
